@@ -12,10 +12,8 @@ redirect_from:
 I am an assistance professor at [ISAE - SUPAERO](https://www.isae-supaero.fr/), and a researcher at [Institut Clément Ader](https://ica.cnrs.fr/). 
 
 
-<p align="left">
+<p float="left">
   <img src="images/Logo_ISAE.png" width=300 />
-</p>
-
-<p align="right">
   <img src="images/Logo_ICA.png" width=300 />
 </p>
+
