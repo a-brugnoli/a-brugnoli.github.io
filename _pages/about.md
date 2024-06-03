@@ -9,7 +9,7 @@ redirect_from:
 
 ## About 
 
-I am an assistance professor at [ISAE-SUPAERO](https://www.isae-supaero.fr/), and a researcher at [Institut Clément Ader](https://ica.cnrs.fr/). 
+I am an assistant professor at [ISAE-SUPAERO](https://www.isae-supaero.fr/), and a researcher at [Institut Clément Ader](https://ica.cnrs.fr/). 
 
 
 <p float="left">
