@@ -13,7 +13,7 @@ I am an assistance professor at [ISAE-SUPAERO](https://www.isae-supaero.fr/), an
 
 
 <p float="left">
-  <img src="images/Logo_ISAE.png" width="40%" style="margin-right: 15%;" />
-  <img src="images/Logo_ICA.png" width="35%" style="margin-left: 15%;" />
+  <img src="images/Logo_ISAE.png" width="30%" style="margin-right: 15%;" />
+  <img src="images/Logo_ICA.png" width="30%" style="margin-left: 15%;" />
 </p>
 
