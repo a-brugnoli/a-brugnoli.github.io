@@ -1,0 +1,26 @@
+project:
+  type: website
+
+website:
+  title: "Andrea Brugnoli"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - cv.qmd
+      - research.qmd
+      - publications.qmd
+      - talks.qmd
+      - text: Teaching
+        menu:
+          - teaching/index.qmd
+          - teaching/fem.qmd
+          - teaching/continuum.qmd
+      - software.qmd
+      - contact.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    mathjax: true
