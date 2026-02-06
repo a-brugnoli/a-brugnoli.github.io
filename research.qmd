@@ -1,0 +1,81 @@
+# Research
+
+## Structure preserving discretization of port-Hamiltonian systems
+
+Since my PhD I have been working on structure preserving methods for port-Hamiltonian systems. 
+To this aim I have primarily used open-source finite element librairies like FEniCS and Firedrake but I also developed my own code for simple simulations. 
+
+* **Finite element exterior calculus and port-Hamiltonian dynamics**
+
+Physical equations are typically written using vector calculus but they can also be written using the language of differential geometry. This latter formalism distiguishes topological and metrical notions and connects integration, derivation using coordinate free expressions. Seemingly different numerical methods (e.g. finite differences, finite elements, finite volumes) can be understood in a unified way when described using tools from differential geometry. Hamiltonian and port-Hamiltonian systems are tipically formulated in a geometric setting. In my research I have established general methodologies on how to discretize port-Hamiltonian systems using Finite Element Exterior Calculus. 
+
+
+::: {#fig-discontinuous-coeff-wave layout-ncol=2}
+
+![Pressure at $t=2\,[\mathrm{s}]$](files/images/pH_hybridization/velocity_primal_t2.png){width=90%}
+
+![Pressure at $t=3\,[\mathrm{s}]$](files/images/pH_hybridization/velocity_primal_t3.png){width=90%}
+
+Snapshots of the pressure for an Heterogeneous domain using an hybrid finite element formulation.
+
+:::
+
+
+
+* **Structural dynamics and integrators**
+In nonlinear mechanics, energy preserving method are preferred as they produce stable and accurate simulations. However this method are tipically implicit and they require Newton iterations to produc a solution. By reformulating the equations, linearly implicit energy conserving method can be devised. For instance, consider the oscillator in @fig-duffing. The system corresonds to the famous duffing oscillator. 
+
+![Geometrically nonlinear oscillations of a sliding mass](files/images/geometrically_nonlinear_intergrator/nonlinear_oscillator.png){#fig-duffing width=80%}
+
+
+The intergration is capable of preserving the energy exactly and has a lower error with respect to other integrators @fig-lin-imp-integrator.
+
+::: {#fig-lin-imp-integrator layout-ncol=2}
+
+![Energy error](files/images/geometrically_nonlinear_integrator/energy_error_duffing.png){width=90%}
+
+![Error on the position of the mass](files/images/geometrically_nonlinear_integrator/convergence_position_duffing.png){width=90%}
+
+
+:::
+
+
+
+
+* **Systems theory and numerical methods**
+System theory provides a structural way of thinking about interconnected system. This can be used to reinterpret numerical method that uses local basis glued together in a strong or weak way. Numerical fluxes in discontinuous methods may benefit from such an interpretation.
+
+::: {#fig-disc-interconnection layout-ncol=2}
+
+<div>
+
+![Splitting of the domain](files/images/domain_decomposition/dom_part.png){width=60%}
+
+![Interconnection at the interface](files/images/domain_decomposition/dom_part_int.png){width=90%}
+
+</div>
+
+<div>
+
+![Feedback interconnection](files/images/domain_decomposition/gyrator_domain_decomposition.png){width=90%}
+
+</div>
+
+Numerical fluxes as feedback interconnection.
+
+:::
+
+
+
+
+## Numerical methods for high frequency structural dynamics
+
+Classical finite elements notorously struggle when high frequency waves propagate in solids. Alternative methods can be used to tackle this problem, like Treffz method or statistical energy analysis. 
+
+![Waves in a nondispersive solid](files/images/sea/rod_c_g_behavior.png){#fig-energy-density-rod width=80%}
+
+![Waves in dispersive solid is more difficult to track as grouph and phase velocities are different](files/images/sea/beam_c_g_behavior.png){#fig-energy-density-beam width=80%}
+
+
+
+

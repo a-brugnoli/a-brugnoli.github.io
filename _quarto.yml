@@ -2,25 +2,29 @@ project:
   type: website
 
 website:
-  title: "Andrea Brugnoli"
+  title: '<img src="files/images/cartoon_face.jpg" height="50px" style="border-radius:50%;"> Andrea Brugnoli'
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - cv.qmd
+      - href: files/pdfs/CV.pdf
+        text: CV
       - research.qmd
       - publications.qmd
       - talks.qmd
       - text: Teaching
         menu:
-          - teaching/index.qmd
-          - teaching/fem.qmd
-          - teaching/continuum.qmd
+          - teaching/finite_elements.qmd
+          - teaching/structural_mechanics.qmd
+          - teaching/port_Hamiltonian_systems.qmd
       - software.qmd
       - contact.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: flatly
+    theme-variables:
+      font-family-base: "Georgia, serif"
+    css: styles/custom.css
     toc: true
     mathjax: true

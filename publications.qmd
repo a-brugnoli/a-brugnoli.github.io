@@ -1,0 +1,23 @@
+---
+title: Publications
+bibliography: publications.bib
+---
+
+You can find my publications on my [Google Scholar profile](https://scholar.google.com/citations?user=aze4Eh4AAAAJ&hl=it)
+
+
+
+## Publications (from HAL)
+
+You can also see my publications directly from HAL below:
+
+<div style="width:100%; max-width:900px; height:600px; overflow:auto; border:1px solid #ccc;">
+  <iframe 
+    src="https://haltools.archives-ouvertes.fr/Public/afficheRequetePubli.php?idHal=andrea-brugnoli&CB_auteur=oui&CB_titre=oui&CB_article=oui&CB_DOI=oui&CB_typdoc=oui&langue=Anglais&tri_exp=typdoc&tri_exp2=annee_publi&tri_exp3=date_publi&ordre_aff=TA&Fen=Aff&css=../css/styles_publicationsHAL_frame.css"
+    width="100%" 
+    height="600" 
+    frameborder="0" 
+    scrolling="auto">
+  </iframe>
+</div>
+

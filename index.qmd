@@ -1,7 +1,47 @@
----
-title: "a-brugnoli.github.io"
+## Andrea Brugnoli
+
+**Associate Professor**, ISAE - SUPAERO  
+Department of Mechanics of Structures and Materials
+
+**Researcher**, Institut Clément Ader
+
+I am a researcher in **computational mechanics**, working at the interface of  
+**applied mathematics**, **physics**, and **scientific computing**.
+
+My research focuses on the numerical analysis and simulation of
+continuum models, with applications to solid mechanics and multiphysics problems.
+
 ---
 
-This is a Quarto website.
+## Research
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+My main research interests include:
+
+* Structure-preserving and variational methods
+* Finite element methods
+* Geometric time integration
+* Connection between control theory and numerical methods
+
+→ See [Research](research.qmd) and [Publications](publications.qmd)
+
+---
+
+## Teaching
+
+I teach the followingh courses:
+
+* classical mechanics
+* solid mechanics
+* finite element methods
+
+→ See [Teaching](teaching/index.qmd)
+
+---
+
+## Software
+
+I typically share the code used in my publications and courses.
+
+→ See [Software](software.qmd)
+
+---

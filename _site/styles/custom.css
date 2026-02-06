@@ -1,0 +1,30 @@
+/* Navbar background and text */
+.navbar {
+    background-color: #008b8b !important;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #ffffff !important;       /* link color */
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #e0e0e0 !important;       /* hover text */
+}
+
+/* Dropdown menu */
+.navbar .dropdown-menu {
+    background-color: #008b8b !important;   /* dark cyan */
+    border: none;
+}
+
+/* Dropdown items (links) */
+.navbar .dropdown-menu .dropdown-item {
+    color: #ffffff !important;              /* white text */
+    background-color: #008b8b !important;   /* dark cyan */
+}
+
+/* Hover effect for dropdown items */
+.navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #006666 !important;   /* slightly darker cyan */
+    color: #ffffff !important;
+}

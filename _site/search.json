@@ -1,16 +1,135 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "a-brugnoli.github.io",
+    "title": "<img src=\"files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Associate Professor, ISAE - SUPAERO\nDepartment of Mechanics of Structures and Materials\nResearcher, Institut Clément Ader\nI am a researcher in computational mechanics, working at the interface of\napplied mathematics, physics, and scientific computing.\nMy research focuses on the numerical analysis and simulation of continuum models, with applications to solid mechanics and multiphysics problems."
+  },
+  {
+    "objectID": "index.html#andrea-brugnoli",
+    "href": "index.html#andrea-brugnoli",
+    "title": "<img src=\"files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
+    "section": "",
+    "text": "Associate Professor, ISAE - SUPAERO\nDepartment of Mechanics of Structures and Materials\nResearcher, Institut Clément Ader\nI am a researcher in computational mechanics, working at the interface of\napplied mathematics, physics, and scientific computing.\nMy research focuses on the numerical analysis and simulation of continuum models, with applications to solid mechanics and multiphysics problems."
+  },
+  {
+    "objectID": "index.html#research",
+    "href": "index.html#research",
+    "title": "<img src=\"files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
+    "section": "Research",
+    "text": "Research\nMy main research interests include:\n\nStructure-preserving and variational methods\nFinite element methods\nGeometric time integration\nConnection between control theory and numerical methods\n\n→ See Research and Publications"
+  },
+  {
+    "objectID": "index.html#teaching",
+    "href": "index.html#teaching",
+    "title": "<img src=\"files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
+    "section": "Teaching",
+    "text": "Teaching\nI teach the followingh courses:\n\nclassical mechanics\nsolid mechanics\nfinite element methods\n\n→ See Teaching"
+  },
+  {
+    "objectID": "index.html#software",
+    "href": "index.html#software",
+    "title": "<img src=\"files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
+    "section": "Software",
+    "text": "Software\nI typically share the code used in my publications and courses.\n→ See Software"
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "<img src=\"files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
+    "section": "Contact",
+    "text": "Contact\n\nEmail: andrea.brugnoli@isae-supaero.fr\n\nGitHub: https://github.com/a-brugnoli/"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "You can find my publications on my Google Scholar profile"
+  },
+  {
+    "objectID": "publications.html#journal-articles",
+    "href": "publications.html#journal-articles",
+    "title": "Publications",
+    "section": "Journal Articles",
+    "text": "Journal Articles\n\n {keywords=journal}"
+  },
+  {
+    "objectID": "publications.html#conference-proceedings",
+    "href": "publications.html#conference-proceedings",
+    "title": "Publications",
+    "section": "Conference Proceedings",
+    "text": "Conference Proceedings\n\n {keywords=conference}"
+  },
+  {
+    "objectID": "publications.html#preprints",
+    "href": "publications.html#preprints",
+    "title": "Publications",
+    "section": "Preprints",
+    "text": "Preprints\n\n {keywords=preprint}"
+  },
+  {
+    "objectID": "publications.html#publications-from-hal",
+    "href": "publications.html#publications-from-hal",
+    "title": "Publications",
+    "section": "Publications (from HAL)",
+    "text": "Publications (from HAL)\nYou can also see my publications directly from HAL below:"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Since my PhD I have been working on structure preserving methods for port-Hamiltonian systems. To this aim I have primarily used open-source finite element librairies like FEniCS and Firedrake but I also developed my own code for simple simulations.\n\nFinite element exterior calculus and port-Hamiltonian dynamics\n\nPhysical equations are typically written using vector calculus but they can also be written using the language of differential geometry. This latter formalism distiguishes topological and metrical notions and connects integration, derivation using coordinate free expressions. Seemingly different numerical methods (e.g. finite differences, finite elements, finite volumes) can be understood in a unified way when described using tools from differential geometry. Hamiltonian and port-Hamiltonian systems are tipically formulated in a geometric setting. In my research I have established general methodologies on how to discretize port-Hamiltonian systems using Finite Element Exterior Calculus.\n\n\n\n\n\n\n\n\nPressure at \\(t=2\\,[\\mathrm{s}]\\)\n\n\n\n\n\n\n\nPressure at \\(t=3\\,[\\mathrm{s}]\\)\n\n\n\n\n\n\nFigure 1: Snapshots of the pressure for an Heterogeneous domain using an hybrid finite element formulation.\n\n\n\n\nStructural dynamics and integrators In nonlinear mechanics, energy preserving method are preferred as they produce stable and accurate simulations. However this method are tipically implicit and they require Newton iterations to produc a solution. By reformulating the equations, linearly implicit energy conserving method can be devised. For instance, consider the oscillator in Figure 2. The system corresonds to the famous duffing oscillator.\n\n\n\n\n\n\n\nFigure 2: Geometrically nonlinear oscillations of a sliding mass\n\n\n\nThe intergration is capable of preserving the energy exactly and has a lower error with respect to other integrators Figure 3.\n\n\n\n\n\n\n\n\nEnergy error\n\n\n\n\n\n\n\nError on the position of the mass\n\n\n\n\n\n\nFigure 3\n\n\n\n\nSystems theory and numerical methods System theory provides a structural way of thinking about interconnected system. This can be used to reinterpret numerical method that uses local basis glued together in a strong or weak way. Numerical fluxes in discontinuous methods may benefit from such an interpretation.\n\n\n\n\n\n\n\n\n\nSplitting of the domain\n\n\n\n\n\nInterconnection at the interface\n\n\n\n\n\n\n\nFeedback interconnection\n\n\n\n\n\n\nFigure 4: Numerical fluxes as feedback interconnection.\n\n\n\n\n\n\nClassical finite elements notorously struggle when high frequency waves propagate in solids. Alternative methods can be used to tackle this problem, like Treffz method or statistical energy analysis.\n\n\n\n\n\n\nFigure 5: Waves in a nondispersive solid\n\n\n\n\n\n\n\n\n\nFigure 6: Waves in dispersive solid is more difficult to track as grouph and phase velocities are different"
+  },
+  {
+    "objectID": "research.html#structure-preserving-discretization-of-port-hamiltonian-systems",
+    "href": "research.html#structure-preserving-discretization-of-port-hamiltonian-systems",
+    "title": "Research",
+    "section": "",
+    "text": "Since my PhD I have been working on structure preserving methods for port-Hamiltonian systems. To this aim I have primarily used open-source finite element librairies like FEniCS and Firedrake but I also developed my own code for simple simulations.\n\nFinite element exterior calculus and port-Hamiltonian dynamics\n\nPhysical equations are typically written using vector calculus but they can also be written using the language of differential geometry. This latter formalism distiguishes topological and metrical notions and connects integration, derivation using coordinate free expressions. Seemingly different numerical methods (e.g. finite differences, finite elements, finite volumes) can be understood in a unified way when described using tools from differential geometry. Hamiltonian and port-Hamiltonian systems are tipically formulated in a geometric setting. In my research I have established general methodologies on how to discretize port-Hamiltonian systems using Finite Element Exterior Calculus.\n\n\n\n\n\n\n\n\nPressure at \\(t=2\\,[\\mathrm{s}]\\)\n\n\n\n\n\n\n\nPressure at \\(t=3\\,[\\mathrm{s}]\\)\n\n\n\n\n\n\nFigure 1: Snapshots of the pressure for an Heterogeneous domain using an hybrid finite element formulation.\n\n\n\n\nStructural dynamics and integrators In nonlinear mechanics, energy preserving method are preferred as they produce stable and accurate simulations. However this method are tipically implicit and they require Newton iterations to produc a solution. By reformulating the equations, linearly implicit energy conserving method can be devised. For instance, consider the oscillator in Figure 2. The system corresonds to the famous duffing oscillator.\n\n\n\n\n\n\n\nFigure 2: Geometrically nonlinear oscillations of a sliding mass\n\n\n\nThe intergration is capable of preserving the energy exactly and has a lower error with respect to other integrators Figure 3.\n\n\n\n\n\n\n\n\nEnergy error\n\n\n\n\n\n\n\nError on the position of the mass\n\n\n\n\n\n\nFigure 3\n\n\n\n\nSystems theory and numerical methods System theory provides a structural way of thinking about interconnected system. This can be used to reinterpret numerical method that uses local basis glued together in a strong or weak way. Numerical fluxes in discontinuous methods may benefit from such an interpretation.\n\n\n\n\n\n\n\n\n\nSplitting of the domain\n\n\n\n\n\nInterconnection at the interface\n\n\n\n\n\n\n\nFeedback interconnection\n\n\n\n\n\n\nFigure 4: Numerical fluxes as feedback interconnection."
+  },
+  {
+    "objectID": "research.html#numerical-methods-for-high-frequency-structural-dynamics",
+    "href": "research.html#numerical-methods-for-high-frequency-structural-dynamics",
+    "title": "Research",
+    "section": "",
+    "text": "Classical finite elements notorously struggle when high frequency waves propagate in solids. Alternative methods can be used to tackle this problem, like Treffz method or statistical energy analysis.\n\n\n\n\n\n\nFigure 5: Waves in a nondispersive solid\n\n\n\n\n\n\n\n\n\nFigure 6: Waves in dispersive solid is more difficult to track as grouph and phase velocities are different"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Contact\nYou can reach me at:\n\nEmail: andrea.brugnoli@isae-supaero.fr\n\nPhone: +33 5 61 33 89 83\nAdress: 10 avenue Marc Pélegrin – BP 54032 – 31055 TOULOUSE Cedex 4 – France\nOffice: 38-136, Department of Mechanics"
+  },
+  {
+    "objectID": "talks.html",
+    "href": "talks.html",
+    "title": "Talks",
+    "section": "",
+    "text": "Talks"
+  },
+  {
+    "objectID": "teaching/finite_elements.html",
+    "href": "teaching/finite_elements.html",
+    "title": "Finite elements",
+    "section": "",
+    "text": "Finite elements"
+  },
+  {
+    "objectID": "teaching/port_Hamiltonian_systems.html",
+    "href": "teaching/port_Hamiltonian_systems.html",
+    "title": "Port-Hamiltonian systems",
+    "section": "",
+    "text": "Port-Hamiltonian systems"
+  },
+  {
+    "objectID": "teaching/structural_mechanics.html",
+    "href": "teaching/structural_mechanics.html",
+    "title": "Structural mechanics",
+    "section": "",
+    "text": "Structural mechanics"
   }
 ]
