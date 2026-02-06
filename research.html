@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title> Andrea Brugnoli</title>
+<title>research – &lt;img src="files/images/cartoon_face.jpg" height="50px" style="border-radius:50%;"&gt; Andrea Brugnoli</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles/custom.css">
 </head>
@@ -90,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -98,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link active" href="./research.html" aria-current="page"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
@@ -152,10 +181,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#andrea-brugnoli" id="toc-andrea-brugnoli" class="nav-link active" data-scroll-target="#andrea-brugnoli">Andrea Brugnoli</a></li>
-  <li><a href="#research" id="toc-research" class="nav-link" data-scroll-target="#research">Research</a></li>
-  <li><a href="#teaching" id="toc-teaching" class="nav-link" data-scroll-target="#teaching">Teaching</a></li>
-  <li><a href="#software" id="toc-software" class="nav-link" data-scroll-target="#software">Software</a></li>
+  <li><a href="#research" id="toc-research" class="nav-link active" data-scroll-target="#research">Research</a>
+  <ul class="collapse">
+  <li><a href="#structure-preserving-discretization-of-port-hamiltonian-systems" id="toc-structure-preserving-discretization-of-port-hamiltonian-systems" class="nav-link" data-scroll-target="#structure-preserving-discretization-of-port-hamiltonian-systems">Structure preserving discretization of port-Hamiltonian systems</a></li>
+  <li><a href="#numerical-methods-for-high-frequency-structural-dynamics" id="toc-numerical-methods-for-high-frequency-structural-dynamics" class="nav-link" data-scroll-target="#numerical-methods-for-high-frequency-structural-dynamics">Numerical methods for high frequency structural dynamics</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -165,46 +195,146 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="andrea-brugnoli" class="level2">
-<h2 class="anchored" data-anchor-id="andrea-brugnoli">Andrea Brugnoli</h2>
-<p><strong>Associate Professor</strong>, ISAE - SUPAERO<br>
-Department of Mechanics of Structures and Materials</p>
-<p><strong>Researcher</strong>, Institut Clément Ader</p>
-<p>I am a researcher in <strong>computational mechanics</strong>, working at the interface of<br>
-<strong>applied mathematics</strong>, <strong>physics</strong>, and <strong>scientific computing</strong>.</p>
-<p>My research focuses on the numerical analysis and simulation of continuum models, with applications to solid mechanics and multiphysics problems.</p>
-<hr>
-</section>
-<section id="research" class="level2">
-<h2 class="anchored" data-anchor-id="research">Research</h2>
-<p>My main research interests include:</p>
+<section id="research" class="level1">
+<h1>Research</h1>
+<section id="structure-preserving-discretization-of-port-hamiltonian-systems" class="level2">
+<h2 class="anchored" data-anchor-id="structure-preserving-discretization-of-port-hamiltonian-systems">Structure preserving discretization of port-Hamiltonian systems</h2>
+<p>Since my PhD I have been working on structure preserving methods for port-Hamiltonian systems. To this aim I have primarily used open-source finite element librairies like FEniCS and Firedrake but I also developed my own code for simple simulations.</p>
 <ul>
-<li>Structure-preserving and variational methods</li>
-<li>Finite element methods</li>
-<li>Geometric time integration</li>
-<li>Connection between control theory and numerical methods</li>
+<li><strong>Finite element exterior calculus and port-Hamiltonian dynamics</strong></li>
 </ul>
-<p>→ See <a href="./research.html">Research</a> and <a href="./publications.html">Publications</a></p>
-<hr>
-</section>
-<section id="teaching" class="level2">
-<h2 class="anchored" data-anchor-id="teaching">Teaching</h2>
-<p>I teach the followingh courses:</p>
+<p>Physical equations are typically written using vector calculus but they can also be written using the language of differential geometry. This latter formalism distiguishes topological and metrical notions and connects integration, derivation using coordinate free expressions. Seemingly different numerical methods (e.g.&nbsp;finite differences, finite elements, finite volumes) can be understood in a unified way when described using tools from differential geometry. Hamiltonian and port-Hamiltonian systems are tipically formulated in a geometric setting. In my research I have established general methodologies on how to discretize port-Hamiltonian systems using Finite Element Exterior Calculus.</p>
+<div id="fig-discontinuous-coeff-wave" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-discontinuous-coeff-wave-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="files/images/pH_hybridization/velocity_primal_t2.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption>Pressure at <span class="math inline">\(t=2\,[\mathrm{s}]\)</span></figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="files/images/pH_hybridization/velocity_primal_t3.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption>Pressure at <span class="math inline">\(t=3\,[\mathrm{s}]\)</span></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-discontinuous-coeff-wave-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Snapshots of the pressure for an Heterogeneous domain using an hybrid finite element formulation.
+</figcaption>
+</figure>
+</div>
 <ul>
-<li>classical mechanics</li>
-<li>solid mechanics</li>
-<li>finite element methods</li>
+<li><strong>Structural dynamics and integrators</strong> In nonlinear mechanics, energy preserving method are preferred as they produce stable and accurate simulations. However this method are tipically implicit and they require Newton iterations to produc a solution. By reformulating the equations, linearly implicit energy conserving method can be devised. For instance, consider the oscillator in <a href="#fig-duffing" class="quarto-xref">Figure&nbsp;2</a>. The system corresonds to the famous duffing oscillator.</li>
 </ul>
-<p>→ See <a href="teaching/index.qmd">Teaching</a></p>
-<hr>
+<div id="fig-duffing" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-duffing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="files/images/geometrically_nonlinear_intergrator/nonlinear_oscillator.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-duffing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Geometrically nonlinear oscillations of a sliding mass
+</figcaption>
+</figure>
+</div>
+<p>The intergration is capable of preserving the energy exactly and has a lower error with respect to other integrators <a href="#fig-lin-imp-integrator" class="quarto-xref">Figure&nbsp;3</a>.</p>
+<div id="fig-lin-imp-integrator" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lin-imp-integrator-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="files/images/geometrically_nonlinear_integrator/energy_error_duffing.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption>Energy error</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="files/images/geometrically_nonlinear_integrator/convergence_position_duffing.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption>Error on the position of the mass</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-lin-imp-integrator-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3
+</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Systems theory and numerical methods</strong> System theory provides a structural way of thinking about interconnected system. This can be used to reinterpret numerical method that uses local basis glued together in a strong or weak way. Numerical fluxes in discontinuous methods may benefit from such an interpretation.</li>
+</ul>
+<div id="fig-disc-interconnection" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-disc-interconnection-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="files/images/domain_decomposition/dom_part.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption>Splitting of the domain</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="files/images/domain_decomposition/dom_part_int.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption>Interconnection at the interface</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="files/images/domain_decomposition/gyrator_domain_decomposition.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption>Feedback interconnection</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-disc-interconnection-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Numerical fluxes as feedback interconnection.
+</figcaption>
+</figure>
+</div>
 </section>
-<section id="software" class="level2">
-<h2 class="anchored" data-anchor-id="software">Software</h2>
-<p>I typically share the code used in my publications and courses.</p>
-<p>→ See <a href="./software.html">Software</a></p>
-<hr>
+<section id="numerical-methods-for-high-frequency-structural-dynamics" class="level2">
+<h2 class="anchored" data-anchor-id="numerical-methods-for-high-frequency-structural-dynamics">Numerical methods for high frequency structural dynamics</h2>
+<p>Classical finite elements notorously struggle when high frequency waves propagate in solids. Alternative methods can be used to tackle this problem, like Treffz method or statistical energy analysis.</p>
+<div id="fig-energy-density-rod" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-energy-density-rod-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="files/images/sea/rod_c_g_behavior.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-energy-density-rod-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Waves in a nondispersive solid
+</figcaption>
+</figure>
+</div>
+<div id="fig-energy-density-beam" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-energy-density-beam-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="files/images/sea/beam_c_g_behavior.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-energy-density-beam-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Waves in dispersive solid is more difficult to track as grouph and phase velocities are different
+</figcaption>
+</figure>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
