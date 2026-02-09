@@ -53,28 +53,28 @@
     "href": "index.html",
     "title": "<img src=\"files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
     "section": "",
-    "text": "Associate Professor, ISAE - SUPAERO\nDepartment of Mechanics of Structures and Materials\nResearcher, Institut Clément Ader\nI am a researcher in computational mechanics, working at the interface of\napplied mathematics, physics, and scientific computing.\nMy research focuses on the numerical analysis and simulation of continuum models, with applications to solid mechanics and multiphysics problems."
+    "text": "Associate Professor, ISAE - SUPAERO\nDepartment of Mechanics of Structures and Materials\nResearcher, Institut Clément Ader\nI am a researcher in computational mechanics, working at the interface of\napplied mathematics, physics, and scientific computing.\nMy research focuses on the numerical analysis and simulation of port-Hamiltonian systems, with applications to solid mechanics and multiphysics problems."
   },
   {
     "objectID": "index.html#andrea-brugnoli",
     "href": "index.html#andrea-brugnoli",
     "title": "<img src=\"files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
     "section": "",
-    "text": "Associate Professor, ISAE - SUPAERO\nDepartment of Mechanics of Structures and Materials\nResearcher, Institut Clément Ader\nI am a researcher in computational mechanics, working at the interface of\napplied mathematics, physics, and scientific computing.\nMy research focuses on the numerical analysis and simulation of continuum models, with applications to solid mechanics and multiphysics problems."
+    "text": "Associate Professor, ISAE - SUPAERO\nDepartment of Mechanics of Structures and Materials\nResearcher, Institut Clément Ader\nI am a researcher in computational mechanics, working at the interface of\napplied mathematics, physics, and scientific computing.\nMy research focuses on the numerical analysis and simulation of port-Hamiltonian systems, with applications to solid mechanics and multiphysics problems."
   },
   {
     "objectID": "index.html#research",
     "href": "index.html#research",
     "title": "<img src=\"files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
     "section": "Research",
-    "text": "Research\nMy main research interests include:\n\nStructure-preserving and variational methods\nFinite element methods\nGeometric time integration\nConnection between control theory and numerical methods\n\n→ See Research and Publications"
+    "text": "Research\nMy main research interests include:\n\nPort-Hamiltonian systems in continuum mechanics\nStructure-preserving discretization methods\nConnection between control theory and numerical methods\nNumerical methods for high frequency vibration\n\n→ See Research and Publications"
   },
   {
     "objectID": "index.html#teaching",
     "href": "index.html#teaching",
     "title": "<img src=\"files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
     "section": "Teaching",
-    "text": "Teaching\nI teach the followingh courses:\n\nclassical mechanics\nsolid mechanics\nfinite element methods\n\n→ See Teaching"
+    "text": "Teaching\nI teach the following courses:\n\nclassical mechanics\nsolid mechanics\nfinite element methods\n\n→ See Teaching"
   },
   {
     "objectID": "index.html#software",
@@ -95,7 +95,7 @@
     "href": "talks.html",
     "title": "Talks",
     "section": "",
-    "text": "Talks"
+    "text": "Linearly-implicit energy-momentum preserving scheme for geometrically nonlinear mechanics\nSeptember 2025  Invited talk, DEC IMSI, University of Chicago, USA \nA domain decomposition strategy for natural imposition of mixed boundary conditions\nApril 2025  GAMM 25, Poznan University of Technology, Poland \nOn the discrete equivalence of Lagrangian, Hamiltonian and mixed finite element formulations for linear wave phenomena\nJune 2024  Invited Talk, LHMNC 24, Besançon, France \nAn invitation to port-Hamiltonian systems\nApril 2024  Internal Seminar, Institut Clément Ader, France \nAn Hamiltonian approach for modular modelling in solid mechanics (but not only)\nFebruary 2024  Internal Seminar, Institut Clément Ader, France \nDual field mixed and hybrid finite elements for port-Hamiltonian systems\nJuly 23  Invited talk, SUPRENUM PDE 2023, Lausanne, Switzerland"
   },
   {
     "objectID": "teaching/structural_mechanics.html",
