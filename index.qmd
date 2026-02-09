@@ -7,10 +7,6 @@ Department of Mechanics of Structures and Materials
 
 I am a researcher in **computational mechanics**, working at the interface of  
 **applied mathematics**, **physics**, and **scientific computing**.
-
-My research focuses on the numerical analysis and simulation of
-port-Hamiltonian systems, with applications to solid mechanics and multiphysics problems.
-
 ---
 
 ## Research
