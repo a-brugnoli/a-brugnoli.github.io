@@ -28,3 +28,27 @@
     background-color: #006666 !important;   /* slightly darker cyan */
     color: #ffffff !important;
 }
+
+
+/* Only affects lists inside .talk-list */
+.talk-list ul {
+  list-style: none;   /* remove bullets */
+  padding-left: 0;    /* remove indentation */
+}
+
+.talk-list ul > li {
+  margin-bottom: 2em; /* spacing between talks */
+}
+
+/* date and location tight layout */
+.talk-list .talk-date,
+.talk-list .talk-location {
+  display: block;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.talk-list {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}

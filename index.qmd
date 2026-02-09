@@ -9,7 +9,7 @@ I am a researcher in **computational mechanics**, working at the interface of
 **applied mathematics**, **physics**, and **scientific computing**.
 
 My research focuses on the numerical analysis and simulation of
-continuum models, with applications to solid mechanics and multiphysics problems.
+port-Hamiltonian systems, with applications to solid mechanics and multiphysics problems.
 
 ---
 
@@ -17,10 +17,10 @@ continuum models, with applications to solid mechanics and multiphysics problems
 
 My main research interests include:
 
-* Structure-preserving and variational methods
-* Finite element methods
-* Geometric time integration
+* Port-Hamiltonian systems in continuum mechanics
+* Structure-preserving discretization methods
 * Connection between control theory and numerical methods
+* Numerical methods for high frequency vibration
 
 → See [Research](research.qmd) and [Publications](publications.qmd)
 
@@ -28,7 +28,7 @@ My main research interests include:
 
 ## Teaching
 
-I teach the followingh courses:
+I teach the following courses:
 
 * classical mechanics
 * solid mechanics

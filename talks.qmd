@@ -1,1 +1,43 @@
-# Talks
+---
+title: Talks
+---
+
+::: {.talk-list}
+
+- **[Linearly-implicit energy-momentum preserving scheme for geometrically nonlinear mechanics](files/pdfs/talks/talk_imsi_dec.pdf)**  
+  <span class="talk-date">September 2025</span>
+  <span class="talk-location"> Invited talk, [DEC IMSI](https://www.imsi.institute/activities/discrete-exterior-calculus/), *University of Chicago, USA*
+  </span>
+
+
+- **[A domain decomposition strategy for natural imposition of mixed boundary conditions](files/pdfs/talks/talk_gamm_2025.pdf)**  
+  <span class="talk-date">April 2025</span>
+  <span class="talk-location"> [GAMM 25](https://jahrestagung.gamm.org/annual-meeting-2025/95th-annual-meeting-2/), *Poznan University of Technology, Poland*
+  </span>
+
+
+- **[On the discrete equivalence of Lagrangian, Hamiltonian and mixed finite element formulations for linear wave phenomena](files/pdfs/talks/talk_lhmnc_24.pdf)**  
+  <span class="talk-date">June 2024</span>
+  <span class="talk-location"> Invited Talk, [LHMNC 24](https://conferences.ifac-control.org/lhmnc24/), *Besançon, France*
+  </span>
+
+
+
+- **[An invitation to port-Hamiltonian systems](files/pdfs/talks/talk_ph_dummies.pdf)**  
+  <span class="talk-date">April 2024</span>
+  <span class="talk-location"> Internal Seminar, *Institut Clément Ader, France*
+  </span>
+
+
+- **[An Hamiltonian approach for modular modelling in solid mechanics (but not only)](files/pdfs/talks/talk_ica.pdf)**  
+  <span class="talk-date">February 2024</span>
+  <span class="talk-location"> Internal Seminar, *Institut Clément Ader, France*
+  </span>
+
+
+
+
+- **[Dual field mixed and hybrid finite elements for port-Hamiltonian systems](files/pdfs/talks/ph_dummies.pdf)**  
+  <span class="talk-date">July 23</span>
+  <span class="talk-location"> Invited talk, [SUPRENUM PDE 2023](https://archiveweb.epfl.ch/suprenumpde2023.epfl.ch/), *Lausanne, Switzerland*
+  </span>
