@@ -103,5 +103,19 @@
     "title": "Structural mechanics",
     "section": "",
     "text": "Structural mechanics"
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "A linearly-implicit energy-momentum preserving scheme for geometrically nonlinear mechanics based on non-canonical Hamiltonian formulations \nNonlinear Dynamics, 2025\nDOI: 10.1016/10.1007/s11071-025-11601-6\nCompanion code\n- 📦 Zenodo (archival, citable):\nhttps://doi.org/10.5281/zenodo.15009425\n- 💻 GitHub (development):\nhttps://github.com/a-brugnoli/hamiltonian-geometrically-nonlinear-elasticity\n\n\n Finite element hybridization of port-Hamiltonian systems \nApplied Mathematics and Computation, 2025\nDOI: 10.1016/j.amc.2025.129377\nCompanion code\n- 📦 Zenodo (archival, citable):\nhttps://doi.org/10.5281/zenodo.10047121\n- 💻 GitHub (development):\nhttps://github.com/a-brugnoli/ph-hybridization"
+  },
+  {
+    "objectID": "software.html#companion-code-to-papers",
+    "href": "software.html#companion-code-to-papers",
+    "title": "Software",
+    "section": "",
+    "text": "A linearly-implicit energy-momentum preserving scheme for geometrically nonlinear mechanics based on non-canonical Hamiltonian formulations \nNonlinear Dynamics, 2025\nDOI: 10.1016/10.1007/s11071-025-11601-6\nCompanion code\n- 📦 Zenodo (archival, citable):\nhttps://doi.org/10.5281/zenodo.15009425\n- 💻 GitHub (development):\nhttps://github.com/a-brugnoli/hamiltonian-geometrically-nonlinear-elasticity\n\n\n Finite element hybridization of port-Hamiltonian systems \nApplied Mathematics and Computation, 2025\nDOI: 10.1016/j.amc.2025.129377\nCompanion code\n- 📦 Zenodo (archival, citable):\nhttps://doi.org/10.5281/zenodo.10047121\n- 💻 GitHub (development):\nhttps://github.com/a-brugnoli/ph-hybridization"
   }
 ]

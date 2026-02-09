@@ -52,3 +52,12 @@
   margin-top: 2em;
   margin-bottom: 2em;
 }
+
+
+.software-entry {
+  margin-bottom: 1.5rem;
+}
+
+.software-entry a {
+  text-decoration: none;
+}

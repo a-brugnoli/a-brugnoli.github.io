@@ -1,4 +1,39 @@
-# Software
+---
+title: Software
+css: styles/software.css
+---
 
 ## Companion code to papers
 
+::: {.software-entry}
+<span class="paper-title">
+A linearly-implicit energy-momentum preserving scheme for geometrically nonlinear mechanics based on non-canonical Hamiltonian formulations
+</span>
+
+
+**Nonlinear Dynamics**, 2025  
+DOI: [10.1016/10.1007/s11071-025-11601-6](https://doi.org/10.1016/10.1007/s11071-025-11601-6)
+
+**Companion code**  
+- 📦 **Zenodo (archival, citable):**  
+  <https://doi.org/10.5281/zenodo.15009425>  
+- 💻 **GitHub (development):**  
+  <https://github.com/a-brugnoli/hamiltonian-geometrically-nonlinear-elasticity>
+:::
+
+
+::: {.software-entry}
+<span class="paper-title">
+Finite element hybridization of port-Hamiltonian systems
+</span>
+
+
+**Applied Mathematics and Computation**, 2025  
+DOI: [10.1016/j.amc.2025.129377](https://doi.org/10.1016/j.amc.2025.129377)
+
+**Companion code**  
+- 📦 **Zenodo (archival, citable):**  
+  <https://doi.org/10.5281/zenodo.10047121>  
+- 💻 **GitHub (development):**  
+  <https://github.com/a-brugnoli/ph-hybridization>
+:::
