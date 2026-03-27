@@ -1,17 +1,490 @@
 [
   {
-    "objectID": "teaching/finite_elements.html",
-    "href": "teaching/finite_elements.html",
-    "title": "Finite elements",
+    "objectID": "teaching/structural_dynamics/beam_bending.html",
+    "href": "teaching/structural_dynamics/beam_bending.html",
+    "title": "Éléments finis pour la flexion des poutres",
     "section": "",
-    "text": "Finite elements"
+    "text": "\\[\n\\newcommand{\\d}{\\mathrm{d}}\n\\newcommand{\\bm}[1]{\\boldsymbol{#1}}\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
   },
   {
-    "objectID": "teaching/port_Hamiltonian_systems.html",
-    "href": "teaching/port_Hamiltonian_systems.html",
-    "title": "Port-Hamiltonian systems",
+    "objectID": "teaching/structural_dynamics/beam_bending.html#modèle-de-poutre",
+    "href": "teaching/structural_dynamics/beam_bending.html#modèle-de-poutre",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "1 Modèle de poutre",
+    "text": "1 Modèle de poutre\n\n\n\n\n\n\nWarning\n\n\n\nLa mécanique des milieux continus (MMC) constitue le fondement de la mécanique des solides, mais sa résolution (analytique ou numérique) est souvent trop complexe.\n\n\n\n\n\n\n\n\nNote\n\n\n\nDes simplifications sur la géométrie et les chargements mènent à la mécanique des structures, qui s’applique aux solides dont au moins une dimension est très petite devant les autres.\n\n\nAujourd’hui : poutres d’Euler Bernoulli.",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#problème-à-analyser",
+    "href": "teaching/structural_dynamics/beam_bending.html#problème-à-analyser",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "2 Problème à analyser",
+    "text": "2 Problème à analyser\n\n\n\n\n\n\nPoutre cantilever\n\n\n\n\n\n\n\nSection droite",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#découplage-traction-et-flexion",
+    "href": "teaching/structural_dynamics/beam_bending.html#découplage-traction-et-flexion",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "3 Découplage traction et flexion",
+    "text": "3 Découplage traction et flexion\n\n\n\n\n\n\nWarning\n\n\n\nPour un matériau quelconque la partie traction et flexion sont couplées.\n\n\n\n\n\n\n\n\nNote\n\n\n\nSi le matériau est isotrope on peut découpler le comportement en traction (le long de l’axe longitudinal) du comportement en flexion.",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#modèle-deulerbernoulli",
+    "href": "teaching/structural_dynamics/beam_bending.html#modèle-deulerbernoulli",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "4 Modèle d’Euler–Bernoulli",
+    "text": "4 Modèle d’Euler–Bernoulli\nHypothèses :\n\nPoutre mince : \\(h, b \\ll L\\)\nSolide prismatique : la section ne change pas le long de l’axe\nLes sections droites restent perpendiculaires à l’axe neutre pendant la déformation (Hypothèse de Kirchhoff) : \\(\\phi_z = \\dfrac{\\mathrm{d}v}{\\mathrm{d}x}\\)\n\nLe champ de déplacement vaut\n\\[\n\\bm{u}(\\bullet) =\n\\begin{pmatrix} -y \\sin\\phi_z \\\\ v - y(1 - \\cos\\phi_z) \\end{pmatrix}\n\\overset{\\text{Petits angles}}{\\approx}\n\\begin{pmatrix} -y\\,\\phi_z \\\\ v \\end{pmatrix}\n\\overset{\\text{Hyp. Kir.}}{=}\n\\begin{pmatrix} -y\\,\\dfrac{\\mathrm{d}v}{\\mathrm{d}x} \\\\ v \\end{pmatrix}\n\\]\noù \\(v(x)\\) est le déplacement de l’axe moyen et \\(\\phi_z(x)\\) est la rotation de la section.",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#déformations-et-contraintes",
+    "href": "teaching/structural_dynamics/beam_bending.html#déformations-et-contraintes",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "5 Déformations et contraintes",
+    "text": "5 Déformations et contraintes\nTenseur de déformation :\n\\[\n\\bm{\\varepsilon} := \\frac{1}{2}\\!\\left(\\nabla\\bm{u} + (\\nabla\\bm{u})^\\top\\right),\\qquad\n\\bm{u} = \\begin{pmatrix} u_x \\\\ u_y \\end{pmatrix} = \\begin{pmatrix} -y\\,\\dfrac{\\mathrm{d}v}{\\mathrm{d}x} \\\\ v \\end{pmatrix}\n\\]\nOn obtient :\n\\[\n\\begin{aligned}\n\\varepsilon_{xx} &:= \\frac{\\partial u_x}{\\partial x} = -y\\,\\frac{\\mathrm{d}^2 v}{\\mathrm{d}x^2}, \\\\\n\\varepsilon_{yy} &:= \\frac{\\partial u_y}{\\partial y} = 0, \\\\\n\\varepsilon_{xy} &:= \\frac{1}{2}\\!\\left(\\frac{\\partial u_y}{\\partial x} + \\frac{\\partial u_x}{\\partial y}\\right) = \\frac{1}{2}\\!\\left(\\frac{\\mathrm{d}v}{\\mathrm{d}x} - \\phi_z\\right) \\overset{\\text{Hyp. Kir.}}{=} 0.\n\\end{aligned}\n\\]\nLoi constitutive :\n\\[\n\\sigma_{xx} = E\\,\\varepsilon_{xx} = -E\\,y\\,\\frac{\\mathrm{d}^2 v}{\\mathrm{d}x^2}.\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#forces-résultantes",
+    "href": "teaching/structural_dynamics/beam_bending.html#forces-résultantes",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "6 Forces résultantes",
+    "text": "6 Forces résultantes\n\n\\[\nT(x) = \\int_S \\sigma_{xy}\\,\\mathrm{d}S \\quad \\text{(Effort tranchant)}, \\qquad\nM(x) = -\\int_S y\\,\\sigma_{xx}\\,\\mathrm{d}S \\quad \\text{(Moment de flexion)}.\n\\]\n\n\n\n\n\n\nWarning\n\n\n\nLe signe négatif dans \\(M\\) provient du fait qu’on le considère positif lorsqu’il est orienté dans le sens antihoraire (selon \\(z\\)).\n\n\n\nL’effort tranchant \\(T\\) n’a pas de déformations associées (\\(\\varepsilon_{xy}=0\\)).\nPour le moment de flexion :\n\n\\[\nM = E\\,\\frac{\\mathrm{d}^2 v}{\\mathrm{d}x^2}\\int_S y^2\\,\\mathrm{d}S = EI\\,\\frac{\\mathrm{d}^2 v}{\\mathrm{d}x^2}, \\qquad I := \\int_S y^2\\,\\mathrm{d}S.\n\\]\nSection rectangulaire : \\(I = bh^3/12\\).",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#équilibre-statique",
+    "href": "teaching/structural_dynamics/beam_bending.html#équilibre-statique",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "7 Équilibre statique",
+    "text": "7 Équilibre statique\n\nÉquilibre à la translation verticale :\n\\[\n\\frac{\\mathrm{d}T}{\\mathrm{d}x} = -p.\n\\]\nÉquilibre en rotation (termes d’ordre deux négligés) :\n\\[\nT = -\\frac{\\mathrm{d}M}{\\mathrm{d}x}.\n\\]\nOn obtient l’équilibre :\n\\[\n\\frac{\\mathrm{d}^2 M}{\\mathrm{d}x^2} = EI\\,\\frac{\\mathrm{d}^4 v}{\\mathrm{d}x^4} = p.\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#problème-conditions-aux-bords",
+    "href": "teaching/structural_dynamics/beam_bending.html#problème-conditions-aux-bords",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "8 Problème + Conditions aux bords",
+    "text": "8 Problème + Conditions aux bords\nPour résoudre l’équation il faut 4 conditions aux bords :\n\\[\nEI\\,\\frac{\\mathrm{d}^4 v}{\\mathrm{d}x^4} = p.\n\\]\nCinématiques (Dirichlet) :\n\\[\nv = \\hat{v} \\text{ sur } \\Gamma_v, \\qquad \\frac{\\mathrm{d}v}{\\mathrm{d}x} = \\hat{\\phi} \\text{ sur } \\Gamma_\\phi.\n\\]\nDynamiques (Neumann) :\n\\[\n-EI\\,\\frac{\\mathrm{d}^3 v}{\\mathrm{d}x^3} = \\hat{T} \\text{ sur } \\Gamma_T, \\qquad EI\\,\\frac{\\mathrm{d}^2 v}{\\mathrm{d}x^2} = \\hat{M} \\text{ sur } \\Gamma_M.\n\\]\nLes conditions suivantes doivent être respectées :\n\n\\(\\Gamma_v \\cap \\Gamma_T = \\emptyset\\) (on ne peut pas imposer simultanément la force et le déplacement) ;\n\\(\\Gamma_\\phi \\cap \\Gamma_M = \\emptyset\\) (on ne peut pas choisir simultanément la rotation et le moment).",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#exemples-de-conditions-aux-bords",
+    "href": "teaching/structural_dynamics/beam_bending.html#exemples-de-conditions-aux-bords",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "9 Exemples de conditions aux bords",
+    "text": "9 Exemples de conditions aux bords\nPoutre encastrée–libre :\n\n\\[\nv(0) = 0, \\quad \\frac{\\mathrm{d}v}{\\mathrm{d}x}(0) = 0, \\quad EI\\,\\frac{\\mathrm{d}^2 v}{\\mathrm{d}x^2}(L) = 0, \\quad -EI\\,\\frac{\\mathrm{d}^3 v}{\\mathrm{d}x^3}(L) = F.\n\\]\nPoutre simplement appuyée :\n\n\\[\nv(0) = 0, \\quad EI\\,\\frac{\\mathrm{d}^2 v}{\\mathrm{d}x^2}(0) = 0, \\quad v(L) = 0, \\quad EI\\,\\frac{\\mathrm{d}^2 v}{\\mathrm{d}x^2}(L) = M.\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#espace-dapproximation",
+    "href": "teaching/structural_dynamics/beam_bending.html#espace-dapproximation",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "10 Espace d’approximation",
+    "text": "10 Espace d’approximation\nLe problème homogène\n\\[\nEI\\,\\frac{\\mathrm{d}^4 v}{\\mathrm{d}x^4} = 0\n\\]\na comme solution un polynôme cubique :\n\\[\nv(x) = a_0 + a_1 x + a_2 x^2 + a_3 x^3.\n\\]\nEn forme matricielle :\n\\[\nv(x) = \\begin{bmatrix} 1 & x & x^2 & x^3 \\end{bmatrix}\n\\begin{pmatrix} a_0 \\\\ a_1 \\\\ a_2 \\\\ a_3 \\end{pmatrix}.\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#élément-de-poutre",
+    "href": "teaching/structural_dynamics/beam_bending.html#élément-de-poutre",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "11 Élément de poutre",
+    "text": "11 Élément de poutre\n\nDegrés de liberté (ddl) :\n\nles déplacements aux nœuds \\(v_1,\\, v_2\\) ;\nles rotations aux nœuds \\(\\phi_1,\\, \\phi_2\\).\n\nOn cherche à exprimer le déplacement sous la forme :\n\\[\nv(x) = \\bm{N}(x)\\,\\bm{q}_e, \\qquad\n\\bm{q}_e = \\begin{bmatrix} v_1 & \\phi_1 & v_2 & \\phi_2 \\end{bmatrix}^\\top.\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#lien-coefficients-polynomiaux-et-ddl",
+    "href": "teaching/structural_dynamics/beam_bending.html#lien-coefficients-polynomiaux-et-ddl",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "12 Lien coefficients polynomiaux et ddl",
+    "text": "12 Lien coefficients polynomiaux et ddl\nApproximation :\n\\[\nv(x) = a_0 + a_1 x + a_2 x^2 + a_3 x^3.\n\\]\nConditions nodales :\n\\[\nv(0) = v_1, \\quad \\frac{\\mathrm{d}v}{\\mathrm{d}x}(0) = \\phi_1, \\quad v(L_e) = v_2, \\quad \\frac{\\mathrm{d}v}{\\mathrm{d}x}(L_e) = \\phi_2.\n\\]\nOn obtient le système :\n\\[\n\\begin{bmatrix}\n1 & 0 & 0 & 0 \\\\\n0 & 1 & 0 & 0 \\\\\n1 & L_e & L_e^2 & L_e^3 \\\\\n0 & 1 & 2L_e & 3L_e^2\n\\end{bmatrix}\n\\begin{pmatrix} a_0 \\\\ a_1 \\\\ a_2 \\\\ a_3 \\end{pmatrix}\n=\n\\begin{pmatrix} v_1 \\\\ \\phi_1 \\\\ v_2 \\\\ \\phi_2 \\end{pmatrix}.\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#fonctions-dinterpolation",
+    "href": "teaching/structural_dynamics/beam_bending.html#fonctions-dinterpolation",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "13 Fonctions d’interpolation",
+    "text": "13 Fonctions d’interpolation\nEn résolvant, les fonctions d’interpolation sont données par :\n\\[\n\\bm{N}(x) = \\begin{bmatrix} 1 & x & x^2 & x^3 \\end{bmatrix}\n\\begin{bmatrix}\n1 & 0 & 0 & 0 \\\\\n0 & 1 & 0 & 0 \\\\\n-\\frac{3}{L_e^2} & -\\frac{2}{L_e} & \\frac{3}{L_e^2} & -\\frac{1}{L_e} \\\\\n\\frac{2}{L_e^3} & \\frac{1}{L_e^2} & -\\frac{2}{L_e^3} & \\frac{1}{L_e^2}\n\\end{bmatrix}.\n\\]\nCe sont les splines cubiques d’Hermite (\\(\\xi := x/L_e\\)) :\n\\[\n\\begin{aligned}\nN_1 &= 1 - 3\\xi^2 + 2\\xi^3, \\\\\nN_2 &= L_e(\\xi - 2\\xi^2 + \\xi^3),\n\\end{aligned}\n\\qquad\\qquad\n\\begin{aligned}\nN_3 &= 3\\xi^2 - 2\\xi^3, \\\\\nN_4 &= L_e(-\\xi^2 + \\xi^3).\n\\end{aligned}\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#forme-faible-du-problème",
+    "href": "teaching/structural_dynamics/beam_bending.html#forme-faible-du-problème",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "14 Forme faible du problème",
+    "text": "14 Forme faible du problème\nOn multiplie \\(EI\\,\\dfrac{\\mathrm{d}^4 v}{\\mathrm{d}x^4} = p\\) par une variation arbitraire \\(\\delta v\\) et on intègre deux fois par parties :\n\\[\n\\int_0^L EI\\,\\frac{\\mathrm{d}^2 \\delta v}{\\mathrm{d}x^2}\\,\\frac{\\mathrm{d}^2 v}{\\mathrm{d}x^2}\\,\\mathrm{d}x\n=\n-\\delta v\\,EI\\,\\frac{\\mathrm{d}^3 v}{\\mathrm{d}x^3}\\bigg|_0^L\n+ \\frac{\\mathrm{d}\\delta v}{\\mathrm{d}x}\\,EI\\,\\frac{\\mathrm{d}^2 v}{\\mathrm{d}x^2}\\bigg|_0^L\n+ \\int_0^L \\delta v\\,p\\,\\mathrm{d}x.\n\\]\n\n\n\n\n\n\nNote\n\n\n\nTraitement des conditions aux bords\n\nLes conditions de type dynamique (Neumann) sont de type naturel : elles rentrent dans la formulation via l’intégration par parties.\nLes conditions de type cinématique (Dirichlet) sont incorporées dans l’espace d’approximation et sont donc appelées essentielles.",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#forme-faible-et-conditions-aux-bords",
+    "href": "teaching/structural_dynamics/beam_bending.html#forme-faible-et-conditions-aux-bords",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "15 Forme faible et conditions aux bords",
+    "text": "15 Forme faible et conditions aux bords\nEn considérant les conditions homogènes sur \\(\\Gamma_v\\) et \\(\\Gamma_\\phi\\), le problème s’écrit : trouver \\(v\\) tel que \\(v|_{\\Gamma_v} = 0\\), \\(\\dfrac{\\mathrm{d}v}{\\mathrm{d}x}\\big|_{\\Gamma_\\phi} = 0\\), qui satisfait\n\\[\n\\underbrace{\\int_0^L EI\\,\\frac{\\mathrm{d}^2\\delta v}{\\mathrm{d}x^2}\\,\\frac{\\mathrm{d}^2 v}{\\mathrm{d}x^2}\\,\\mathrm{d}x}_{\\text{travail virtuel interne}}\n=\n\\underbrace{\\delta v\\,\\hat{T}\\bigg|_{\\Gamma_T} + \\frac{\\mathrm{d}\\delta v}{\\mathrm{d}x}\\,\\hat{M}\\bigg|_{\\Gamma_M} + \\int_0^L \\delta v\\,p\\,\\mathrm{d}x}_{\\text{travail virtuel externe}}\n\\]\npour tout \\(\\delta v\\) tel que \\(\\delta v|_{\\Gamma_v} = 0\\), \\(\\dfrac{\\mathrm{d}\\delta v}{\\mathrm{d}x}\\big|_{\\Gamma_\\phi} = 0\\).",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#justification-énergétique",
+    "href": "teaching/structural_dynamics/beam_bending.html#justification-énergétique",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "16 Justification énergétique",
+    "text": "16 Justification énergétique\nÉnergie totale en flexion :\n\\[\nE_f = \\frac{1}{2}\\int_V \\varepsilon_{xx}\\,\\sigma_{xx}\\,\\mathrm{d}x\n= \\frac{1}{2}\\int_0^L EI\\left(\\frac{\\mathrm{d}^2 v}{\\mathrm{d}x^2}\\right)^2\\mathrm{d}x.\n\\]\nLa variation de l’énergie est définie par :\n\\[\n\\delta E_f := \\lim_{\\eta\\to 0}\\frac{E_f(v+\\eta\\,\\delta v)-E_f(v)}{\\eta}, \\qquad \\eta\\in\\mathbb{R}.\n\\]\nOn obtient :\n\\[\n\\delta E_f = \\int_0^L EI\\,\\frac{\\mathrm{d}^2\\delta v}{\\mathrm{d}x^2}\\,\\frac{\\mathrm{d}^2 v}{\\mathrm{d}x^2}\\,\\mathrm{d}x.\n\\]\n\n\n\n\n\n\nNote\n\n\n\nMouvements rigides infinitésimaux\n\\(\\delta E_f = 0\\) si \\(v(x) = \\mathrm{const}\\) ou \\(v(x)=x\\).",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#principe-des-travaux-virtuels",
+    "href": "teaching/structural_dynamics/beam_bending.html#principe-des-travaux-virtuels",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "17 Principe des travaux virtuels",
+    "text": "17 Principe des travaux virtuels\nLe travail virtuel des forces et moments externes vaut :\n\\[\n\\delta W_f = \\delta v\\,\\hat{T}\\bigg|_{\\Gamma_T} + \\frac{\\mathrm{d}\\delta v}{\\mathrm{d}x}\\,\\hat{M}\\bigg|_{\\Gamma_M} + \\int_0^L \\delta v\\,p\\,\\mathrm{d}x.\n\\]\n\n\n\n\n\n\nNote\n\n\n\nLa formulation faible représente la conservation d’énergie : \\(\\delta E_f = \\delta W_f\\).",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#matrice-de-raideur-élémentaire",
+    "href": "teaching/structural_dynamics/beam_bending.html#matrice-de-raideur-élémentaire",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "18 Matrice de raideur élémentaire",
+    "text": "18 Matrice de raideur élémentaire\nOn substitue dans la formulation faible l’approximation \\(v = \\bm{N}\\bm{q}_e\\), \\(\\delta v = \\bm{N}\\delta\\bm{q}_e\\).\nLien courbure – degrés de liberté :\n\\[\n\\frac{\\mathrm{d}^2 v}{\\mathrm{d}x^2} = \\frac{\\mathrm{d}^2\\bm{N}}{\\mathrm{d}x^2}\\,\\bm{q}_e = \\bm{B}\\,\\bm{q}_e.\n\\]\nLa variation d’énergie donne :\n\\[\n\\delta E_f = \\delta\\bm{q}_e^\\top\\,\\bm{K}_e\\,\\bm{q}_e, \\qquad\n\\bm{K}_e := \\int_0^{L_e} EI\\,\\bm{B}^\\top\\bm{B}\\,\\mathrm{d}x.\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#raideur-élémentaire",
+    "href": "teaching/structural_dynamics/beam_bending.html#raideur-élémentaire",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "19 Raideur élémentaire",
+    "text": "19 Raideur élémentaire\n\\[\n\\bm{K}_e =\n\\frac{EI}{L_e^3}\n\\begin{bmatrix}\n12 & 6L_e & -12 & 6L_e \\\\\n6L_e & 4L_e^2 & -6L_e & 2L_e^2 \\\\\n-12 & -6L_e & 12 & -6L_e \\\\\n6L_e & 2L_e^2 & -6L_e & 4L_e^2\n\\end{bmatrix}.\n\\]\nLe noyau de \\(\\bm{K}_e\\) est donné par les translations et rotations infinitésimales :\n\\[\n\\ker\\,\\bm{K}_e = \\left\\{\n\\begin{pmatrix} 1 \\\\ 0 \\\\ 1 \\\\ 0 \\end{pmatrix},\\;\n\\begin{pmatrix} 0 \\\\ 1 \\\\ L_e \\\\ 1 \\end{pmatrix}\n\\right\\}.\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#complément-ajout-du-comportement-en-traction",
+    "href": "teaching/structural_dynamics/beam_bending.html#complément-ajout-du-comportement-en-traction",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "20 Complément : ajout du comportement en traction",
+    "text": "20 Complément : ajout du comportement en traction\nLe déplacement horizontal est exprimé à l’aide des fonctions chapeau :\n\\[\nu = \\begin{bmatrix} 1-\\xi & \\xi \\end{bmatrix}\n\\begin{pmatrix} u_1 \\\\ u_2 \\end{pmatrix}, \\qquad \\xi = \\frac{x}{L_e}.\n\\]\nÉnergie en traction :\n\\[\nE_t = \\int_0^L EA\\left(\\frac{\\mathrm{d}u}{\\mathrm{d}x}\\right)^2\\mathrm{d}x.\n\\]\nLa variation d’énergie donne :\n\\[\n\\delta E_t = \\begin{pmatrix} \\delta u_1 & \\delta u_2 \\end{pmatrix}\n\\begin{bmatrix}\n\\frac{EA}{L_e} & -\\frac{EA}{L_e} \\\\\n-\\frac{EA}{L_e} & \\frac{EA}{L_e}\n\\end{bmatrix}\n\\begin{pmatrix} u_1 \\\\ u_2 \\end{pmatrix}.\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#matrice-de-raideur-de-poutre-traction-flexion",
+    "href": "teaching/structural_dynamics/beam_bending.html#matrice-de-raideur-de-poutre-traction-flexion",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "21 Matrice de raideur de poutre (traction + flexion)",
+    "text": "21 Matrice de raideur de poutre (traction + flexion)\n\\[\n\\bm{K}_e^{\\text{tract.}+\\text{flex.}} =\n\\begin{bmatrix}\n\\frac{EA}{L_e} & 0 & 0 & -\\frac{EA}{L_e} & 0 & 0 \\\\\n0 & \\frac{12EI}{L_e^3} & \\frac{6EI}{L_e^2} & 0 & -\\frac{12EI}{L_e^3} & \\frac{6EI}{L_e^2} \\\\\n0 & \\frac{6EI}{L_e^2} & \\frac{4EI}{L_e} & 0 & -\\frac{6EI}{L_e^2} & \\frac{2EI}{L_e} \\\\\n-\\frac{EA}{L_e} & 0 & 0 & \\frac{EA}{L_e} & 0 & 0 \\\\\n0 & -\\frac{12EI}{L_e^3} & -\\frac{6EI}{L_e^2} & 0 & \\frac{12EI}{L_e^3} & -\\frac{6EI}{L_e^2} \\\\\n0 & \\frac{6EI}{L_e^2} & \\frac{2EI}{L_e} & 0 & -\\frac{6EI}{L_e^2} & \\frac{4EI}{L_e}\n\\end{bmatrix},\n\\]\navec les degrés ordonnés \\(\\bm{q}_e = \\begin{pmatrix} u_1 & v_1 & \\phi_1 & u_2 & v_2 & \\phi_2 \\end{pmatrix}^\\top\\).",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#chargement-distribué-élémentaire",
+    "href": "teaching/structural_dynamics/beam_bending.html#chargement-distribué-élémentaire",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "22 Chargement distribué élémentaire",
+    "text": "22 Chargement distribué élémentaire\n\nLe vecteur force associé est donné par le travail virtuel des forces externes :\n\\[\n\\delta W = \\int_0^{L_e}\\delta v\\,p\\,\\mathrm{d}x = \\delta\\bm{q}_e^\\top\\int_0^{L_e}\\bm{N}^\\top p\\,\\mathrm{d}x = \\delta\\bm{q}_e^\\top\\,\\bm{f}_e.\n\\]\nSi \\(p\\) est constant :\n\\[\n\\bm{f}_e^{\\mathrm{dist.}} = p\\int_0^{L_e}\\bm{N}^\\top\\,\\mathrm{d}x\n= \\frac{pL_e}{2}\\begin{pmatrix} 1 \\\\ \\dfrac{L_e}{6} \\\\ 1 \\\\ -\\dfrac{L_e}{6} \\end{pmatrix}.\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#forces-et-moments-concentrés-aux-nœuds",
+    "href": "teaching/structural_dynamics/beam_bending.html#forces-et-moments-concentrés-aux-nœuds",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "23 Forces et moments concentrés aux nœuds",
+    "text": "23 Forces et moments concentrés aux nœuds\n\n\\[\n\\delta W = \\begin{pmatrix} \\delta v_1 & \\delta\\phi_1 & \\delta v_2 & \\delta\\phi_2 \\end{pmatrix}\n\\begin{pmatrix} F_1 \\\\ M_1 \\\\ F_2 \\\\ M_2 \\end{pmatrix},\n\\qquad\n\\bm{f}_e^{\\mathrm{nodal}} = \\begin{pmatrix} F_1 \\\\ M_1 \\\\ F_2 \\\\ M_2 \\end{pmatrix}.\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#plusieurs-éléments-finis-assemblage",
+    "href": "teaching/structural_dynamics/beam_bending.html#plusieurs-éléments-finis-assemblage",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "24 Plusieurs éléments finis : assemblage",
+    "text": "24 Plusieurs éléments finis : assemblage\n\nLes éléments ont les mêmes propriétés (\\(E, I, S\\)) et la même longueur \\(L_e\\), donc la même matrice élémentaire.\n\n24.1 Degrés de liberté globaux et locaux\nAvec trois nœuds, deux ddl chacun :\n\\[\n\\bm{q} = \\begin{pmatrix} v_1 & \\phi_1 & v_2 & \\phi_2 & v_3 & \\phi_3 \\end{pmatrix}.\n\\]\nDdl locaux des deux éléments :\n\\[\n\\bm{q}_{e1} = \\begin{pmatrix} v_1 & \\phi_1 & v_2 & \\phi_2 \\end{pmatrix}, \\qquad\n\\bm{q}_{e2} = \\begin{pmatrix} v_2 & \\phi_2 & v_3 & \\phi_3 \\end{pmatrix}.\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#assemblage-de-la-matrice-de-raideur",
+    "href": "teaching/structural_dynamics/beam_bending.html#assemblage-de-la-matrice-de-raideur",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "25 Assemblage de la matrice de raideur",
+    "text": "25 Assemblage de la matrice de raideur\nInitialisation : \\(\\bm{K} = \\bm{0}_{6\\times6}\\).\nAprès ajout du premier élément \\(\\bm{K}_{e1}\\) :\n\\[\n\\bm{K} \\mathrel{+}=\n\\frac{EI}{L_e^3}\n\\begin{bmatrix}\n12 & 6L_e & -12 & 6L_e & 0 & 0\\\\\n6L_e & 4L_e^2 & -6L_e & 2L_e^2 & 0 & 0\\\\\n-12 & -6L_e & 12 & -6L_e & 0 & 0\\\\\n6L_e & 2L_e^2 & -6L_e & 4L_e^2 & 0 & 0\\\\\n0 & 0 & 0 & 0 & 0 & 0\\\\\n0 & 0 & 0 & 0 & 0 & 0\n\\end{bmatrix}.\n\\]\nMatrice globale \\(\\bm{K}\\) (après deux éléments) :\n\\[\n\\bm{K} = \\frac{EI}{L_e^3}\n\\begin{bmatrix}\n12 & 6L_e & -12 & 6L_e & 0 & 0\\\\\n6L_e & 4L_e^2 & -6L_e & 2L_e^2 & 0 & 0\\\\\n-12 & -6L_e & 24 & 0 & -12 & 6L_e\\\\\n6L_e & 2L_e^2 & 0 & 8L_e^2 & -6L_e & 2L_e^2\\\\\n0 & 0 & -12 & -6L_e & 12 & -6L_e\\\\\n0 & 0 & 6L_e & 2L_e^2 & -6L_e & 4L_e^2\n\\end{bmatrix}.\n\\]\n\n\n\nDeux éléments\n\n\n\n\n\nTrois éléments",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#assemblage-de-la-force-distribuée",
+    "href": "teaching/structural_dynamics/beam_bending.html#assemblage-de-la-force-distribuée",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "26 Assemblage de la force distribuée",
+    "text": "26 Assemblage de la force distribuée\n\nVecteur force élémentaire :\n\\[\n\\bm{f}_e = -\\frac{pL_e}{2}\\begin{pmatrix} 1 & \\dfrac{L_e}{6} & 1 & -\\dfrac{L_e}{6} \\end{pmatrix}^\\top.\n\\]\nVecteur force global \\(\\bm{f}\\) (deux éléments) :\n\\[\n\\bm{f} = \\bm{f}_{e1} + \\bm{f}_{e2} = -\\frac{pL_e}{2}\n\\begin{pmatrix} 1 \\\\ \\dfrac{L_e}{6} \\\\ 2 \\\\ 0 \\\\ 1 \\\\ -\\dfrac{L_e}{6} \\end{pmatrix}.\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#force-nodale",
+    "href": "teaching/structural_dynamics/beam_bending.html#force-nodale",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "27 Force nodale",
+    "text": "27 Force nodale\n\nAvec une force concentrée \\(F\\) au nœud 2 :\n\\[\n\\bm{f} = -\\begin{pmatrix}\n\\dfrac{pL_e}{2} \\\\ \\dfrac{pL_e^2}{12} \\\\ pL_e + F \\\\ 0 \\\\ \\dfrac{pL_e}{2} \\\\ -\\dfrac{pL_e^2}{12}\n\\end{pmatrix}.\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#algorithme-dassemblage",
+    "href": "teaching/structural_dynamics/beam_bending.html#algorithme-dassemblage",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "28 Algorithme d’assemblage",
+    "text": "28 Algorithme d’assemblage\nEntrée  : Maillage\nSortie  : Matrice de rigidité globale K, vecteur de forces global f\n\nInitialiser K = 0, f = 0\nPour chaque élément e :\n    Calculer K_e et f_e (rigidité et forces distribuées élémentaires)\n    Récupérer la connectivité et les coordonnées nodales\n    Pour chaque paire de ddl locaux (m, n) dans l'élément e :\n        i ← local2global(m)\n        j ← local2global(n)\n        K[i,j] += K_e[m,n]\n        f[i]   += f_e[m]\nAjouter force nodale : f = f + f_nodale\nRetourner K, f",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#conditions-aux-bords",
+    "href": "teaching/structural_dynamics/beam_bending.html#conditions-aux-bords",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "29 Conditions aux bords",
+    "text": "29 Conditions aux bords\n\n\n\n\n\n\nStructure\n\n\n\n\n\n\n\nDiscrétisation\n\n\n\n\n\nSachant que \\(v_1 = 0\\), \\(\\phi_1 = 0\\) (encastrement), on résout le système partitionné.\nOn peut distinguer les ddl bloqués \\(\\bm{q}_b\\) et libres \\(\\bm{q}_l\\) :\n\\[\n\\bm{q}_b = \\begin{pmatrix} v_1 \\\\ \\phi_1 \\end{pmatrix}, \\qquad\n\\bm{q}_l = \\begin{pmatrix} v_2 \\\\ \\phi_2 \\\\ v_3 \\\\ \\phi_3 \\end{pmatrix}.\n\\]\nSystème partitionné :\n\\[\n\\begin{bmatrix} \\bm{K}_{bb} & \\bm{K}_{bl} \\\\ \\bm{K}_{lb} & \\bm{K}_{ll} \\end{bmatrix}\n\\begin{pmatrix} \\bm{q}_b \\\\ \\bm{q}_l \\end{pmatrix}\n=\n\\begin{pmatrix} \\bm{f}_b + \\bm{r} \\\\ \\bm{f}_l \\end{pmatrix},\n\\]\noù \\(\\bm{r} = \\begin{pmatrix} F_1 \\\\ M_1 \\end{pmatrix}\\) sont les réactions à l’encastrement.\n\n\n\n\n\n\nWarning\n\n\n\nSi on ne bloque pas les mouvements rigides, la matrice \\(\\bm{K}\\) ne sera pas inversible.",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#résolution",
+    "href": "teaching/structural_dynamics/beam_bending.html#résolution",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "30 Résolution",
+    "text": "30 Résolution\n\n\n\n\n\n\nNote\n\n\n\nOn résout d’abord pour \\(\\bm{q}_l\\) :\n\\[\n\\bm{q}_l = \\bm{K}_{ll}^{-1}(\\bm{f}_l - \\bm{K}_{lb}\\,\\bm{q}_b) = \\bm{K}_{ll}^{-1}\\bm{f}_l \\quad \\text{(car } \\bm{q}_b = 0 \\text{)}.\n\\]\n\n\n\n\n\n\n\n\nNote\n\n\n\nEnsuite on trouve les réactions :\n\\[\n\\bm{r} = \\bm{K}_{bl}\\,\\bm{q}_l - \\bm{f}_b.\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#résultats",
+    "href": "teaching/structural_dynamics/beam_bending.html#résultats",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "31 Résultats",
+    "text": "31 Résultats\n\n\n\n\n\n\n\n\n\n\nBarre prismatique rectangulaire : \\(L=1\\,\\mathrm{[m]}\\), \\(b=1\\,\\mathrm{[cm]}\\), \\(h=1\\,\\mathrm{[cm]}\\). Paramètres acier : \\(EI = 2\\times10^5\\,[\\mathrm{Pa\\cdot m^4}]\\). Forces : \\(p=100\\,[\\mathrm{N/m}]\\), \\(F=20\\,[\\mathrm{N}]\\).\n(Insérer ici les figures : déflexion de la poutre encastrée et courbe de convergence de l’erreur — images exportées depuis les scripts de calcul.)",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#problème-dynamique",
+    "href": "teaching/structural_dynamics/beam_bending.html#problème-dynamique",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "32 Problème dynamique",
+    "text": "32 Problème dynamique\nLe problème dynamique se retrouve en utilisant le principe de d’Alembert :\n\\[\nEI\\,\\frac{\\partial^4 v}{\\partial x^4} = p + f_{\\mathrm{inertie}}, \\qquad f_{\\mathrm{inertie}} = -\\rho S\\,\\frac{\\partial^2 v}{\\partial t^2}.\n\\]\nLa formulation faible est obtenue en considérant le travail des forces d’inertie :\n\\[\n\\underbrace{\\int_0^L EI\\,\\frac{\\mathrm{d}^2\\delta v}{\\mathrm{d}x^2}\\,\\frac{\\mathrm{d}^2 v}{\\mathrm{d}x^2}\\,\\mathrm{d}x}_{\\delta E_f}\n=\n\\underbrace{-\\int_0^L \\rho S\\,\\delta v\\,\\frac{\\partial^2 v}{\\partial t^2}\\,\\mathrm{d}x}_{\\delta W_{\\mathrm{inertie}}}\n+\n\\underbrace{\\delta v\\,\\hat{T}\\bigg|_{\\Gamma_T} + \\frac{\\mathrm{d}\\delta v}{\\mathrm{d}x}\\,\\hat{M}\\bigg|_{\\Gamma_M} + \\int_0^L\\delta v\\,p\\,\\mathrm{d}x}_{\\delta W_{\\mathrm{ext}}}.\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#formulation-discrète",
+    "href": "teaching/structural_dynamics/beam_bending.html#formulation-discrète",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "33 Formulation discrète",
+    "text": "33 Formulation discrète\nOn substitue \\(v = \\bm{N}\\bm{q}_e(t)\\), \\(\\delta v = \\bm{N}\\delta\\bm{q}_e\\) dans la formulation faible. Les degrés de liberté \\(\\bm{q}_e(t)\\) dépendent maintenant du temps.\n\\[\n\\delta W_{\\mathrm{inertie}} = -\\delta\\bm{q}_e\\,\\bm{M}_e\\,\\ddot{\\bm{q}}_e, \\qquad\n\\bm{M}_e = \\int_0^{L_e}\\rho S\\,\\bm{N}^\\top\\bm{N}\\,\\mathrm{d}x.\n\\]\nMatrice de masse élémentaire :\n\\[\n\\bm{M}_e =\n\\frac{\\rho S L_e}{420}\n\\begin{bmatrix}\n156 & 22L_e & 54 & -13L_e \\\\\n22L_e & 4L_e^2 & 13L_e & -3L_e^2 \\\\\n54 & 13L_e & 156 & -22L_e \\\\\n-13L_e & -3L_e^2 & -22L_e & 4L_e^2\n\\end{bmatrix}.\n\\]\nL’assemblage pour la matrice de masse est le même que pour \\(\\bm{K}\\).",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#problème-dynamique-global",
+    "href": "teaching/structural_dynamics/beam_bending.html#problème-dynamique-global",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "34 Problème dynamique global",
+    "text": "34 Problème dynamique global\nSystème global (sans forces) :\n\\[\n\\bm{M}\\,\\ddot{\\bm{q}} + \\bm{K}\\,\\bm{q} = \\bm{0}.\n\\]\nAprès avoir éliminé les ddl bloqués (\\(\\bm{q}_b = 0\\)) :\n\\[\n\\bm{M}_{ll}\\,\\ddot{\\bm{q}}_l + \\bm{K}_{ll}\\,\\bm{q}_l = \\bm{0}.\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#analyse-modale",
+    "href": "teaching/structural_dynamics/beam_bending.html#analyse-modale",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "35 Analyse modale",
+    "text": "35 Analyse modale\n\n\n\n\n\n\nNote\n\n\n\nLa décomposition modale est cruciale car les sollicitations externes ont souvent un contenu fréquentiel limité sur une bande.\n\n\nOn considère une solution harmonique \\(\\bm{q}(t) = \\bm{\\phi}\\,e^{i\\omega t}\\) :\n\\[\n(\\bm{K}_{ll} - \\omega^2\\,\\bm{M}_{ll})\\,\\bm{\\phi} = \\bm{0}.\n\\]\nPour trouver les fréquences propres, on résout :\n\\[\n\\det(\\bm{K}_{ll} - \\omega_i^2\\,\\bm{M}_{ll}) = 0, \\qquad i = 1,\\dots,n.\n\\]\nLe vecteur propre \\(\\bm{\\phi}_i\\) se trouve en résolvant :\n\\[\n(\\bm{K}_{ll} - \\omega_i^2\\,\\bm{M}_{ll})\\,\\bm{\\phi}_i = \\bm{0}.\n\\]\n\n\n\n\n\n\nWarning\n\n\n\nOn peut avoir plusieurs vecteurs propres \\(\\bm{\\phi}_i\\) pour une fréquence propre \\(\\omega_i\\).",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#résultat-de-lanalyse-modale",
+    "href": "teaching/structural_dynamics/beam_bending.html#résultat-de-lanalyse-modale",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "36 Résultat de l’analyse modale",
+    "text": "36 Résultat de l’analyse modale\n\\(L = 1\\,[\\mathrm{m}]\\), \\(EI = 2\\times10^5\\,[\\mathrm{Pa\\cdot m^4}]\\), \\(\\rho S = 0.78\\,[\\mathrm{kg/m}]\\).",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#propriétés-des-modes",
+    "href": "teaching/structural_dynamics/beam_bending.html#propriétés-des-modes",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "37 Propriétés des modes",
+    "text": "37 Propriétés des modes\n\n37.1 Orthogonalité des modes\nVu que \\(\\bm{M}\\), \\(\\bm{K}\\) sont symétriques, les modes vérifient :\n\\[\n\\bm{\\phi}_i^\\top\\,\\bm{M}\\,\\bm{\\phi}_j = 0, \\quad \\bm{\\phi}_i^\\top\\,\\bm{K}\\,\\bm{\\phi}_j = 0 \\qquad \\text{si } i \\neq j.\n\\]\nEn normalisant de manière appropriée, \\(\\bm{\\Phi} = \\begin{bmatrix} \\bm{\\phi}_1 & \\bm{\\phi}_2 & \\dots & \\bm{\\phi}_n \\end{bmatrix}\\) :\n\\[\n\\bm{\\Phi}^\\top\\bm{M}\\bm{\\Phi} = \\bm{I}, \\qquad\n\\bm{\\Phi}^\\top\\bm{K}\\bm{\\Phi} = \\bm{\\Omega}^2, \\qquad\n\\bm{\\Omega}^2 = \\mathrm{diag}(\\omega_1^2,\\omega_2^2,\\dots,\\omega_n^2).\n\\]\nOn peut exprimer le système dans la base modale \\(\\bm{q} = \\bm{\\Phi}\\bm{\\eta}\\) :\n\\[\n\\bm{M}\\bm{\\Phi}\\ddot{\\bm{\\eta}} + \\bm{K}\\bm{\\Phi}\\bm{\\eta} = 0.\n\\]\nEn multipliant par \\(\\bm{\\Phi}^\\top\\) et en utilisant les propriétés :\n\\[\n\\ddot{\\bm{\\eta}} + \\bm{\\Omega}^2\\bm{\\eta} = 0.\n\\]\nInterprétation physique : les modes propres sont découplés.",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#invariance-des-modes",
+    "href": "teaching/structural_dynamics/beam_bending.html#invariance-des-modes",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "38 Invariance des modes",
+    "text": "38 Invariance des modes\n\n\n\n\n\n\nNote\n\n\n\nUn mode est un espace invariant : si on prend une condition initiale donnée par une combinaison linéaire des modes\n\\[\n\\bm{q}^0 = \\sum_{i\\in I}\\bm{\\phi}_i\\,\\eta_i^0,\n\\]\nla solution du problème dynamique sera décrite par les mêmes modes :\n\\[\n\\bm{q}(t) = \\sum_{i\\in I}\\bm{\\phi}_i\\,\\eta_i(t).\n\\]\n\n\n\n38.1 L’orthogonalité implique l’invariance\nChaque espace propre s’écrit :\n\\[\nE_i := \\{\\bm{\\phi}_i \\neq \\bm{0} \\mid \\bm{K}\\bm{\\phi}_i = \\omega_i^2\\,\\bm{M}\\bm{\\phi}_i\\}.\n\\]\nInvariance : si \\(\\bm{q}(0),\\,\\dot{\\bm{q}}(0) \\in E_i\\), alors \\(\\bm{q}(t) \\in E_i\\) pour tout \\(t \\ge 0\\).\nPreuve :\n\nÉcrire \\(\\bm{q}(t) = \\bm{\\phi}_i\\,\\eta_i(t) + \\sum_{j\\neq i}\\bm{\\phi}_j\\,\\eta_j(t)\\).\nEn utilisant \\(\\bm{K}\\bm{\\phi}_i = \\omega_i^2\\,\\bm{M}\\bm{\\phi}_i\\), on obtient les équations découplées : \\[\n\\ddot{\\eta}_i + \\omega_i^2\\,\\eta_i = 0, \\quad \\eta_j\\big|_{t=0} = 0, \\quad \\dot{\\eta}_j\\big|_{t=0} = 0.\n\\]\nOn trouve \\(\\eta_j(t) \\equiv 0\\). Le mouvement reste donc dans \\(E_i\\).",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#réduction-modale",
+    "href": "teaching/structural_dynamics/beam_bending.html#réduction-modale",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "39 Réduction modale",
+    "text": "39 Réduction modale\nLes modes peuvent être utilisés pour réduire la taille du problème\n\\[\n\\bm{M}\\,\\ddot{\\bm{q}} + \\bm{K}\\,\\bm{q} = \\bm{f}\n\\]\nquand les sollicitations \\(\\bm{f}\\) ont un contenu fréquentiel limité.\n\nOn considère \\(m &lt; n\\) modes pour approximer la solution :\n\\[\n\\bm{q} \\approx \\bm{\\Phi}_{[m]}\\,\\bm{\\eta}_{[m]}, \\qquad\n\\bm{\\Phi}_{[m]} = \\begin{bmatrix} \\bm{\\phi}_1 & \\dots & \\bm{\\phi}_m \\end{bmatrix}, \\quad\n\\bm{\\eta}_{[m]} = \\begin{pmatrix} \\eta_1 & \\dots & \\eta_m \\end{pmatrix}^\\top.\n\\]\nNB : on n’est pas obligé de considérer les premières \\(m\\) fréquences.",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "teaching/structural_dynamics/beam_bending.html#système-réduit",
+    "href": "teaching/structural_dynamics/beam_bending.html#système-réduit",
+    "title": "Éléments finis pour la flexion des poutres",
+    "section": "40 Système réduit",
+    "text": "40 Système réduit\nEn utilisant l’approximation dans la dynamique et en projetant sur \\(\\bm{\\Phi}_{[m]}\\) :\n\\[\n\\bm{\\Phi}_{[m]}^\\top\\bm{M}\\bm{\\Phi}_{[m]}\\,\\ddot{\\bm{\\eta}} + \\bm{\\Phi}_{[m]}^\\top\\bm{K}\\bm{\\Phi}_{[m]}\\,\\bm{\\eta}_{[m]} = \\bm{\\Phi}_{[m]}^\\top\\bm{f}.\n\\]\nLa matrice \\(\\bm{\\Phi}_{[m]}\\) vérifie :\n\\[\n\\bm{M}\\bm{\\Phi}_{[m]} = \\bm{K}\\bm{\\Phi}_{[m]}\\,\\bm{\\Omega}_{[m]}^2, \\qquad\n\\bm{\\Omega}_{[m]}^2 = \\mathrm{diag}(\\omega_1^2,\\omega_2^2,\\dots,\\omega_m^2).\n\\]\nOn obtient un système découplé de taille réduite :\n\\[\n\\ddot{\\bm{\\eta}}_{[m]} + \\bm{\\Omega}_{[m]}^2\\,\\bm{\\eta}_{[m]} = \\bm{\\Phi}_{[m]}^\\top\\bm{f}.\n\\]",
+    "crumbs": [
+      "Éléments finis pour la flexion des poutres"
+    ]
+  },
+  {
+    "objectID": "talks.html",
+    "href": "talks.html",
+    "title": "Talks",
     "section": "",
-    "text": "Port-Hamiltonian systems"
+    "text": "Linearly-implicit energy-momentum preserving scheme for geometrically nonlinear mechanics\nSeptember 2025  Invited talk, DEC IMSI, University of Chicago, USA \nA domain decomposition strategy for natural imposition of mixed boundary conditions\nApril 2025  GAMM 25, Poznan University of Technology, Poland \nOn the discrete equivalence of Lagrangian, Hamiltonian and mixed finite element formulations for linear wave phenomena\nJune 2024  Invited Talk, LHMNC 24, Besançon, France \nAn invitation to port-Hamiltonian systems\nApril 2024  Internal Seminar, Institut Clément Ader, France \nAn Hamiltonian approach for modular modelling in solid mechanics (but not only)\nFebruary 2024  Internal Seminar, Institut Clément Ader, France \nDual field mixed and hybrid finite elements for port-Hamiltonian systems\nJuly 23  Invited talk, SUPRENUM PDE 2023, Lausanne, Switzerland"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Contact\nYou can reach me at:\n\nEmail: andrea.brugnoli@isae-supaero.fr\n\nPhone: +33 5 61 33 89 83\nAdress: 10 avenue Marc Pélegrin – BP 54032 – 31055 TOULOUSE Cedex 4 – France\nOffice: 38-136, Department of Mechanics"
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "A linearly-implicit energy-momentum preserving scheme for geometrically nonlinear mechanics based on non-canonical Hamiltonian formulations \nNonlinear Dynamics, 2025\nDOI: 10.1016/10.1007/s11071-025-11601-6\nCompanion code\n- 📦 Zenodo (archival, citable):\nhttps://doi.org/10.5281/zenodo.15009425\n- 💻 GitHub (development):\nhttps://github.com/a-brugnoli/hamiltonian-geometrically-nonlinear-elasticity\n\n\n Finite element hybridization of port-Hamiltonian systems \nApplied Mathematics and Computation, 2025\nDOI: 10.1016/j.amc.2025.129377\nCompanion code\n- 📦 Zenodo (archival, citable):\nhttps://doi.org/10.5281/zenodo.10047121\n- 💻 GitHub (development):\nhttps://github.com/a-brugnoli/ph-hybridization"
+  },
+  {
+    "objectID": "software.html#companion-code-to-papers",
+    "href": "software.html#companion-code-to-papers",
+    "title": "Software",
+    "section": "",
+    "text": "A linearly-implicit energy-momentum preserving scheme for geometrically nonlinear mechanics based on non-canonical Hamiltonian formulations \nNonlinear Dynamics, 2025\nDOI: 10.1016/10.1007/s11071-025-11601-6\nCompanion code\n- 📦 Zenodo (archival, citable):\nhttps://doi.org/10.5281/zenodo.15009425\n- 💻 GitHub (development):\nhttps://github.com/a-brugnoli/hamiltonian-geometrically-nonlinear-elasticity\n\n\n Finite element hybridization of port-Hamiltonian systems \nApplied Mathematics and Computation, 2025\nDOI: 10.1016/j.amc.2025.129377\nCompanion code\n- 📦 Zenodo (archival, citable):\nhttps://doi.org/10.5281/zenodo.10047121\n- 💻 GitHub (development):\nhttps://github.com/a-brugnoli/ph-hybridization"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "<img src=\"/files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
+    "section": "",
+    "text": "Associate Professor, ISAE - SUPAERO\nDepartment of Mechanics of Structures and Materials\nResearcher, Institut Clément Ader\nI am a researcher in computational mechanics, working at the interface of\napplied mathematics, physics, and scientific computing."
+  },
+  {
+    "objectID": "index.html#andrea-brugnoli",
+    "href": "index.html#andrea-brugnoli",
+    "title": "<img src=\"/files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
+    "section": "",
+    "text": "Associate Professor, ISAE - SUPAERO\nDepartment of Mechanics of Structures and Materials\nResearcher, Institut Clément Ader\nI am a researcher in computational mechanics, working at the interface of\napplied mathematics, physics, and scientific computing."
+  },
+  {
+    "objectID": "index.html#research",
+    "href": "index.html#research",
+    "title": "<img src=\"/files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
+    "section": "Research",
+    "text": "Research\nMy main research interests include:\n\nPort-Hamiltonian systems in continuum mechanics\nStructure-preserving discretization methods\nConnection between control theory and numerical methods\nNumerical methods for high frequency vibration\n\n→ See Research and Publications"
+  },
+  {
+    "objectID": "index.html#teaching",
+    "href": "index.html#teaching",
+    "title": "<img src=\"/files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
+    "section": "Teaching",
+    "text": "Teaching\nI teach the following courses:\n\nclassical mechanics\nsolid mechanics\nfinite element methods\n\n→ See Teaching"
+  },
+  {
+    "objectID": "index.html#software",
+    "href": "index.html#software",
+    "title": "<img src=\"/files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
+    "section": "Software",
+    "text": "Software\nI typically share the code used in my publications and courses.\n→ See Software"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "You can find my publications on my Google Scholar profile"
+  },
+  {
+    "objectID": "publications.html#publications-from-hal",
+    "href": "publications.html#publications-from-hal",
+    "title": "Publications",
+    "section": "Publications (from HAL)",
+    "text": "Publications (from HAL)\nYou can also see my publications directly from HAL below:"
   },
   {
     "objectID": "research.html",
@@ -35,87 +508,30 @@
     "text": "Classical finite elements notorously struggle when high frequency waves propagate in solids. Alternative methods can be used to tackle this problem, like Treffz method or statistical energy analysis.\n\n\n\n\n\n\nFigure 5: Waves in a nondispersive solid\n\n\n\n\n\n\n\n\n\nFigure 6: Waves in dispersive solid is more difficult to track as grouph and phase velocities are different"
   },
   {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
+    "objectID": "teaching/index.html",
+    "href": "teaching/index.html",
+    "title": "Teaching",
     "section": "",
-    "text": "You can find my publications on my Google Scholar profile"
+    "text": "Structural dynamics\n\nCourse overview"
   },
   {
-    "objectID": "publications.html#publications-from-hal",
-    "href": "publications.html#publications-from-hal",
-    "title": "Publications",
-    "section": "Publications (from HAL)",
-    "text": "Publications (from HAL)\nYou can also see my publications directly from HAL below:"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "<img src=\"files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
+    "objectID": "teaching/structural_dynamics/index.html",
+    "href": "teaching/structural_dynamics/index.html",
+    "title": "Structural dynamics",
     "section": "",
-    "text": "Associate Professor, ISAE - SUPAERO\nDepartment of Mechanics of Structures and Materials\nResearcher, Institut Clément Ader\nI am a researcher in computational mechanics, working at the interface of\napplied mathematics, physics, and scientific computing."
+    "text": "Lecture 1: Finite elements for beam bending (in french)",
+    "crumbs": [
+      "Structural dynamics"
+    ]
   },
   {
-    "objectID": "index.html#andrea-brugnoli",
-    "href": "index.html#andrea-brugnoli",
-    "title": "<img src=\"files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
+    "objectID": "teaching/structural_dynamics/index.html#lectures",
+    "href": "teaching/structural_dynamics/index.html#lectures",
+    "title": "Structural dynamics",
     "section": "",
-    "text": "Associate Professor, ISAE - SUPAERO\nDepartment of Mechanics of Structures and Materials\nResearcher, Institut Clément Ader\nI am a researcher in computational mechanics, working at the interface of\napplied mathematics, physics, and scientific computing."
-  },
-  {
-    "objectID": "index.html#research",
-    "href": "index.html#research",
-    "title": "<img src=\"files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
-    "section": "Research",
-    "text": "Research\nMy main research interests include:\n\nPort-Hamiltonian systems in continuum mechanics\nStructure-preserving discretization methods\nConnection between control theory and numerical methods\nNumerical methods for high frequency vibration\n\n→ See Research and Publications"
-  },
-  {
-    "objectID": "index.html#teaching",
-    "href": "index.html#teaching",
-    "title": "<img src=\"files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
-    "section": "Teaching",
-    "text": "Teaching\nI teach the following courses:\n\nclassical mechanics\nsolid mechanics\nfinite element methods\n\n→ See Teaching"
-  },
-  {
-    "objectID": "index.html#software",
-    "href": "index.html#software",
-    "title": "<img src=\"files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
-    "section": "Software",
-    "text": "Software\nI typically share the code used in my publications and courses.\n→ See Software"
-  },
-  {
-    "objectID": "software.html",
-    "href": "software.html",
-    "title": "Software",
-    "section": "",
-    "text": "A linearly-implicit energy-momentum preserving scheme for geometrically nonlinear mechanics based on non-canonical Hamiltonian formulations \nNonlinear Dynamics, 2025\nDOI: 10.1016/10.1007/s11071-025-11601-6\nCompanion code\n- 📦 Zenodo (archival, citable):\nhttps://doi.org/10.5281/zenodo.15009425\n- 💻 GitHub (development):\nhttps://github.com/a-brugnoli/hamiltonian-geometrically-nonlinear-elasticity\n\n\n Finite element hybridization of port-Hamiltonian systems \nApplied Mathematics and Computation, 2025\nDOI: 10.1016/j.amc.2025.129377\nCompanion code\n- 📦 Zenodo (archival, citable):\nhttps://doi.org/10.5281/zenodo.10047121\n- 💻 GitHub (development):\nhttps://github.com/a-brugnoli/ph-hybridization"
-  },
-  {
-    "objectID": "software.html#companion-code-to-papers",
-    "href": "software.html#companion-code-to-papers",
-    "title": "Software",
-    "section": "",
-    "text": "A linearly-implicit energy-momentum preserving scheme for geometrically nonlinear mechanics based on non-canonical Hamiltonian formulations \nNonlinear Dynamics, 2025\nDOI: 10.1016/10.1007/s11071-025-11601-6\nCompanion code\n- 📦 Zenodo (archival, citable):\nhttps://doi.org/10.5281/zenodo.15009425\n- 💻 GitHub (development):\nhttps://github.com/a-brugnoli/hamiltonian-geometrically-nonlinear-elasticity\n\n\n Finite element hybridization of port-Hamiltonian systems \nApplied Mathematics and Computation, 2025\nDOI: 10.1016/j.amc.2025.129377\nCompanion code\n- 📦 Zenodo (archival, citable):\nhttps://doi.org/10.5281/zenodo.10047121\n- 💻 GitHub (development):\nhttps://github.com/a-brugnoli/ph-hybridization"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Contact\nYou can reach me at:\n\nEmail: andrea.brugnoli@isae-supaero.fr\n\nPhone: +33 5 61 33 89 83\nAdress: 10 avenue Marc Pélegrin – BP 54032 – 31055 TOULOUSE Cedex 4 – France\nOffice: 38-136, Department of Mechanics"
-  },
-  {
-    "objectID": "talks.html",
-    "href": "talks.html",
-    "title": "Talks",
-    "section": "",
-    "text": "Linearly-implicit energy-momentum preserving scheme for geometrically nonlinear mechanics\nSeptember 2025  Invited talk, DEC IMSI, University of Chicago, USA \nA domain decomposition strategy for natural imposition of mixed boundary conditions\nApril 2025  GAMM 25, Poznan University of Technology, Poland \nOn the discrete equivalence of Lagrangian, Hamiltonian and mixed finite element formulations for linear wave phenomena\nJune 2024  Invited Talk, LHMNC 24, Besançon, France \nAn invitation to port-Hamiltonian systems\nApril 2024  Internal Seminar, Institut Clément Ader, France \nAn Hamiltonian approach for modular modelling in solid mechanics (but not only)\nFebruary 2024  Internal Seminar, Institut Clément Ader, France \nDual field mixed and hybrid finite elements for port-Hamiltonian systems\nJuly 23  Invited talk, SUPRENUM PDE 2023, Lausanne, Switzerland"
-  },
-  {
-    "objectID": "teaching/structural_mechanics.html",
-    "href": "teaching/structural_mechanics.html",
-    "title": "Structural mechanics",
-    "section": "",
-    "text": "Structural mechanics"
+    "text": "Lecture 1: Finite elements for beam bending (in french)",
+    "crumbs": [
+      "Structural dynamics"
+    ]
   }
 ]
