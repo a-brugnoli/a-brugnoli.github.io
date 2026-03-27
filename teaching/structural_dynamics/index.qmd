@@ -1,0 +1,5 @@
+# Structural dynamics
+
+## Lectures
+
+- [Lecture 1: Finite elements for beam bending (in french)](beam_bending.qmd)

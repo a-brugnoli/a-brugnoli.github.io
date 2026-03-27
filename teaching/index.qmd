@@ -1,0 +1,6 @@
+---
+title: "Teaching"
+---
+
+### Structural dynamics
+- [Course overview](structural_dynamics/index.qmd)

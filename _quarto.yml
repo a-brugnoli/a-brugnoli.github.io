@@ -2,23 +2,34 @@ project:
   type: website
 
 website:
-  title: '<img src="files/images/cartoon_face.jpg" height="50px" style="border-radius:50%;"> Andrea Brugnoli'
+  title: '<img src="/files/images/cartoon_face.jpg" height="50px" style="border-radius:50%;"> Andrea Brugnoli'
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - href: files/pdfs/CV.pdf
+      - href: /files/pdfs/CV.pdf
         text: CV
       - research.qmd
       - publications.qmd
       - talks.qmd
       - text: Teaching
         menu:
-          - teaching/finite_elements.qmd
-          - teaching/structural_mechanics.qmd
-          - teaching/port_Hamiltonian_systems.qmd
+          - text: "Structural dynamics"
+            href: teaching/structural_dynamics/index.qmd
+          - text: "Port-Hamiltonian systems"
+            href: teaching/port_hamiltonian_systems/index.qmd
       - software.qmd
       - contact.qmd
+  sidebar:
+    - id: structural_dynamics
+      title: "Structural dynamics"
+      contents:
+        - teaching/structural_dynamics/index.qmd
+        - teaching/structural_dynamics/beam_bending.qmd
+    - id: port_hamiltonian_systems
+      title: "Port-Hamiltonian systems"
+      contents:
+        - teaching/port_hamiltonian_systems/index.qmd
 
 format:
   html:
