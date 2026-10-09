@@ -1,0 +1,51 @@
+---
+title: "Laboratoire interactif"
+subtitle: "Six simulations qui tournent dans le navigateur, pour explorer le cours en manipulant les paramètres."
+lang: fr
+include-before-body: _macros.html
+include-after-body: _scripts.html
+---
+
+Tous les calculs sont faits en direct dans la page (aucun serveur) : séries de Navier, systèmes de Ritz, problèmes aux valeurs propres généralisés. Les mêmes simulations apparaissent dans les [transparents](slides.qmd) et dans les corrigés des [PC 1](pc1.qmd) et [PC 2](pc2.qmd).
+
+## 1 · Solution de Navier
+
+Plaque rectangulaire simplement appuyée, $D\Delta^2 w = q$, avec $w=\sum W_{mn}\sin\frac{m\pi x}{a}\sin\frac{n\pi y}{b}$. Changez le nombre de termes, le rapport des côtés, ou passez à une charge ponctuelle et **cliquez sur la plaque** pour la déplacer.
+
+::: {.pw data-widget="navier"}
+:::
+
+## 2 · Coefficient de flambement
+
+$N_{mn}=k\,\pi^2D/b^2$ avec $k=\left(\frac{m}{\alpha}+\frac{n^2\alpha}{m}\right)^2$. Faites varier $\alpha=a/b$ et observez les changements de mode en $\alpha=\sqrt{m(m+1)}$.
+
+::: {.pw data-widget="buckling"}
+:::
+
+## 3 · Ritz à un terme
+
+Choisissez les conditions aux limites des quatre bords : l'enveloppe $g_{B_0B_1}(\xi)=\xi^{r(B_0)}(1-\xi)^{r(B_1)}$ est construite automatiquement, les intégrales 1D sont calculées **exactement** (fractions) et la flèche et la charge de flambement de Rayleigh en découlent.
+
+::: {.pw data-widget="ritz1"}
+:::
+
+## 4 · Convergence de Rayleigh–Ritz
+
+Problème aux valeurs propres généralisé $\mathbf K\mathbf c=-\lambda\mathbf K_G\mathbf c$ résolu en direct. La valeur approchée est toujours une **borne supérieure** de la charge critique.
+
+::: {.pw data-widget="rrconv"}
+:::
+
+## 5 · Disque encastré sous force ponctuelle
+
+La solution exacte contient un terme $r^2\ln r$ que les polynômes peinent à représenter : regardez la lenteur de la convergence.
+
+::: {.pw data-widget="diskritz"}
+:::
+
+## 6 · Plaque vs poutre
+
+Déformées de la plaque en traction-flexion dans son plan (PC 1, exercice 1) : l'écart entre les deux modèles est entièrement dû à l'effet Poisson.
+
+::: {.pw data-widget="platebeam"}
+:::

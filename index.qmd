@@ -1,44 +1,86 @@
-## Andrea Brugnoli
-
-**Associate Professor**, ISAE - SUPAERO  
-Department of Mechanics of Structures and Materials
-
-**Researcher**, Institut Clément Ader
-
-I am a researcher in **computational mechanics**, working at the interface of  
-**applied mathematics**, **physics**, and **scientific computing**.
-
 ---
+pagetitle: "Andrea Brugnoli — Computational mechanics"
+toc: false
+title-block-banner: false
+page-layout: article
+---
+
+```{=html}
+<section class="ab-hero">
+  <img class="ab-portrait" src="files/images/cartoon_face.jpg" alt="Portrait of Andrea Brugnoli">
+  <div>
+    <div class="ab-eyebrow">Computational mechanics · Applied mathematics</div>
+    <h1>Andrea Brugnoli</h1>
+    <div class="ab-role">
+      <strong>Associate Professor</strong>, ISAE-SUPAERO — Department of Mechanics of Structures and Materials<br>
+      <strong>Researcher</strong>, Institut Clément Ader, Toulouse
+    </div>
+    <p>I work at the interface of <em>applied mathematics</em>, <em>physics</em> and <em>scientific computing</em>,
+    designing numerical methods that preserve the structure of the underlying physics.</p>
+    <div>
+      <a class="ab-btn primary" href="mailto:andrea.brugnoli@isae-supaero.fr"><i class="bi bi-envelope"></i> Email</a>
+      <a class="ab-btn" href="https://github.com/a-brugnoli" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+      <a class="ab-btn" href="https://www.linkedin.com/in/andrea-brugnoli" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
+      <a class="ab-btn" href="https://scholar.google.com/citations?user=aze4Eh4AAAAJ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg> Scholar</a>
+      <a class="ab-btn" href="https://cv.hal.science/andrea-brugnoli" target="_blank" rel="noopener"><i class="bi bi-journal-text"></i> HAL</a>
+      <a class="ab-btn" href="files/pdfs/CV.pdf"><i class="bi bi-file-earmark-person"></i> CV</a>
+    </div>
+  </div>
+</section>
+```
 
 ## Research
 
-My main research interests include:
+```{=html}
+<div class="ab-cards two">
+  <div class="ab-card">
+    <i class="bi bi-diagram-3"></i>
+    <h3>Port-Hamiltonian systems</h3>
+    <p>Energy-based, modular modelling of continuum mechanics and multiphysics.</p>
+  </div>
+  <div class="ab-card">
+    <i class="bi bi-bounding-box"></i>
+    <h3>Structure-preserving discretization</h3>
+    <p>Finite element exterior calculus, mixed and hybrid methods, energy-conserving integrators.</p>
+  </div>
+  <div class="ab-card">
+    <i class="bi bi-sliders"></i>
+    <h3>Control meets numerics</h3>
+    <p>Systems theory as a lens on numerical fluxes and domain decomposition.</p>
+  </div>
+  <div class="ab-card">
+    <i class="bi bi-soundwave"></i>
+    <h3>High-frequency vibrations</h3>
+    <p>Methods beyond classical finite elements for wave propagation in solids.</p>
+  </div>
+</div>
+```
 
-* Port-Hamiltonian systems in continuum mechanics
-* Structure-preserving discretization methods
-* Connection between control theory and numerical methods
-* Numerical methods for high frequency vibration
-
-→ See [Research](research.qmd) and [Publications](publications.qmd)
-
----
+<a class="ab-btn" href="research.qmd">Research <i class="bi bi-arrow-right"></i></a>
+<a class="ab-btn" href="publications.qmd">Publications <i class="bi bi-arrow-right"></i></a>
+<a class="ab-btn" href="talks.qmd">Talks <i class="bi bi-arrow-right"></i></a>
 
 ## Teaching
 
-I teach the following courses:
+```{=html}
+<div class="ab-cards two">
+  <div class="ab-card featured">
+    <span class="ab-tag">New</span><span class="ab-tag">Interactive</span>
+    <h3>Thin structures: plates</h3>
+    <p>Kirchhoff–Love theory, buckling and the Ritz method — slides, exercises with solutions and live simulations (in French).</p>
+    <a class="stretched-link" href="teaching/plates/index.qmd" aria-label="Plates course"></a>
+  </div>
+  <div class="ab-card">
+    <span class="ab-tag">Lecture</span>
+    <h3>Structural dynamics</h3>
+    <p>Finite elements for Euler–Bernoulli beam bending (in French).</p>
+    <a class="stretched-link" href="teaching/structural_dynamics/index.qmd" aria-label="Structural dynamics"></a>
+  </div>
+</div>
+```
 
-* classical mechanics
-* solid mechanics
-* finite element methods
-
-→ See [Teaching](teaching/index.qmd)
-
----
+I teach classical mechanics, solid and structural mechanics, and finite element methods at ISAE-SUPAERO. → [All courses](teaching/index.qmd)
 
 ## Software
 
-I typically share the code used in my publications and courses.
-
-→ See [Software](software.qmd)
-
----
+I share the code behind my publications and courses, archived on Zenodo and developed on GitHub. → [Software](software.qmd)

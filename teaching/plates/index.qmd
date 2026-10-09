@@ -1,0 +1,78 @@
+---
+pagetitle: "Structures minces — plaques"
+lang: fr
+toc: false
+title-block-style: none
+include-after-body: _scripts.html
+---
+
+```{=html}
+<section class="course-hero">
+  <div class="ab-eyebrow">ISAE-SUPAERO · 2<sup>e</sup> année · cours en français</div>
+  <h1>Structures minces — plaques</h1>
+  <p class="ab-lead">Théorie de Kirchhoff–Love, plaques circulaires, flambement et méthode de Ritz.</p>
+  <div class="course-meta">
+    <span><i class="bi bi-clock"></i> 2 h de cours</span>
+    <span><i class="bi bi-pencil-square"></i> 2 séances de PC</span>
+    <span><i class="bi bi-cpu"></i> 6 simulations interactives</span>
+    <span><i class="bi bi-person"></i> Andrea Brugnoli</span>
+  </div>
+  <div style="margin-top:1rem">
+    <a class="ab-btn primary" href="slides.qmd"><i class="bi bi-easel"></i> Ouvrir les transparents</a>
+    <a class="ab-btn" href="pc1.qmd"><i class="bi bi-1-circle"></i> PC 1</a>
+    <a class="ab-btn" href="pc2.qmd"><i class="bi bi-2-circle"></i> PC 2</a>
+    <a class="ab-btn" href="lab.qmd"><i class="bi bi-sliders"></i> Laboratoire</a>
+  </div>
+</section>
+```
+
+::: {.figure-panel}
+![Plan du cours : première heure (rappels, Kirchhoff–Love, applications) et deuxième heure (flambement, Ritz).](../../files/images/teaching/plates/roadmap.svg){width="720"}
+:::
+
+## Contenu
+
+```{=html}
+<div class="ab-cards two">
+  <div class="ab-card featured">
+    <span class="ab-tag">Cours</span><span class="ab-tag">73 transparents</span>
+    <h3><i class="bi bi-easel"></i>&nbsp; Transparents</h3>
+    <p>Diaporama interactif (Reveal.js) : élasticité, cinématique de Kirchhoff, efforts généralisés, conditions aux limites, von Kármán, flambement, Rayleigh–Ritz. Trois simulations intégrées.</p>
+    <p class="small">Touches : <kbd>F</kbd> plein écran · <kbd>O</kbd> vue d'ensemble · <kbd>E</kbd> mode impression PDF · <kbd>B</kbd> tableau noir.</p>
+    <a class="stretched-link" href="slides.qmd" aria-label="Transparents"></a>
+  </div>
+  <div class="ab-card">
+    <span class="ab-tag">Laboratoire</span>
+    <h3><i class="bi bi-sliders"></i>&nbsp; Simulations</h3>
+    <p>Série de Navier, coefficient de flambement, Ritz à un terme pour toute combinaison C/S/F, convergence de Rayleigh–Ritz, disque encastré, plaque vs poutre.</p>
+    <a class="stretched-link" href="lab.qmd" aria-label="Laboratoire interactif"></a>
+  </div>
+  <div class="ab-card">
+    <span class="ab-tag">PC 1</span><span class="ab-tag">Corrigé</span>
+    <h3><i class="bi bi-1-circle"></i>&nbsp; Solutions analytiques</h3>
+    <p>Traction-flexion dans le plan (plaque vs poutre), disque encastré sous pression, solution de Navier, cisaillement pur.</p>
+    <a class="stretched-link" href="pc1.qmd" aria-label="PC 1"></a>
+  </div>
+  <div class="ab-card">
+    <span class="ab-tag">PC 2</span><span class="ab-tag">Corrigé</span>
+    <h3><i class="bi bi-2-circle"></i>&nbsp; Méthodes énergétiques</h3>
+    <p>Ritz pour un disque sous force ponctuelle, flambement par Rayleigh–Ritz, plaque appuyée revisitée.</p>
+    <a class="stretched-link" href="pc2.qmd" aria-label="PC 2"></a>
+  </div>
+</div>
+```
+
+## Aperçu : le flambement en direct
+
+Faites varier le rapport des côtés $\alpha = a/b$ d'une plaque appuyée comprimée : le mode critique change de nombre de demi-ondes en $\alpha=\sqrt{m(m+1)}$.
+
+::: {.pw data-widget="buckling" data-alpha="1.3"}
+:::
+
+## Références
+
+- J. N. Reddy (2006), *Theory and Analysis of Elastic Plates and Shells*, CRC Press.
+- E. Ventsel & T. Krauthammer (2001), *Thin Plates and Shells: Theory, Analysis, and Applications*, CRC Press.
+- R. Szilard (2004), *Theories and Applications of Plate Analysis*, Wiley.
+- A. C. Ugural (2018), *Plates and Shells: Theory and Analysis*, 4^e^ éd., CRC Press.
+- B. Audoly & Y. Pomeau (2010), *Elasticity and Geometry*, Oxford University Press.

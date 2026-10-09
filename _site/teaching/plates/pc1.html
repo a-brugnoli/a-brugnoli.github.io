@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>PC 1 · Solutions analytiques – Andrea Brugnoli</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../teaching/plates/pc2.html" rel="next">
+<link href="../../teaching/plates/slides.html" rel="prev">
+<link href="../../files/images/cartoon_face.jpg" rel="icon" type="image/jpeg">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-8f99ecc55887f2ce381cfc6b01f48ab6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-1de24e8f28a0b8257e57cf1d5baaebe4.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-8f99ecc55887f2ce381cfc6b01f48ab6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-321c191247638ee0eb194b62c3960d8c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-14b347695a6efa141a9305110d4b2810.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-321c191247638ee0eb194b62c3960d8c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles/custom.css">
+<meta property="og:title" content="PC 1 · Solutions analytiques – Andrea Brugnoli">
+<meta property="og:description" content="Structures minces — plaques · ISAE-SUPAERO, 2e année">
+<meta property="og:image" content="https://a-brugnoli.github.io/files/images/teaching/plates/ex_traction_bending_plate.svg">
+<meta property="og:site_name" content="Andrea Brugnoli">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../files/images/cartoon_face.jpg" alt="Andrea Brugnoli" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Andrea Brugnoli</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../talks.html"> 
+<span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Teaching</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-teaching">    
+        <li>
+    <a class="dropdown-item" href="../../teaching/index.html">
+ <span class="dropdown-text">Overview</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
+    <a class="dropdown-item" href="../../teaching/plates/index.html">
+ <span class="dropdown-text">Thin structures: plates</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching/structural_dynamics/index.html">
+ <span class="dropdown-text">Structural dynamics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../teaching/port_hamiltonian_systems/index.html">
+ <span class="dropdown-text">Port-Hamiltonian systems</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../software.html"> 
+<span class="menu-text">Software</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../files/pdfs/CV.pdf"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/a-brugnoli"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/andrea-brugnoli"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=aze4Eh4AAAAJ"> 
+<span class="menu-text"><svg class="scholar-icon" viewbox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"></path></svg></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Basculer le mode sombre"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../teaching/plates/pc1.html">PC 1 · Analytical solutions</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../teaching/plates/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../teaching/plates/slides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slides</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../teaching/plates/pc1.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">PC 1 · Analytical solutions</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../teaching/plates/pc2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PC 2 · Energy methods</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../teaching/plates/lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Interactive lab</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Exercices</h2>
+   
+  <ul class="collapse">
+  <li><a href="#exercice-1-traction-flexion-dune-plaque-mince-dans-son-plan" id="toc-exercice-1-traction-flexion-dune-plaque-mince-dans-son-plan" class="nav-link active" data-scroll-target="#exercice-1-traction-flexion-dune-plaque-mince-dans-son-plan">Exercice 1 — Traction-flexion d’une plaque mince dans son plan</a></li>
+  <li><a href="#exercice-2-disque-soumis-à-un-chargement-constant" id="toc-exercice-2-disque-soumis-à-un-chargement-constant" class="nav-link" data-scroll-target="#exercice-2-disque-soumis-à-un-chargement-constant">Exercice 2 — Disque soumis à un chargement constant</a></li>
+  <li><a href="#sec-navier" id="toc-sec-navier" class="nav-link" data-scroll-target="#sec-navier">Exercice 3 — Solution de Navier d’une plaque simplement appuyée</a></li>
+  <li><a href="#exercice-4-travail-à-la-maison-cisaillement-pur" id="toc-exercice-4-travail-à-la-maison-cisaillement-pur" class="nav-link" data-scroll-target="#exercice-4-travail-à-la-maison-cisaillement-pur">Exercice 4 — Travail à la maison : cisaillement pur</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">PC 1 · Solutions analytiques</h1>
+<p class="subtitle lead">Structures minces — plaques · ISAE-SUPAERO, 2<sup>e</sup> année</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><span style="display:none"><span class="math inline">\(\renewcommand{\div}{\operatorname{div}}\newcommand{\bm}[1]{\boldsymbol{#1}}\newcommand{\Hess}{\operatorname{Hess}}\newcommand{\tr}{\operatorname{tr}}\newcommand{\bbR}{\mathbb{R}}\newcommand{\curl}{\operatorname{curl}}\)</span></span></p>
+<div class="sol-toolbar">
+  <button class="ab-btn" type="button" data-sol="open"><i class="bi bi-eye"></i> Afficher toutes les solutions</button>
+  <button class="ab-btn" type="button" data-sol="close"><i class="bi bi-eye-slash"></i> Tout masquer</button>
+</div>
+<p>Chaque question a sa propre solution repliée : essayez d’abord, puis dépliez. Les encadrés <strong>Simulation</strong> permettent de vérifier les résultats en faisant varier les paramètres.</p>
+<section id="exercice-1-traction-flexion-dune-plaque-mince-dans-son-plan" class="level2">
+<h2 class="anchored" data-anchor-id="exercice-1-traction-flexion-dune-plaque-mince-dans-son-plan">Exercice 1 — Traction-flexion d’une plaque mince dans son plan</h2>
+<div class="figure-panel">
+<p><img src="../../files/images/teaching/plates/ex_traction_bending_plate.svg" class="img-fluid" width="520"></p>
+</div>
+<p>Une plaque rectangulaire mince, d’épaisseur constante <span class="math inline">\(h\)</span>, est soumise au chargement auto-équilibré suivant :</p>
+<ul>
+<li>sur le bord <span class="math inline">\(x = L\)</span> : une force linéique <span class="math display">\[
+\bm{f} = \begin{pmatrix} f_x \\ f_y \end{pmatrix} = \begin{pmatrix} Kh(y + b) \\ 0 \end{pmatrix}, \qquad K = \mathrm{const.}
+\]</span></li>
+<li>sur le bord <span class="math inline">\(x = 0\)</span> : la force linéique opposée <span class="math inline">\(-\bm{f}\)</span>.</li>
+</ul>
+<p>Afin de faciliter la comparaison entre les deux approches, on considère le point <span class="math inline">\(O\)</span> de la plaque fixé en translation selon <span class="math inline">\(x\)</span> et <span class="math inline">\(y\)</span>, et en rotation selon <span class="math inline">\(z\)</span>.</p>
+<p><strong>Approche plaque</strong></p>
+<ol type="1">
+<li>En proposant une expression des efforts internes de plaque (satisfaisant les équations d’équilibre de membrane), rappelez les hypothèses de membrane et vérifiez que cette plaque les satisfait.</li>
+<li>Exprimez les contraintes en tout point <span class="math inline">\(P(x, y)\)</span>, puis les déformations associées.</li>
+<li>Identifiez les champs de déplacement et de rotation <span class="math inline">\(u(x, y)\)</span>, <span class="math inline">\(v(x, y)\)</span>, <span class="math inline">\(\theta_z(x, y)\)</span>.</li>
+</ol>
+<p><strong>Approche poutre</strong></p>
+<ol start="4" type="1">
+<li>Proposez un modèle poutre de ce problème avec ses conditions aux limites cinématiques et statiques.</li>
+<li>Exprimez les efforts internes de poutre <span class="math inline">\(N(x)\)</span>, <span class="math inline">\(T_y(x)\)</span>, <span class="math inline">\(M_z(x)\)</span> et la contrainte <span class="math inline">\(\sigma_{xx}\)</span>.</li>
+<li>Identifiez la déformée de la poutre (<span class="math inline">\(u(x)\)</span>, <span class="math inline">\(v(x)\)</span>, <span class="math inline">\(\theta_z(x)\)</span>). Comparez avec l’approche plaque et expliquez l’origine des termes supplémentaires.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Formulaire
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Équilibre statique en deux dimensions : <span class="math display">\[
+\div \bm{N}= \bm 0, \qquad
+\frac{\partial N_{xx}}{\partial x} + \frac{\partial N_{xy}}{\partial y} = 0, \qquad
+\frac{\partial N_{xy}}{\partial x} + \frac{\partial N_{yy}}{\partial y} = 0,
+\qquad \bm{N} = \int_{-h/2}^{h/2} \bm{\sigma}\, dz.
+\]</span> Tenseur de déformation : <span class="math display">\[
+\bm{\varepsilon} = \tfrac{1}{2}\left(\nabla \bm{u} + (\nabla \bm{u})^\top \right), \qquad
+\varepsilon_{xx} = \frac{\partial u}{\partial x}, \quad
+\varepsilon_{yy} = \frac{\partial v}{\partial y}, \quad
+\varepsilon_{xy} = \frac{1}{2}\left(\frac{\partial u}{\partial y} + \frac{\partial v}{\partial x}\right).
+\]</span> Loi de Hooke en contrainte plane : <span class="math display">\[
+\begin{pmatrix} \sigma_{xx} \\ \sigma_{yy} \\ \sigma_{xy} \end{pmatrix}
+= \frac{E}{1-\nu^2}
+\begin{bmatrix} 1 &amp; \nu &amp; 0 \\ \nu &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; \frac{1-\nu}{2} \end{bmatrix}
+\begin{pmatrix} \varepsilon_{xx} \\ \varepsilon_{yy} \\ 2\varepsilon_{xy} \end{pmatrix}.
+\]</span> En 2D seule la composante <span class="math inline">\(\theta_z\)</span> du vecteur rotation est utilisée : <span class="math display">\[
+\bm{\theta} = \tfrac{1}{2} \curl \bm{u}, \qquad
+\theta_z = \frac{1}{2}\left(\frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}\right).
+\]</span></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution Q1 — Efforts internes de plaque
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Les efforts de membrane à déterminer sont <span class="math inline">\(N_{xx}, N_{yy}, N_{xy}\)</span>. Au vu des conditions aux limites statiques et cinématiques, on propose <span class="math inline">\(N_{yy} = N_{xy} = 0\)</span> et <span class="math display">\[
+N_{xx}(x, y) = Kh(y + b).
+\]</span> Ces expressions satisfont les équations d’équilibre de plaque. La plaque est soumise à des efforts selon <span class="math inline">\(x\)</span> et <span class="math inline">\(y\)</span> qui ne varient pas selon <span class="math inline">\(z\)</span> : elle se déforme uniquement dans son plan (membrane), pas en flexion.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution Q2 — Contraintes et déformations
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>La seule contrainte non nulle est la contrainte normale <span class="math display">\[
+\sigma_{xx} = \frac{N_{xx}}{h} = K(y + b).
+\]</span> Les déformations découlent de la loi de Hooke : <span class="math display">\[
+\varepsilon_{xx} = \frac{\partial u}{\partial x} = \frac{K}{E}(y + b), \qquad
+\varepsilon_{yy} = \frac{\partial v}{\partial y} = -\nu \frac{K}{E}(y + b), \qquad
+2\varepsilon_{xy} = \frac{\partial u}{\partial y} + \frac{\partial v}{\partial x} = 0.
+\]</span></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution Q3 — Champs de déplacement
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>En intégrant les déformations normales : <span class="math display">\[
+u(x, y) = \frac{K}{E}(y + b)x + f(y), \qquad
+v(x, y) = -\nu \frac{K}{E}\left(\frac{y^2}{2} + by\right) + g(x).
+\]</span> La condition <span class="math inline">\(\varepsilon_{xy}=0\)</span> donne <span class="math inline">\(\frac{Kx}{E} + f'(y) + g'(x) = 0\)</span>, soit <span class="math inline">\(\frac{Kx}{E} + g'(x) = -f'(y) = A\)</span> (constante). Après intégration : <span class="math display">\[
+\begin{aligned}
+u(x, y) &amp;= \frac{K}{E}(y + b)x - Ay + C_1, \\
+v(x, y) &amp;= -\nu \frac{K}{E}\left(\frac{y^2}{2} + by\right) + Ax - \frac{K}{E} \frac{x^2}{2} + C_2,
+\end{aligned}
+\]</span> <span class="math display">\[
+\theta_z(x, y) = \frac{1}{2} \left( \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y} \right) = A - \frac{K}{E}x.
+\]</span> Avec <span class="math inline">\(u(0, 0) = v(0, 0) = \theta_z(0, 0) = 0\)</span> on obtient <span class="math inline">\(A = C_1 = C_2 = 0\)</span> : <span class="math display">\[
+\begin{aligned}
+u(x, y) &amp;= \frac{K}{E}xy + \frac{Kb}{E}x, \\
+v(x, y) &amp;= -\frac{K}{E}\frac{x^2}{2} - \nu\frac{K}{E}\frac{y^2}{2} - \nu\frac{Kb}{E}y, \\
+\theta_z(x, y) &amp;= -\frac{K}{E}x.
+\end{aligned}
+\]</span></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution Q4 — Modèle poutre
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Si <span class="math inline">\(L \gg 2b\)</span>, la plaque peut être modélisée comme une poutre de longueur <span class="math inline">\(L\)</span>, de section <span class="math inline">\(S = 2bh\)</span> et de moment quadratique <span class="math inline">\(I_z = \frac{h(2b)^3}{12} = \frac{2}{3}b^3h\)</span>. Le bord <span class="math inline">\(x = 0\)</span> est encastré ; le bord <span class="math inline">\(x = L\)</span> est soumis au torseur résultant de <span class="math inline">\(f_x\)</span> :</p>
+<ul>
+<li><span class="math inline">\(F = \int_{-b}^{b} f_x\, dy = KbS\)</span> : effort de traction selon <span class="math inline">\(x\)</span> ;</li>
+<li><span class="math inline">\(M = \int_{-b}^{b} -y f_x\, dy = -K I_z\)</span> : moment de flexion porté par <span class="math inline">\(z\)</span>.</li>
+</ul>
+<div class="figure-panel">
+<p><img src="../../files/images/teaching/plates/ex_sol_beam.svg" class="img-fluid" width="380"></p>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution Q5 — Efforts internes et contrainte
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Seuls l’effort normal et le moment de flexion sont non nuls : <span class="math inline">\(N(x) = F\)</span>, <span class="math inline">\(T_y(x) = 0\)</span>, <span class="math inline">\(M_z(x) = M\)</span>. La contrainte normale cumule les deux contributions : <span class="math display">\[
+\sigma_{xx}(x, y) = \frac{N}{S} - \frac{M_z}{I_{z}}\,y = K(b + y).
+\]</span> On retrouve exactement la contrainte de l’approche plaque.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution Q6 — Déformée et comparaison
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Effort normal (allongement) : <span class="math inline">\(u(x, 0) = \int_0^x \varepsilon_{xx}\, dx = \dfrac{F}{ES}x\)</span>.</li>
+<li>Moment de flexion : <span class="math inline">\(v'' = \dfrac{M}{EI_z}\)</span>, d’où <span class="math inline">\(\theta_z = v' = \dfrac{M}{EI_z}x\)</span> et <span class="math inline">\(v = \dfrac{M}{EI_z}\dfrac{x^2}{2}\)</span>.</li>
+</ul>
+<p>La rotation de la section droite contribue au déplacement axial : <span class="math inline">\(u(x, y) = u(x,0) - \theta_z\, y\)</span>.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;">Plaque</th>
+<th style="text-align: center;">Poutre</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(u(x, y)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dfrac{Kb}{E}x + \dfrac{K}{E}xy\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dfrac{F}{ES}x - \dfrac{M}{EI_{z}}xy\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(v(x, y)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-\dfrac{K}{E}\dfrac{x^2}{2} - \nu\dfrac{K}{E}\dfrac{y^2}{2} - \nu\dfrac{Kb}{E}y\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dfrac{M}{EI_{z}}\dfrac{x^2}{2}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\theta_z(x, y)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-\dfrac{K}{E}x\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\dfrac{M}{EI_{z}}x\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Avec <span class="math inline">\(F = KbS\)</span> et <span class="math inline">\(M = -KI_z\)</span>, on retrouve terme à terme les contributions de l’effort normal et du moment. Les termes supplémentaires de <span class="math inline">\(v(x, y)\)</span> dans l’approche plaque traduisent l’<strong>effet Poisson</strong>, négligé par le modèle poutre.</p>
+<div class="pw" data-widget="platebeam">
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="exercice-2-disque-soumis-à-un-chargement-constant" class="level2">
+<h2 class="anchored" data-anchor-id="exercice-2-disque-soumis-à-un-chargement-constant">Exercice 2 — Disque soumis à un chargement constant</h2>
+<p>On considère une plaque circulaire encastrée sur son bord extérieur, soumise à une pression uniforme <span class="math inline">\(p\)</span>. Les conditions au bord et le chargement ne dépendent pas de <span class="math inline">\(\theta\)</span> : le problème est axisymétrique.</p>
+<div class="figure-panel">
+<p><img src="../../files/images/teaching/plates/ex_clamped_disk_pressure.svg" class="img-fluid" width="600"></p>
+</div>
+<ol type="1">
+<li>En utilisant l’équilibre statique d’un disque de rayon <span class="math inline">\(r\)</span>, retrouvez l’effort tranchant <span class="math inline">\(Q_r(r)\)</span>.</li>
+<li>Explicitez les conditions au bord du problème.</li>
+<li>Obtenez le déplacement vertical.</li>
+<li>Déduisez-en les réactions à l’encastrement.</li>
+<li>Comment changent les conditions aux limites pour un appui simple ?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Formulaire
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Effort tranchant et chargement externe : <span class="math display">\[\frac{1}{r}\frac{d}{dr}(rQ_r) + f_z = 0\]</span> Effort tranchant et déplacement : <span class="math display">\[
+Q_r = -D \frac{d}{dr}\left[\frac{1}{r}\frac{d}{dr}\left(r\frac{dw}{dr}\right)\right] = -D\,\frac{d}{dr}\left(\Delta w\right),
+\qquad \Delta(\cdot)=\frac{1}{r}\frac{d}{dr}\left(r\frac{d(\cdot)}{dr}\right).
+\]</span> Effort tranchant et moments : <span class="math inline">\(\;Q_r = \dfrac{1}{r} \left[\dfrac{d}{dr}(rM_{rr}) - M_{\theta\theta}\right]\)</span></p>
+<p>Moments en fonction du déplacement : <span class="math display">\[
+M_{rr} = - D\left(\frac{d^2w}{dr^2} + \frac{\nu}{r}\frac{dw}{dr}\right), \qquad
+M_{\theta\theta} = - D\left(\frac{1}{r}\frac{dw}{dr} + \nu\frac{d^2w}{dr^2}\right).
+\]</span></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution Q1 — Effort tranchant
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>On coupe le disque à une distance <span class="math inline">\(r\)</span> du centre :</p>
+<div class="figure-panel">
+<p><img src="../../files/images/teaching/plates/ex_scheme_cut_disk.svg" class="img-fluid" width="480"></p>
+</div>
+<p>L’équilibre vertical de la partie centrale donne <span class="math display">\[
+2\pi r\, Q_r = p\,\pi r^2 \quad\Longrightarrow\quad Q_r = \frac{pr}{2}.
+\]</span></p>
+<div class="figure-panel">
+<p><img src="../../files/images/teaching/plates/ex_disk_stress_cut.svg" class="img-fluid" width="380"></p>
+</div>
+<p>La réaction verticale à l’encastrement correspond à <span class="math inline">\(r=a\)</span> : <span class="math inline">\(V_a = \dfrac{pa}{2}\)</span>. Il restera à calculer la seconde réaction <span class="math inline">\(M_a\)</span> (moment fléchissant au bord).</p>
+<div class="figure-panel">
+<p><img src="../../files/images/teaching/plates/ex_disk_stress_reactions.svg" class="img-fluid" width="380"></p>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution Q2 — Conditions au bord
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>L’encastrement bloque le déplacement et la rotation ; avec l’hypothèse de Kirchhoff : <span class="math display">\[
+w(a)=0, \qquad \frac{dw}{dr}(a)=0.
+\]</span></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution Q3 — Déplacement vertical
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>À partir de <span class="math inline">\(Q_r = -D\,\frac{d}{dr}(\Delta w) = \frac{pr}{2}\)</span>, on intègre successivement : <span class="math display">\[
+\begin{aligned}
+2D\,\frac{1}{r}\frac{d}{dr}\left(r\frac{dw}{dr}\right) &amp;= -p\,\frac{r^2}{2}+A,\\
+2D\,r\frac{dw}{dr} &amp;= -\frac{p}{8}\,r^4+\frac{A}{2}\,r^2+B,\\
+2Dw &amp;= -\frac{p}{32}\,r^4+\frac{A}{4}\,r^2 + B\ln r+C .
+\end{aligned}
+\]</span> Pour éviter <span class="math inline">\(w\to\infty\)</span> en <span class="math inline">\(r=0\)</span> (ou par symétrie, <span class="math inline">\(w'(0)=0\)</span>), on impose <span class="math inline">\(B=0\)</span>. Les conditions au bord donnent ensuite <span class="math display">\[
+\frac{dw}{dr}(a)=0 \;\Rightarrow\; A = \frac{pa^2}{4}, \qquad
+w(a)=0 \;\Rightarrow\; C = -\frac{pa^4}{32}.
+\]</span> D’où <span class="math display">\[
+w(r) = \frac{p}{2D}\left(-\frac{r^4}{32} + \frac{a^2r^2}{16} - \frac{a^4}{32}\right) = -\frac{p}{64D}\left(r^2-a^2\right)^2 .
+\]</span></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution Q4 — Réactions à l’encastrement
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Avec les lois moment–déplacement : <span class="math display">\[
+M_{rr}(r)=-\frac{p}{16}\left[a^2(1+\nu) - r^2(3+\nu)\right], \qquad
+M_{\theta\theta}(r)=-\frac{p}{16}\left[a^2(1+\nu) - r^2(1+3\nu)\right].
+\]</span> À l’encastrement : <span class="math display">\[
+M_{rr}(a)=\frac{pa^2}{8}, \qquad M_{\theta\theta}(a)=\nu\,\frac{pa^2}{8}, \qquad V_a = \frac{pa}{2}.
+\]</span></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution Q5 — Appui simple
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>La rotation est libre et le moment fléchissant est nul : <span class="math display">\[
+w(a)=0, \qquad M_{rr}(a)=0.
+\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="sec-navier" class="level2">
+<h2 class="anchored" data-anchor-id="sec-navier">Exercice 3 — Solution de Navier d’une plaque simplement appuyée</h2>
+<p>On considère une plaque mince rectangulaire de Kirchhoff–Love sur <span class="math inline">\(\Omega = [0, a] \times [0, b]\)</span>, de rigidité <span class="math inline">\(D = \frac{Eh^3}{12(1-\nu^2)}\)</span>. Sous une charge transversale <span class="math inline">\(q(x, y)\)</span> (dans le sens <span class="math inline">\(+z\)</span>), la flèche vérifie <span class="math display">\[
+D \Delta^2 w = q, \qquad \Delta^2 = \frac{\partial^4}{\partial x^4} + 2\frac{\partial^4}{\partial x^2 \partial y^2} + \frac{\partial^4}{\partial y^4}.
+\]</span> La plaque est <strong>simplement appuyée</strong> sur ses quatre côtés.</p>
+<div class="figure-panel">
+<p><img src="../../files/images/teaching/plates/ex_SSSS_plate_uniform_q.svg" class="img-fluid" width="420"></p>
+</div>
+<ol type="1">
+<li>Écrivez explicitement les conditions aux limites pour <span class="math inline">\(w(x, y)\)</span> le long des bords <span class="math inline">\(x=0\)</span>, <span class="math inline">\(x=a\)</span>, <span class="math inline">\(y=0\)</span> et <span class="math inline">\(y=b\)</span>.</li>
+<li>Calculez la solution analytique <span class="math inline">\(w(x, y)\)</span> sous une charge uniforme <span class="math inline">\(q = -p_0\)</span>.</li>
+<li><em>(Bonus)</em> La charge uniforme est remplacée par une force ponctuelle <span class="math inline">\(F_0\)</span> en <span class="math inline">\((x^*, y^*) \in \Omega\)</span>. Déterminez <span class="math inline">\(w(x, y)\)</span>.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Suggestion : méthode de Navier
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Développez la charge et le déplacement en double série de Fourier, sur les fonctions propres du bi-laplacien avec conditions d’appui simple (<span class="math inline">\(\Delta^2 \phi = \lambda \phi\)</span>) : <span class="math display">\[
+w(x, y) = \sum_{m=1}^{\infty} \sum_{n=1}^{\infty} W_{mn} \sin\left(\frac{m\pi x}{a}\right) \sin\left(\frac{n\pi y}{b}\right).
+\]</span> Exploitez l’orthogonalité de la base pour isoler les coefficients <span class="math inline">\(W_{mn}\)</span>, et faites de même pour <span class="math inline">\(q(x, y)\)</span>.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Rappel : orthogonalité de la base de Fourier
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[
+\int_0^a \sin\left(\frac{m\pi x}{a}\right) \sin\left(\frac{k\pi x}{a}\right) dx = \frac{a}{2} \delta_{mk},
+\qquad \delta_{mk} = \begin{cases} 1 &amp; m=k \\ 0 &amp; \text{sinon} \end{cases}
+\]</span> <strong>Démonstration.</strong> Avec <span class="math inline">\(\sin\alpha\sin\beta = \frac{1}{2}\left[\cos(\alpha-\beta) - \cos(\alpha+\beta)\right]\)</span> : <span class="math display">\[
+\int_0^a \sin\left(\frac{m\pi x}{a}\right) \sin\left(\frac{k\pi x}{a}\right) dx = \frac{1}{2} \int_0^a \left[ \cos\left(\frac{(m-k)\pi x}{a}\right) - \cos\left(\frac{(m+k)\pi x}{a}\right) \right] dx .
+\]</span></p>
+<ul>
+<li>Si <span class="math inline">\(m \neq k\)</span> : <span class="math inline">\((m\pm k)\)</span> sont des entiers non nuls ; les primitives <span class="math inline">\(\frac{a}{(m\pm k)\pi}\sin\frac{(m\pm k)\pi x}{a}\)</span> s’annulent en <span class="math inline">\(0\)</span> et en <span class="math inline">\(a\)</span>, donc l’intégrale est nulle.</li>
+<li>Si <span class="math inline">\(m = k\)</span> : <span class="math inline">\(\frac{1}{2}\int_0^a \left[1-\cos\frac{2m\pi x}{a}\right]dx = \frac{1}{2}\left[x - \frac{a}{2m\pi}\sin\frac{2m\pi x}{a}\right]_0^a = \frac{a}{2}\)</span>.</li>
+</ul>
+<p>Le même résultat s’applique <em>mutatis mutandis</em> sur <span class="math inline">\([0, b]\)</span>.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution Q1 — Conditions aux limites
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Appui simple : flèche nulle et moment de flexion normal nul, avec <span class="math inline">\(M_{xx} = -D \left( \partial_{xx} w + \nu \partial_{yy} w \right)\)</span>, <span class="math inline">\(M_{yy} = -D \left( \partial_{yy} w + \nu \partial_{xx} w \right)\)</span> : <span class="math display">\[
+\begin{aligned}
+x=0,\ x=a :&amp;\quad w = 0, \quad M_{xx} = 0 \;\Rightarrow\; \partial_{xx} w = 0, \\
+y=0,\ y=b :&amp;\quad w = 0, \quad M_{yy} = 0 \;\Rightarrow\; \partial_{yy} w = 0 .
+\end{aligned}
+\]</span> Comme <span class="math inline">\(w=0\)</span> le long de <span class="math inline">\(x\in\{0,a\}\)</span>, <span class="math inline">\(\partial_{yy}w\)</span> y est nulle aussi, et <span class="math inline">\(M_{xx}=0\)</span> se réduit à <span class="math inline">\(\partial_{xx} w = 0\)</span> (idem en <span class="math inline">\(y\)</span>). Les conditions sont <strong>découplées</strong> : on cherche <span class="math inline">\(f(x)\)</span> nulle ainsi que <span class="math inline">\(f''\)</span> en <span class="math inline">\(x\in\{0,a\}\)</span>, et <span class="math inline">\(g(y)\)</span> de même en <span class="math inline">\(y\in\{0,b\}\)</span>. Les sinus conviennent : <span class="math display">\[
+f(x) = \sin\left(\frac{m\pi x}{a}\right), \qquad g(y) = \sin\left(\frac{n\pi y}{b}\right).
+\]</span></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution Q2 — Charge uniforme
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Avec <span class="math inline">\(\phi_{mn} = \sin(\alpha_m x) \sin(\beta_n y)\)</span>, <span class="math inline">\(\alpha_m = \frac{m\pi}{a}\)</span>, <span class="math inline">\(\beta_n = \frac{n\pi}{b}\)</span> : <span class="math display">\[
+\Delta^2 \phi_{mn} = \left( \alpha_m^2 + \beta_n^2 \right)^2 \phi_{mn} = \pi^4 \left[ \left(\tfrac{m}{a}\right)^2 + \left(\tfrac{n}{b}\right)^2 \right]^2 \phi_{mn} .
+\]</span> En développant <span class="math inline">\(w = \sum W_{mn}\phi_{mn}\)</span> et <span class="math inline">\(q = \sum Q_{mn}\phi_{mn}\)</span> dans <span class="math inline">\(D \Delta^2 w = q\)</span>, puis en projetant sur le mode <span class="math inline">\((k,l)\)</span> (orthogonalité, facteur <span class="math inline">\(\frac{ab}{4}\)</span>), on obtient <span class="math display">\[
+W_{mn} = \frac{Q_{mn}}{D \pi^4 \left[ \left(\frac{m}{a}\right)^2 + \left(\frac{n}{b}\right)^2 \right]^2},
+\qquad
+Q_{mn} = \frac{4}{ab} \int_0^a \!\!\int_0^b q(x, y)\, \phi_{mn}\, dx\,dy .
+\]</span> Pour <span class="math inline">\(q = -p_0\)</span>, l’intégrale se factorise, avec <span class="math inline">\(\int_0^a \sin\frac{m\pi x}{a}\,dx = \frac{a}{m\pi}\left(1 - (-1)^m\right)\)</span> : <span class="math display">\[
+Q_{mn} = \begin{cases} -\dfrac{16 p_0}{\pi^2 m n} &amp; m, n \text{ impairs} \\ 0 &amp; \text{sinon} \end{cases}
+\]</span> d’où la solution <span class="math display">\[
+w(x, y) = -\frac{16 p_0}{\pi^6 D} \sum_{m=1,3,\dots} \;\sum_{n=1,3,\dots} \frac{\sin\left(\frac{m\pi x}{a}\right) \sin\left(\frac{n\pi y}{b}\right)}{mn \left[ \left(\frac{m}{a}\right)^2 + \left(\frac{n}{b}\right)^2 \right]^2}.
+\]</span> Pour une plaque carrée, <span class="math inline">\(w_{\max} \approx 0{,}00406\, p_0a^4/D\)</span>. Explorez la convergence de la série :</p>
+<div class="pw" data-widget="navier" data-load="u">
+
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution Q3 — Force ponctuelle (bonus)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>On modélise la charge par une distribution de Dirac, <span class="math inline">\(q(x, y) = -F_0\, \delta(x - x^*)\, \delta(y - y^*)\)</span>, avec <span class="math inline">\(\int_0^a f(x)\delta(x-x^*)\,dx = f(x^*)\)</span>. La même projection donne <span class="math display">\[
+Q_{mn} = -\frac{4F_0}{ab} \sin\left(\frac{m\pi x^*}{a}\right) \sin\left(\frac{n\pi y^*}{b}\right),
+\]</span> <span class="math display">\[
+w(x, y) = -\frac{4F_0}{ab\, D \pi^4} \sum_{m=1}^{\infty} \sum_{n=1}^{\infty} \frac{\sin\left(\frac{m\pi x^*}{a}\right) \sin\left(\frac{n\pi y^*}{b}\right)}{\left[ \left(\frac{m}{a}\right)^2 + \left(\frac{n}{b}\right)^2 \right]^2} \sin\left(\frac{m\pi x}{a}\right) \sin\left(\frac{n\pi y}{b}\right).
+\]</span> Cliquez sur la plaque pour déplacer la force :</p>
+<div class="pw" data-widget="navier" data-load="p">
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="exercice-4-travail-à-la-maison-cisaillement-pur" class="level2">
+<h2 class="anchored" data-anchor-id="exercice-4-travail-à-la-maison-cisaillement-pur">Exercice 4 — Travail à la maison : cisaillement pur</h2>
+<p>On considère une plaque rectangulaire homogène, isotrope, élastique linéaire (module d’Young <span class="math inline">\(E\)</span>, module de cisaillement <span class="math inline">\(G\)</span>, coefficient de Poisson <span class="math inline">\(\nu\)</span>), de dimensions <span class="math inline">\(a\)</span> selon <span class="math inline">\(x\)</span> et <span class="math inline">\(b\)</span> selon <span class="math inline">\(y\)</span>. Elle est soumise à des forces linéiques tangentielles uniformes imposant un état de cisaillement pur : <span class="math display">\[
+\bm{f} = -h\tau_0\, \bm{e}_y \text{ sur } x=0, \qquad
+\bm{f} = +h\tau_0\, \bm{e}_y \text{ sur } x=a, \qquad
+\bm{f} = -h\tau_0\, \bm{e}_x \text{ sur } y=0, \qquad
+\bm{f} = +h\tau_0\, \bm{e}_x \text{ sur } y=b.
+\]</span></p>
+<div class="figure-panel">
+<p><img src="../../files/images/teaching/plates/ex_shear_stress_2D.svg" class="img-fluid" width="460"></p>
+</div>
+<ol type="1">
+<li>Montrez que le champ de contraintes est un cisaillement pur uniforme.</li>
+<li>Déterminez les déformations.</li>
+<li>Trouvez un champ de déplacements. Quelles hypothèses faut-il introduire pour fixer le mouvement rigide ?</li>
+<li>Donnez les contraintes principales.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution Q1 — Champ de contraintes
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>On cherche un champ statiquement admissible et uniforme : <span class="math inline">\(N_{xx} = 0\)</span>, <span class="math inline">\(N_{yy} = 0\)</span>, <span class="math inline">\(N_{xy} = h\tau_0\)</span>. Il vérifie trivialement <span class="math inline">\(\partial_x N_{xx} + \partial_y N_{xy} = 0\)</span> et <span class="math inline">\(\partial_x N_{xy} + \partial_y N_{yy} = 0\)</span>. La seule composante active est <span class="math inline">\(\sigma_{xy} = \tau_0\)</span>.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution Q2 — Déformations
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Pour un matériau isotrope, <span class="math inline">\(\sigma_{xy} = G \gamma_{xy}\)</span>, donc <span class="math display">\[
+\gamma_{xy} = \frac{\tau_0}{G}, \qquad \varepsilon_{xx} = \varepsilon_{yy} = 0.
+\]</span></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution Q3 — Déplacements
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-21" class="callout-21-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(\varepsilon_{xx} = \partial_x u = 0 \Rightarrow u = f(y)\)</span> et <span class="math inline">\(\varepsilon_{yy} = \partial_y v = 0 \Rightarrow v = g(x)\)</span>. Le cisaillement impose <span class="math inline">\(f'(y) + g'(x) = \tau_0/G\)</span> : chaque terme est constant, <span class="math inline">\(f'(y) = A\)</span>, <span class="math inline">\(g'(x) = \tau_0/G - A\)</span>, d’où <span class="math display">\[
+u(x,y) = Ay + C_1, \qquad v(x,y) = \left(\frac{\tau_0}{G} - A\right)x + C_2 .
+\]</span> Pour fixer le mouvement rigide, on bloque le point <span class="math inline">\((0, 0)\)</span> en translation (<span class="math inline">\(C_1 = C_2 = 0\)</span>) et en rotation : <span class="math inline">\(\theta_z = \frac{1}{2}\left(\partial_x v - \partial_y u\right) = \frac{1}{2}\left(\frac{\tau_0}{G}-2A\right) = 0 \Rightarrow A=\frac{\tau_0}{2G}\)</span>. Ainsi <span class="math display">\[
+u(x,y) = \frac{\tau_0}{2G}\,y, \qquad v(x,y) = \frac{\tau_0}{2G}\,x .
+\]</span></p>
+<div class="figure-panel">
+<p><img src="../../files/images/teaching/plates/ex_sol_shear.svg" class="img-fluid" width="340"></p>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution Q4 — Contraintes principales
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-22" class="callout-22-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[
+\bm{\sigma} = \begin{pmatrix} 0 &amp; \tau_0 \\ \tau_0 &amp; 0 \end{pmatrix}
+\quad\Longrightarrow\quad \sigma_1 = \tau_0, \qquad \sigma_2 = -\tau_0,
+\]</span> avec des directions principales inclinées à <span class="math inline">\(45^\circ\)</span>.</p>
+</div>
+</div>
+</div>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Retour au sommet</a></main> <!-- /main -->
+<script src="../../assets/js/d3.min.js"></script>
+<script src="../../assets/js/plot.umd.min.js"></script>
+<script src="../../assets/js/plates-widgets.js"></script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copié");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copié");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/a-brugnoli\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../teaching/plates/slides.html" class="pagination-link" aria-label="Slides">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Slides</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../teaching/plates/pc2.html" class="pagination-link" aria-label="PC 2 · Energy methods">
+        <span class="nav-page-text">PC 2 · Energy methods</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Andrea Brugnoli · ISAE-SUPAERO, Toulouse</p>
+</div>   
+    <div class="nav-footer-center">
+<p>Built with <a href="https://quarto.org">Quarto</a></p>
+</div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:andrea.brugnoli@isae-supaero.fr">
+      <i class="bi bi-envelope" role="img" aria-label="Email">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/a-brugnoli">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/andrea-brugnoli">
+      <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=aze4Eh4AAAAJ">
+<svg class="scholar-icon" viewbox="0 0 24 24" aria-hidden="true">
+<path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"></path>
+</svg>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

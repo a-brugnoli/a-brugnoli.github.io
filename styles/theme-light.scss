@@ -1,0 +1,54 @@
+/*-- scss:defaults --*/
+// Palette: deep teal ink + warm paper, amber accent
+$brand-teal:      #0b7a75;
+$brand-ink:       #0e3b3f;
+$brand-amber:     #e0a33a;
+
+$body-bg:         #fbfaf7;
+$body-color:      #1d2a2e;
+$primary:         $brand-teal;
+$secondary:       #5b6b70;
+$info:            #2b7bb9;
+$warning:         #c9871b;
+$link-color:      $brand-teal;
+$link-hover-color: darken($brand-teal, 10%);
+
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$font-family-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+$font-family-base: $font-family-serif;
+$font-family-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: 650;
+$headings-color: $brand-ink;
+$font-size-root: 17px;
+$line-height-base: 1.65;
+
+$navbar-bg: $brand-ink;
+$navbar-fg: #e8f1f0;
+$navbar-hl: #ffffff;
+$footer-bg: #f2f0ea;
+$footer-fg: #5b6b70;
+
+$border-radius: .6rem;
+$border-radius-lg: .9rem;
+$code-color: #8a3b12;
+
+$toc-color: $brand-teal;
+$callout-color-note: #2b7bb9;
+$callout-color-tip: $brand-teal;
+
+/*-- scss:rules --*/
+:root {
+  --ab-teal: #{$brand-teal};
+  --ab-ink: #{$brand-ink};
+  --ab-amber: #{$brand-amber};
+  --ab-paper: #{$body-bg};
+  --ab-card: #ffffff;
+  --ab-card-border: #e6e2d8;
+  --ab-muted: #5b6b70;
+  --ab-soft: #eef6f5;
+  --ab-figure-bg: #ffffff;
+  --ab-shadow: 0 1px 2px rgba(14,59,63,.06), 0 8px 24px rgba(14,59,63,.07);
+  --ab-hero-grad: radial-gradient(1200px 400px at 85% -10%, rgba(11,122,117,.13), transparent 60%),
+                  radial-gradient(800px 300px at -10% 110%, rgba(224,163,58,.12), transparent 60%);
+}

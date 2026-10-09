@@ -41,3 +41,5 @@ title: Talks
   <span class="talk-date">July 23</span>
   <span class="talk-location"> Invited talk, [SUPRENUM PDE 2023](https://archiveweb.epfl.ch/suprenumpde2023.epfl.ch/), *Lausanne, Switzerland*
   </span>
+
+:::

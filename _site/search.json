@@ -414,14 +414,14 @@
     "href": "talks.html",
     "title": "Talks",
     "section": "",
-    "text": "Linearly-implicit energy-momentum preserving scheme for geometrically nonlinear mechanics\nSeptember 2025  Invited talk, DEC IMSI, University of Chicago, USA \nA domain decomposition strategy for natural imposition of mixed boundary conditions\nApril 2025  GAMM 25, Poznan University of Technology, Poland \nOn the discrete equivalence of Lagrangian, Hamiltonian and mixed finite element formulations for linear wave phenomena\nJune 2024  Invited Talk, LHMNC 24, Besançon, France \nAn invitation to port-Hamiltonian systems\nApril 2024  Internal Seminar, Institut Clément Ader, France \nAn Hamiltonian approach for modular modelling in solid mechanics (but not only)\nFebruary 2024  Internal Seminar, Institut Clément Ader, France \nDual field mixed and hybrid finite elements for port-Hamiltonian systems\nJuly 23  Invited talk, SUPRENUM PDE 2023, Lausanne, Switzerland"
+    "text": "Linearly-implicit energy-momentum preserving scheme for geometrically nonlinear mechanics\nSeptember 2025  Invited talk, DEC IMSI, University of Chicago, USA \nA domain decomposition strategy for natural imposition of mixed boundary conditions\nApril 2025  GAMM 25, Poznan University of Technology, Poland \nOn the discrete equivalence of Lagrangian, Hamiltonian and mixed finite element formulations for linear wave phenomena\nJune 2024  Invited Talk, LHMNC 24, Besançon, France \nAn invitation to port-Hamiltonian systems\nApril 2024  Internal Seminar, Institut Clément Ader, France \nAn Hamiltonian approach for modular modelling in solid mechanics (but not only)\nFebruary 2024  Internal Seminar, Institut Clément Ader, France \nDual field mixed and hybrid finite elements for port-Hamiltonian systems\nJuly 23  Invited talk, SUPRENUM PDE 2023, Lausanne, Switzerland \n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "contact.html",
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "Contact\nYou can reach me at:\n\nEmail: andrea.brugnoli@isae-supaero.fr\n\nPhone: +33 5 61 33 89 83\nAdress: 10 avenue Marc Pélegrin – BP 54032 – 31055 TOULOUSE Cedex 4 – France\nOffice: 38-136, Department of Mechanics"
+    "text": "andrea.brugnoli@isae-supaero.fr\n  \n  \n    \n    \n    +33 5 61 33 89 83\n  \n  \n    \n    \n    ISAE-SUPAERO, Department of Mechanics of Structures and Materials\n    10 avenue Marc Pélegrin – BP 5403231055 Toulouse Cedex 4 – France\n  \n  \n    \n    \n    38-136, Department of Mechanics"
   },
   {
     "objectID": "software.html",
@@ -440,9 +440,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "<img src=\"/files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
+    "title": "Andrea Brugnoli",
     "section": "",
-    "text": "Associate Professor, ISAE - SUPAERO\nDepartment of Mechanics of Structures and Materials\nResearcher, Institut Clément Ader\nI am a researcher in computational mechanics, working at the interface of\napplied mathematics, physics, and scientific computing."
+    "text": "Computational mechanics · Applied mathematics\n    \n    \n      Associate Professor, ISAE-SUPAERO — Department of Mechanics of Structures and Materials\n      Researcher, Institut Clément Ader, Toulouse\n    \n    I work at the interface of applied mathematics, physics and scientific computing,\n    designing numerical methods that preserve the structure of the underlying physics.\n    \n       Email\n       GitHub\n       LinkedIn\n       Scholar\n       HAL\n       CV"
   },
   {
     "objectID": "index.html#andrea-brugnoli",
@@ -454,30 +454,30 @@
   {
     "objectID": "index.html#research",
     "href": "index.html#research",
-    "title": "<img src=\"/files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
+    "title": "Andrea Brugnoli",
     "section": "Research",
-    "text": "Research\nMy main research interests include:\n\nPort-Hamiltonian systems in continuum mechanics\nStructure-preserving discretization methods\nConnection between control theory and numerical methods\nNumerical methods for high frequency vibration\n\n→ See Research and Publications"
+    "text": "Research\n\n  \n    \n    Port-Hamiltonian systems\n    Energy-based, modular modelling of continuum mechanics and multiphysics.\n  \n  \n    \n    Structure-preserving discretization\n    Finite element exterior calculus, mixed and hybrid methods, energy-conserving integrators.\n  \n  \n    \n    Control meets numerics\n    Systems theory as a lens on numerical fluxes and domain decomposition.\n  \n  \n    \n    High-frequency vibrations\n    Methods beyond classical finite elements for wave propagation in solids.\n  \n\nResearch  Publications  Talks"
   },
   {
     "objectID": "index.html#teaching",
     "href": "index.html#teaching",
-    "title": "<img src=\"/files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
+    "title": "Andrea Brugnoli",
     "section": "Teaching",
-    "text": "Teaching\nI teach the following courses:\n\nclassical mechanics\nsolid mechanics\nfinite element methods\n\n→ See Teaching"
+    "text": "Teaching\n\n  \n    NewInteractive\n    Thin structures: plates\n    Kirchhoff–Love theory, buckling and the Ritz method — slides, exercises with solutions and live simulations (in French).\n    \n  \n  \n    Lecture\n    Structural dynamics\n    Finite elements for Euler–Bernoulli beam bending (in French).\n    \n  \n\nI teach classical mechanics, solid and structural mechanics, and finite element methods at ISAE-SUPAERO. → All courses"
   },
   {
     "objectID": "index.html#software",
     "href": "index.html#software",
-    "title": "<img src=\"/files/images/cartoon_face.jpg\" height=\"50px\" style=\"border-radius:50%;\"> Andrea Brugnoli",
+    "title": "Andrea Brugnoli",
     "section": "Software",
-    "text": "Software\nI typically share the code used in my publications and courses.\n→ See Software"
+    "text": "Software\nI share the code behind my publications and courses, archived on Zenodo and developed on GitHub. → Software"
   },
   {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "You can find my publications on my Google Scholar profile"
+    "text": "Google Scholar profile\n   HAL CV"
   },
   {
     "objectID": "publications.html#publications-from-hal",
@@ -491,35 +491,35 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "Since my PhD I have been working on structure preserving methods for port-Hamiltonian systems. To this aim I have primarily used open-source finite element librairies like FEniCS and Firedrake but I also developed my own code for simple simulations.\n\nFinite element exterior calculus and port-Hamiltonian dynamics\n\nPhysical equations are typically written using vector calculus but they can also be written using the language of differential geometry. This latter formalism distiguishes topological and metrical notions and connects integration, derivation using coordinate free expressions. Seemingly different numerical methods (e.g. finite differences, finite elements, finite volumes) can be understood in a unified way when described using tools from differential geometry. Hamiltonian and port-Hamiltonian systems are tipically formulated in a geometric setting. In my research I have established general methodologies on how to discretize port-Hamiltonian systems using Finite Element Exterior Calculus.\n\n\n\n\n\n\n\n\nPressure at \\(t=2\\,[\\mathrm{s}]\\)\n\n\n\n\n\n\n\nPressure at \\(t=3\\,[\\mathrm{s}]\\)\n\n\n\n\n\n\nFigure 1: Snapshots of the pressure for an Heterogeneous domain using an hybrid finite element formulation.\n\n\n\n\nStructural dynamics and integrators In nonlinear mechanics, energy preserving method are preferred as they produce stable and accurate simulations. However this method are tipically implicit and they require Newton iterations to produc a solution. By reformulating the equations, linearly implicit energy conserving method can be devised. For instance, consider the oscillator in Figure 2. The system corresonds to the famous duffing oscillator.\n\n\n\n\n\n\n\nFigure 2: Geometrically nonlinear oscillations of a sliding mass\n\n\n\nThe intergration is capable of preserving the energy exactly and has a lower error with respect to other integrators Figure 3.\n\n\n\n\n\n\n\n\nEnergy error\n\n\n\n\n\n\n\nError on the position of the mass\n\n\n\n\n\n\nFigure 3\n\n\n\n\nSystems theory and numerical methods System theory provides a structural way of thinking about interconnected system. This can be used to reinterpret numerical method that uses local basis glued together in a strong or weak way. Numerical fluxes in discontinuous methods may benefit from such an interpretation.\n\n\n\n\n\n\n\n\n\nSplitting of the domain\n\n\n\n\n\nInterconnection at the interface\n\n\n\n\n\n\n\nFeedback interconnection\n\n\n\n\n\n\nFigure 4: Numerical fluxes as feedback interconnection.\n\n\n\n\n\n\nClassical finite elements notorously struggle when high frequency waves propagate in solids. Alternative methods can be used to tackle this problem, like Treffz method or statistical energy analysis.\n\n\n\n\n\n\nFigure 5: Waves in a nondispersive solid\n\n\n\n\n\n\n\n\n\nFigure 6: Waves in dispersive solid is more difficult to track as grouph and phase velocities are different"
+    "text": "Since my PhD I have been working on structure preserving methods for port-Hamiltonian systems. To this aim I have primarily used open-source finite element libraries like FEniCS and Firedrake but I also developed my own code for simple simulations.\n\n\nPhysical equations are typically written using vector calculus but they can also be written using the language of differential geometry. This latter formalism distinguishes topological and metrical notions and connects integration, derivation using coordinate free expressions. Seemingly different numerical methods (e.g. finite differences, finite elements, finite volumes) can be understood in a unified way when described using tools from differential geometry. Hamiltonian and port-Hamiltonian systems are typically formulated in a geometric setting. In my research I have established general methodologies on how to discretize port-Hamiltonian systems using Finite Element Exterior Calculus.\n\n\n\n\n\n\n\n\nPressure at \\(t=2\\,[\\mathrm{s}]\\)\n\n\n\n\n\n\n\nPressure at \\(t=3\\,[\\mathrm{s}]\\)\n\n\n\n\n\n\nFigure 1: Snapshots of the pressure for a heterogeneous domain using an hybrid finite element formulation.\n\n\n\n\n\n\nIn nonlinear mechanics, energy preserving methods are preferred as they produce stable and accurate simulations. However these methods are typically implicit and they require Newton iterations to produce a solution. By reformulating the equations, linearly implicit energy conserving methods can be devised. For instance, consider the oscillator in Figure 2. The system corresponds to the famous Duffing oscillator.\n\n\n\n\n\n\nFigure 2: Geometrically nonlinear oscillations of a sliding mass\n\n\n\nThe integration is capable of preserving the energy exactly and has a lower error with respect to other integrators Figure 3.\n\n\n\n\n\n\n\n\nEnergy error\n\n\n\n\n\n\n\nError on the position of the mass\n\n\n\n\n\n\nFigure 3\n\n\n\n\n\n\nSystem theory provides a structural way of thinking about interconnected system. This can be used to reinterpret numerical method that uses local basis glued together in a strong or weak way. Numerical fluxes in discontinuous methods may benefit from such an interpretation.\n\n\n\n\n\n\n\n\nSplitting of the domain\n\n\n\n\n\nInterconnection at the interface\n\n\n\n\n\n\n\nFeedback interconnection\n\n\n\n\n\n\nFigure 4: Numerical fluxes as feedback interconnection."
   },
   {
     "objectID": "research.html#structure-preserving-discretization-of-port-hamiltonian-systems",
     "href": "research.html#structure-preserving-discretization-of-port-hamiltonian-systems",
     "title": "Research",
     "section": "",
-    "text": "Since my PhD I have been working on structure preserving methods for port-Hamiltonian systems. To this aim I have primarily used open-source finite element librairies like FEniCS and Firedrake but I also developed my own code for simple simulations.\n\nFinite element exterior calculus and port-Hamiltonian dynamics\n\nPhysical equations are typically written using vector calculus but they can also be written using the language of differential geometry. This latter formalism distiguishes topological and metrical notions and connects integration, derivation using coordinate free expressions. Seemingly different numerical methods (e.g. finite differences, finite elements, finite volumes) can be understood in a unified way when described using tools from differential geometry. Hamiltonian and port-Hamiltonian systems are tipically formulated in a geometric setting. In my research I have established general methodologies on how to discretize port-Hamiltonian systems using Finite Element Exterior Calculus.\n\n\n\n\n\n\n\n\nPressure at \\(t=2\\,[\\mathrm{s}]\\)\n\n\n\n\n\n\n\nPressure at \\(t=3\\,[\\mathrm{s}]\\)\n\n\n\n\n\n\nFigure 1: Snapshots of the pressure for an Heterogeneous domain using an hybrid finite element formulation.\n\n\n\n\nStructural dynamics and integrators In nonlinear mechanics, energy preserving method are preferred as they produce stable and accurate simulations. However this method are tipically implicit and they require Newton iterations to produc a solution. By reformulating the equations, linearly implicit energy conserving method can be devised. For instance, consider the oscillator in Figure 2. The system corresonds to the famous duffing oscillator.\n\n\n\n\n\n\n\nFigure 2: Geometrically nonlinear oscillations of a sliding mass\n\n\n\nThe intergration is capable of preserving the energy exactly and has a lower error with respect to other integrators Figure 3.\n\n\n\n\n\n\n\n\nEnergy error\n\n\n\n\n\n\n\nError on the position of the mass\n\n\n\n\n\n\nFigure 3\n\n\n\n\nSystems theory and numerical methods System theory provides a structural way of thinking about interconnected system. This can be used to reinterpret numerical method that uses local basis glued together in a strong or weak way. Numerical fluxes in discontinuous methods may benefit from such an interpretation.\n\n\n\n\n\n\n\n\n\nSplitting of the domain\n\n\n\n\n\nInterconnection at the interface\n\n\n\n\n\n\n\nFeedback interconnection\n\n\n\n\n\n\nFigure 4: Numerical fluxes as feedback interconnection."
+    "text": "Since my PhD I have been working on structure preserving methods for port-Hamiltonian systems. To this aim I have primarily used open-source finite element libraries like FEniCS and Firedrake but I also developed my own code for simple simulations.\n\n\nPhysical equations are typically written using vector calculus but they can also be written using the language of differential geometry. This latter formalism distinguishes topological and metrical notions and connects integration, derivation using coordinate free expressions. Seemingly different numerical methods (e.g. finite differences, finite elements, finite volumes) can be understood in a unified way when described using tools from differential geometry. Hamiltonian and port-Hamiltonian systems are typically formulated in a geometric setting. In my research I have established general methodologies on how to discretize port-Hamiltonian systems using Finite Element Exterior Calculus.\n\n\n\n\n\n\n\n\nPressure at \\(t=2\\,[\\mathrm{s}]\\)\n\n\n\n\n\n\n\nPressure at \\(t=3\\,[\\mathrm{s}]\\)\n\n\n\n\n\n\nFigure 1: Snapshots of the pressure for a heterogeneous domain using an hybrid finite element formulation.\n\n\n\n\n\n\nIn nonlinear mechanics, energy preserving methods are preferred as they produce stable and accurate simulations. However these methods are typically implicit and they require Newton iterations to produce a solution. By reformulating the equations, linearly implicit energy conserving methods can be devised. For instance, consider the oscillator in Figure 2. The system corresponds to the famous Duffing oscillator.\n\n\n\n\n\n\nFigure 2: Geometrically nonlinear oscillations of a sliding mass\n\n\n\nThe integration is capable of preserving the energy exactly and has a lower error with respect to other integrators Figure 3.\n\n\n\n\n\n\n\n\nEnergy error\n\n\n\n\n\n\n\nError on the position of the mass\n\n\n\n\n\n\nFigure 3\n\n\n\n\n\n\nSystem theory provides a structural way of thinking about interconnected system. This can be used to reinterpret numerical method that uses local basis glued together in a strong or weak way. Numerical fluxes in discontinuous methods may benefit from such an interpretation.\n\n\n\n\n\n\n\n\nSplitting of the domain\n\n\n\n\n\nInterconnection at the interface\n\n\n\n\n\n\n\nFeedback interconnection\n\n\n\n\n\n\nFigure 4: Numerical fluxes as feedback interconnection."
   },
   {
     "objectID": "research.html#numerical-methods-for-high-frequency-structural-dynamics",
     "href": "research.html#numerical-methods-for-high-frequency-structural-dynamics",
     "title": "Research",
-    "section": "",
-    "text": "Classical finite elements notorously struggle when high frequency waves propagate in solids. Alternative methods can be used to tackle this problem, like Treffz method or statistical energy analysis.\n\n\n\n\n\n\nFigure 5: Waves in a nondispersive solid\n\n\n\n\n\n\n\n\n\nFigure 6: Waves in dispersive solid is more difficult to track as grouph and phase velocities are different"
+    "section": "Numerical methods for high frequency structural dynamics",
+    "text": "Numerical methods for high frequency structural dynamics\nClassical finite elements notoriously struggle when high frequency waves propagate in solids. Alternative methods can be used to tackle this problem, like Trefftz method or statistical energy analysis.\n\n\n\n\n\n\nFigure 5: Waves in a nondispersive solid\n\n\n\n\n\n\n\n\n\nFigure 6: Waves in dispersive solids are more difficult to track as group and phase velocities are different"
   },
   {
     "objectID": "teaching/index.html",
     "href": "teaching/index.html",
     "title": "Teaching",
     "section": "",
-    "text": "Structural dynamics\n\nCourse overview"
+    "text": "2nd yearFRInteractive\n    Thin structures: plates\n    Linear elasticity refresher, Kirchhoff–Love plate theory, circular plates, buckling and the Rayleigh–Ritz method.\n     Slides ·  2 exercise sessions with solutions ·  live simulations\n    \n  \n  \n    FR\n    Structural dynamics\n    Finite elements for beam bending: Euler–Bernoulli model, Hermite elements, convergence and modal analysis.\n    \n  \n  \n    Coming soon\n    Port-Hamiltonian systems\n    Energy-based modelling, interconnection and structure-preserving discretization.\n    \n  \n\n\n\n\n Back to top"
   },
   {
     "objectID": "teaching/structural_dynamics/index.html",
     "href": "teaching/structural_dynamics/index.html",
     "title": "Structural dynamics",
     "section": "",
-    "text": "Lecture 1: Finite elements for beam bending (in french)",
+    "text": "Lecture 1: Finite elements for beam bending (in French)",
     "crumbs": [
       "Structural dynamics"
     ]
@@ -529,9 +529,256 @@
     "href": "teaching/structural_dynamics/index.html#lectures",
     "title": "Structural dynamics",
     "section": "",
-    "text": "Lecture 1: Finite elements for beam bending (in french)",
+    "text": "Lecture 1: Finite elements for beam bending (in French)",
     "crumbs": [
       "Structural dynamics"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/slides.html#references",
+    "href": "teaching/plates/slides.html#references",
+    "title": "Structures minces — plaques",
+    "section": "Bibliographie",
+    "text": "Bibliographie\n\n\nAmabili, Marco. 2018. Nonlinear Mechanics of Shells and Plates in Composite, Soft and Biological Materials. Cambridge: Cambridge University Press.\n\n\nAudoly, Basile, et Yves Pomeau. 2010. Elasticity and Geometry: From Hair Curls to the Non-linear Response of Shells. Oxford: Oxford University Press.\n\n\nCiarletta, Pasquale, Giuseppe Pozzi, et Davide Riccobelli. 2022. « The Föppl–von Kármán equations of elastic plates with initial stress ». Royal Society Open Science 9 (5).\n\n\nConstanda, Christian. 2014. Mathematical Methods for Elastic Plates. Springer Monographs in Mathematics. London: Springer. https://doi.org/10.1007/978-1-4471-6434-0.\n\n\nLu, Yan, Bojie Ren, Bin Wu, Ying Yang, et Bin Li. 2025. « Deep Rayleigh-Ritz method for elastic local buckling analysis of cold-formed steel columns ». Structures 76: 109016. https://doi.org/10.1016/j.istruc.2025.109016.\n\n\nReddy, J. N. 2006. Theory and analysis of elastic plates and shells. CRC press.\n\n\nSzilard, Rudolph. 2004. Theories and Applications of Plate Analysis: Classical, Numerical and Engineering Methods. Hoboken, NJ: John Wiley & Sons. https://doi.org/10.1002/9780470172872.\n\n\nUgural, Ansel C. 2018. Plates and Shells: Theory and Analysis. 4ᵉ éd. Boca Raton, FL: CRC Press.\n\n\nVentsel, Eduard, et Theodor Krauthammer. 2001. Thin Plates and Shells: Theory, Analysis, and Applications. Boca Raton, FL: CRC Press.",
+    "crumbs": [
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/pc1.html",
+    "href": "teaching/plates/pc1.html",
+    "title": "PC 1 · Solutions analytiques",
+    "section": "",
+    "text": "\\(\\renewcommand{\\div}{\\operatorname{div}}\\newcommand{\\bm}[1]{\\boldsymbol{#1}}\\newcommand{\\Hess}{\\operatorname{Hess}}\\newcommand{\\tr}{\\operatorname{tr}}\\newcommand{\\bbR}{\\mathbb{R}}\\newcommand{\\curl}{\\operatorname{curl}}\\)\nChaque question a sa propre solution repliée : essayez d’abord, puis dépliez. Les encadrés Simulation permettent de vérifier les résultats en faisant varier les paramètres.",
+    "crumbs": [
+      "PC 1 · Analytical solutions"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/pc1.html#exercice-1-traction-flexion-dune-plaque-mince-dans-son-plan",
+    "href": "teaching/plates/pc1.html#exercice-1-traction-flexion-dune-plaque-mince-dans-son-plan",
+    "title": "PC 1 · Solutions analytiques",
+    "section": "Exercice 1 — Traction-flexion d’une plaque mince dans son plan",
+    "text": "Exercice 1 — Traction-flexion d’une plaque mince dans son plan\n\n\n\nUne plaque rectangulaire mince, d’épaisseur constante \\(h\\), est soumise au chargement auto-équilibré suivant :\n\nsur le bord \\(x = L\\) : une force linéique \\[\n\\bm{f} = \\begin{pmatrix} f_x \\\\ f_y \\end{pmatrix} = \\begin{pmatrix} Kh(y + b) \\\\ 0 \\end{pmatrix}, \\qquad K = \\mathrm{const.}\n\\]\nsur le bord \\(x = 0\\) : la force linéique opposée \\(-\\bm{f}\\).\n\nAfin de faciliter la comparaison entre les deux approches, on considère le point \\(O\\) de la plaque fixé en translation selon \\(x\\) et \\(y\\), et en rotation selon \\(z\\).\nApproche plaque\n\nEn proposant une expression des efforts internes de plaque (satisfaisant les équations d’équilibre de membrane), rappelez les hypothèses de membrane et vérifiez que cette plaque les satisfait.\nExprimez les contraintes en tout point \\(P(x, y)\\), puis les déformations associées.\nIdentifiez les champs de déplacement et de rotation \\(u(x, y)\\), \\(v(x, y)\\), \\(\\theta_z(x, y)\\).\n\nApproche poutre\n\nProposez un modèle poutre de ce problème avec ses conditions aux limites cinématiques et statiques.\nExprimez les efforts internes de poutre \\(N(x)\\), \\(T_y(x)\\), \\(M_z(x)\\) et la contrainte \\(\\sigma_{xx}\\).\nIdentifiez la déformée de la poutre (\\(u(x)\\), \\(v(x)\\), \\(\\theta_z(x)\\)). Comparez avec l’approche plaque et expliquez l’origine des termes supplémentaires.\n\n\n\n\n\n\n\nFormulaire\n\n\n\n\n\nÉquilibre statique en deux dimensions : \\[\n\\div \\bm{N}= \\bm 0, \\qquad\n\\frac{\\partial N_{xx}}{\\partial x} + \\frac{\\partial N_{xy}}{\\partial y} = 0, \\qquad\n\\frac{\\partial N_{xy}}{\\partial x} + \\frac{\\partial N_{yy}}{\\partial y} = 0,\n\\qquad \\bm{N} = \\int_{-h/2}^{h/2} \\bm{\\sigma}\\, dz.\n\\] Tenseur de déformation : \\[\n\\bm{\\varepsilon} = \\tfrac{1}{2}\\left(\\nabla \\bm{u} + (\\nabla \\bm{u})^\\top \\right), \\qquad\n\\varepsilon_{xx} = \\frac{\\partial u}{\\partial x}, \\quad\n\\varepsilon_{yy} = \\frac{\\partial v}{\\partial y}, \\quad\n\\varepsilon_{xy} = \\frac{1}{2}\\left(\\frac{\\partial u}{\\partial y} + \\frac{\\partial v}{\\partial x}\\right).\n\\] Loi de Hooke en contrainte plane : \\[\n\\begin{pmatrix} \\sigma_{xx} \\\\ \\sigma_{yy} \\\\ \\sigma_{xy} \\end{pmatrix}\n= \\frac{E}{1-\\nu^2}\n\\begin{bmatrix} 1 & \\nu & 0 \\\\ \\nu & 1 & 0 \\\\ 0 & 0 & \\frac{1-\\nu}{2} \\end{bmatrix}\n\\begin{pmatrix} \\varepsilon_{xx} \\\\ \\varepsilon_{yy} \\\\ 2\\varepsilon_{xy} \\end{pmatrix}.\n\\] En 2D seule la composante \\(\\theta_z\\) du vecteur rotation est utilisée : \\[\n\\bm{\\theta} = \\tfrac{1}{2} \\curl \\bm{u}, \\qquad\n\\theta_z = \\frac{1}{2}\\left(\\frac{\\partial v}{\\partial x} - \\frac{\\partial u}{\\partial y}\\right).\n\\]\n\n\n\n\n\n\n\n\n\nSolution Q1 — Efforts internes de plaque\n\n\n\n\n\nLes efforts de membrane à déterminer sont \\(N_{xx}, N_{yy}, N_{xy}\\). Au vu des conditions aux limites statiques et cinématiques, on propose \\(N_{yy} = N_{xy} = 0\\) et \\[\nN_{xx}(x, y) = Kh(y + b).\n\\] Ces expressions satisfont les équations d’équilibre de plaque. La plaque est soumise à des efforts selon \\(x\\) et \\(y\\) qui ne varient pas selon \\(z\\) : elle se déforme uniquement dans son plan (membrane), pas en flexion.\n\n\n\n\n\n\n\n\n\nSolution Q2 — Contraintes et déformations\n\n\n\n\n\nLa seule contrainte non nulle est la contrainte normale \\[\n\\sigma_{xx} = \\frac{N_{xx}}{h} = K(y + b).\n\\] Les déformations découlent de la loi de Hooke : \\[\n\\varepsilon_{xx} = \\frac{\\partial u}{\\partial x} = \\frac{K}{E}(y + b), \\qquad\n\\varepsilon_{yy} = \\frac{\\partial v}{\\partial y} = -\\nu \\frac{K}{E}(y + b), \\qquad\n2\\varepsilon_{xy} = \\frac{\\partial u}{\\partial y} + \\frac{\\partial v}{\\partial x} = 0.\n\\]\n\n\n\n\n\n\n\n\n\nSolution Q3 — Champs de déplacement\n\n\n\n\n\nEn intégrant les déformations normales : \\[\nu(x, y) = \\frac{K}{E}(y + b)x + f(y), \\qquad\nv(x, y) = -\\nu \\frac{K}{E}\\left(\\frac{y^2}{2} + by\\right) + g(x).\n\\] La condition \\(\\varepsilon_{xy}=0\\) donne \\(\\frac{Kx}{E} + f'(y) + g'(x) = 0\\), soit \\(\\frac{Kx}{E} + g'(x) = -f'(y) = A\\) (constante). Après intégration : \\[\n\\begin{aligned}\nu(x, y) &= \\frac{K}{E}(y + b)x - Ay + C_1, \\\\\nv(x, y) &= -\\nu \\frac{K}{E}\\left(\\frac{y^2}{2} + by\\right) + Ax - \\frac{K}{E} \\frac{x^2}{2} + C_2,\n\\end{aligned}\n\\] \\[\n\\theta_z(x, y) = \\frac{1}{2} \\left( \\frac{\\partial v}{\\partial x} - \\frac{\\partial u}{\\partial y} \\right) = A - \\frac{K}{E}x.\n\\] Avec \\(u(0, 0) = v(0, 0) = \\theta_z(0, 0) = 0\\) on obtient \\(A = C_1 = C_2 = 0\\) : \\[\n\\begin{aligned}\nu(x, y) &= \\frac{K}{E}xy + \\frac{Kb}{E}x, \\\\\nv(x, y) &= -\\frac{K}{E}\\frac{x^2}{2} - \\nu\\frac{K}{E}\\frac{y^2}{2} - \\nu\\frac{Kb}{E}y, \\\\\n\\theta_z(x, y) &= -\\frac{K}{E}x.\n\\end{aligned}\n\\]\n\n\n\n\n\n\n\n\n\nSolution Q4 — Modèle poutre\n\n\n\n\n\nSi \\(L \\gg 2b\\), la plaque peut être modélisée comme une poutre de longueur \\(L\\), de section \\(S = 2bh\\) et de moment quadratique \\(I_z = \\frac{h(2b)^3}{12} = \\frac{2}{3}b^3h\\). Le bord \\(x = 0\\) est encastré ; le bord \\(x = L\\) est soumis au torseur résultant de \\(f_x\\) :\n\n\\(F = \\int_{-b}^{b} f_x\\, dy = KbS\\) : effort de traction selon \\(x\\) ;\n\\(M = \\int_{-b}^{b} -y f_x\\, dy = -K I_z\\) : moment de flexion porté par \\(z\\).\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution Q5 — Efforts internes et contrainte\n\n\n\n\n\nSeuls l’effort normal et le moment de flexion sont non nuls : \\(N(x) = F\\), \\(T_y(x) = 0\\), \\(M_z(x) = M\\). La contrainte normale cumule les deux contributions : \\[\n\\sigma_{xx}(x, y) = \\frac{N}{S} - \\frac{M_z}{I_{z}}\\,y = K(b + y).\n\\] On retrouve exactement la contrainte de l’approche plaque.\n\n\n\n\n\n\n\n\n\nSolution Q6 — Déformée et comparaison\n\n\n\n\n\n\nEffort normal (allongement) : \\(u(x, 0) = \\int_0^x \\varepsilon_{xx}\\, dx = \\dfrac{F}{ES}x\\).\nMoment de flexion : \\(v'' = \\dfrac{M}{EI_z}\\), d’où \\(\\theta_z = v' = \\dfrac{M}{EI_z}x\\) et \\(v = \\dfrac{M}{EI_z}\\dfrac{x^2}{2}\\).\n\nLa rotation de la section droite contribue au déplacement axial : \\(u(x, y) = u(x,0) - \\theta_z\\, y\\).\n\n\n\n\n\n\n\n\n\nPlaque\nPoutre\n\n\n\n\n\\(u(x, y)\\)\n\\(\\dfrac{Kb}{E}x + \\dfrac{K}{E}xy\\)\n\\(\\dfrac{F}{ES}x - \\dfrac{M}{EI_{z}}xy\\)\n\n\n\\(v(x, y)\\)\n\\(-\\dfrac{K}{E}\\dfrac{x^2}{2} - \\nu\\dfrac{K}{E}\\dfrac{y^2}{2} - \\nu\\dfrac{Kb}{E}y\\)\n\\(\\dfrac{M}{EI_{z}}\\dfrac{x^2}{2}\\)\n\n\n\\(\\theta_z(x, y)\\)\n\\(-\\dfrac{K}{E}x\\)\n\\(\\dfrac{M}{EI_{z}}x\\)\n\n\n\nAvec \\(F = KbS\\) et \\(M = -KI_z\\), on retrouve terme à terme les contributions de l’effort normal et du moment. Les termes supplémentaires de \\(v(x, y)\\) dans l’approche plaque traduisent l’effet Poisson, négligé par le modèle poutre.",
+    "crumbs": [
+      "PC 1 · Analytical solutions"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/pc1.html#exercice-2-disque-soumis-à-un-chargement-constant",
+    "href": "teaching/plates/pc1.html#exercice-2-disque-soumis-à-un-chargement-constant",
+    "title": "PC 1 · Solutions analytiques",
+    "section": "Exercice 2 — Disque soumis à un chargement constant",
+    "text": "Exercice 2 — Disque soumis à un chargement constant\nOn considère une plaque circulaire encastrée sur son bord extérieur, soumise à une pression uniforme \\(p\\). Les conditions au bord et le chargement ne dépendent pas de \\(\\theta\\) : le problème est axisymétrique.\n\n\n\n\nEn utilisant l’équilibre statique d’un disque de rayon \\(r\\), retrouvez l’effort tranchant \\(Q_r(r)\\).\nExplicitez les conditions au bord du problème.\nObtenez le déplacement vertical.\nDéduisez-en les réactions à l’encastrement.\nComment changent les conditions aux limites pour un appui simple ?\n\n\n\n\n\n\n\nFormulaire\n\n\n\n\n\nEffort tranchant et chargement externe : \\[\\frac{1}{r}\\frac{d}{dr}(rQ_r) + f_z = 0\\] Effort tranchant et déplacement : \\[\nQ_r = -D \\frac{d}{dr}\\left[\\frac{1}{r}\\frac{d}{dr}\\left(r\\frac{dw}{dr}\\right)\\right] = -D\\,\\frac{d}{dr}\\left(\\Delta w\\right),\n\\qquad \\Delta(\\cdot)=\\frac{1}{r}\\frac{d}{dr}\\left(r\\frac{d(\\cdot)}{dr}\\right).\n\\] Effort tranchant et moments : \\(\\;Q_r = \\dfrac{1}{r} \\left[\\dfrac{d}{dr}(rM_{rr}) - M_{\\theta\\theta}\\right]\\)\nMoments en fonction du déplacement : \\[\nM_{rr} = - D\\left(\\frac{d^2w}{dr^2} + \\frac{\\nu}{r}\\frac{dw}{dr}\\right), \\qquad\nM_{\\theta\\theta} = - D\\left(\\frac{1}{r}\\frac{dw}{dr} + \\nu\\frac{d^2w}{dr^2}\\right).\n\\]\n\n\n\n\n\n\n\n\n\nSolution Q1 — Effort tranchant\n\n\n\n\n\nOn coupe le disque à une distance \\(r\\) du centre :\n\n\n\nL’équilibre vertical de la partie centrale donne \\[\n2\\pi r\\, Q_r = p\\,\\pi r^2 \\quad\\Longrightarrow\\quad Q_r = \\frac{pr}{2}.\n\\]\n\n\n\nLa réaction verticale à l’encastrement correspond à \\(r=a\\) : \\(V_a = \\dfrac{pa}{2}\\). Il restera à calculer la seconde réaction \\(M_a\\) (moment fléchissant au bord).\n\n\n\n\n\n\n\n\n\n\n\n\nSolution Q2 — Conditions au bord\n\n\n\n\n\nL’encastrement bloque le déplacement et la rotation ; avec l’hypothèse de Kirchhoff : \\[\nw(a)=0, \\qquad \\frac{dw}{dr}(a)=0.\n\\]\n\n\n\n\n\n\n\n\n\nSolution Q3 — Déplacement vertical\n\n\n\n\n\nÀ partir de \\(Q_r = -D\\,\\frac{d}{dr}(\\Delta w) = \\frac{pr}{2}\\), on intègre successivement : \\[\n\\begin{aligned}\n2D\\,\\frac{1}{r}\\frac{d}{dr}\\left(r\\frac{dw}{dr}\\right) &= -p\\,\\frac{r^2}{2}+A,\\\\\n2D\\,r\\frac{dw}{dr} &= -\\frac{p}{8}\\,r^4+\\frac{A}{2}\\,r^2+B,\\\\\n2Dw &= -\\frac{p}{32}\\,r^4+\\frac{A}{4}\\,r^2 + B\\ln r+C .\n\\end{aligned}\n\\] Pour éviter \\(w\\to\\infty\\) en \\(r=0\\) (ou par symétrie, \\(w'(0)=0\\)), on impose \\(B=0\\). Les conditions au bord donnent ensuite \\[\n\\frac{dw}{dr}(a)=0 \\;\\Rightarrow\\; A = \\frac{pa^2}{4}, \\qquad\nw(a)=0 \\;\\Rightarrow\\; C = -\\frac{pa^4}{32}.\n\\] D’où \\[\nw(r) = \\frac{p}{2D}\\left(-\\frac{r^4}{32} + \\frac{a^2r^2}{16} - \\frac{a^4}{32}\\right) = -\\frac{p}{64D}\\left(r^2-a^2\\right)^2 .\n\\]\n\n\n\n\n\n\n\n\n\nSolution Q4 — Réactions à l’encastrement\n\n\n\n\n\nAvec les lois moment–déplacement : \\[\nM_{rr}(r)=-\\frac{p}{16}\\left[a^2(1+\\nu) - r^2(3+\\nu)\\right], \\qquad\nM_{\\theta\\theta}(r)=-\\frac{p}{16}\\left[a^2(1+\\nu) - r^2(1+3\\nu)\\right].\n\\] À l’encastrement : \\[\nM_{rr}(a)=\\frac{pa^2}{8}, \\qquad M_{\\theta\\theta}(a)=\\nu\\,\\frac{pa^2}{8}, \\qquad V_a = \\frac{pa}{2}.\n\\]\n\n\n\n\n\n\n\n\n\nSolution Q5 — Appui simple\n\n\n\n\n\nLa rotation est libre et le moment fléchissant est nul : \\[\nw(a)=0, \\qquad M_{rr}(a)=0.\n\\]",
+    "crumbs": [
+      "PC 1 · Analytical solutions"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/pc1.html#sec-navier",
+    "href": "teaching/plates/pc1.html#sec-navier",
+    "title": "PC 1 · Solutions analytiques",
+    "section": "Exercice 3 — Solution de Navier d’une plaque simplement appuyée",
+    "text": "Exercice 3 — Solution de Navier d’une plaque simplement appuyée\nOn considère une plaque mince rectangulaire de Kirchhoff–Love sur \\(\\Omega = [0, a] \\times [0, b]\\), de rigidité \\(D = \\frac{Eh^3}{12(1-\\nu^2)}\\). Sous une charge transversale \\(q(x, y)\\) (dans le sens \\(+z\\)), la flèche vérifie \\[\nD \\Delta^2 w = q, \\qquad \\Delta^2 = \\frac{\\partial^4}{\\partial x^4} + 2\\frac{\\partial^4}{\\partial x^2 \\partial y^2} + \\frac{\\partial^4}{\\partial y^4}.\n\\] La plaque est simplement appuyée sur ses quatre côtés.\n\n\n\n\nÉcrivez explicitement les conditions aux limites pour \\(w(x, y)\\) le long des bords \\(x=0\\), \\(x=a\\), \\(y=0\\) et \\(y=b\\).\nCalculez la solution analytique \\(w(x, y)\\) sous une charge uniforme \\(q = -p_0\\).\n(Bonus) La charge uniforme est remplacée par une force ponctuelle \\(F_0\\) en \\((x^*, y^*) \\in \\Omega\\). Déterminez \\(w(x, y)\\).\n\n\n\n\n\n\n\nSuggestion : méthode de Navier\n\n\n\n\n\nDéveloppez la charge et le déplacement en double série de Fourier, sur les fonctions propres du bi-laplacien avec conditions d’appui simple (\\(\\Delta^2 \\phi = \\lambda \\phi\\)) : \\[\nw(x, y) = \\sum_{m=1}^{\\infty} \\sum_{n=1}^{\\infty} W_{mn} \\sin\\left(\\frac{m\\pi x}{a}\\right) \\sin\\left(\\frac{n\\pi y}{b}\\right).\n\\] Exploitez l’orthogonalité de la base pour isoler les coefficients \\(W_{mn}\\), et faites de même pour \\(q(x, y)\\).\n\n\n\n\n\n\n\n\n\nRappel : orthogonalité de la base de Fourier\n\n\n\n\n\n\\[\n\\int_0^a \\sin\\left(\\frac{m\\pi x}{a}\\right) \\sin\\left(\\frac{k\\pi x}{a}\\right) dx = \\frac{a}{2} \\delta_{mk},\n\\qquad \\delta_{mk} = \\begin{cases} 1 & m=k \\\\ 0 & \\text{sinon} \\end{cases}\n\\] Démonstration. Avec \\(\\sin\\alpha\\sin\\beta = \\frac{1}{2}\\left[\\cos(\\alpha-\\beta) - \\cos(\\alpha+\\beta)\\right]\\) : \\[\n\\int_0^a \\sin\\left(\\frac{m\\pi x}{a}\\right) \\sin\\left(\\frac{k\\pi x}{a}\\right) dx = \\frac{1}{2} \\int_0^a \\left[ \\cos\\left(\\frac{(m-k)\\pi x}{a}\\right) - \\cos\\left(\\frac{(m+k)\\pi x}{a}\\right) \\right] dx .\n\\]\n\nSi \\(m \\neq k\\) : \\((m\\pm k)\\) sont des entiers non nuls ; les primitives \\(\\frac{a}{(m\\pm k)\\pi}\\sin\\frac{(m\\pm k)\\pi x}{a}\\) s’annulent en \\(0\\) et en \\(a\\), donc l’intégrale est nulle.\nSi \\(m = k\\) : \\(\\frac{1}{2}\\int_0^a \\left[1-\\cos\\frac{2m\\pi x}{a}\\right]dx = \\frac{1}{2}\\left[x - \\frac{a}{2m\\pi}\\sin\\frac{2m\\pi x}{a}\\right]_0^a = \\frac{a}{2}\\).\n\nLe même résultat s’applique mutatis mutandis sur \\([0, b]\\).\n\n\n\n\n\n\n\n\n\nSolution Q1 — Conditions aux limites\n\n\n\n\n\nAppui simple : flèche nulle et moment de flexion normal nul, avec \\(M_{xx} = -D \\left( \\partial_{xx} w + \\nu \\partial_{yy} w \\right)\\), \\(M_{yy} = -D \\left( \\partial_{yy} w + \\nu \\partial_{xx} w \\right)\\) : \\[\n\\begin{aligned}\nx=0,\\ x=a :&\\quad w = 0, \\quad M_{xx} = 0 \\;\\Rightarrow\\; \\partial_{xx} w = 0, \\\\\ny=0,\\ y=b :&\\quad w = 0, \\quad M_{yy} = 0 \\;\\Rightarrow\\; \\partial_{yy} w = 0 .\n\\end{aligned}\n\\] Comme \\(w=0\\) le long de \\(x\\in\\{0,a\\}\\), \\(\\partial_{yy}w\\) y est nulle aussi, et \\(M_{xx}=0\\) se réduit à \\(\\partial_{xx} w = 0\\) (idem en \\(y\\)). Les conditions sont découplées : on cherche \\(f(x)\\) nulle ainsi que \\(f''\\) en \\(x\\in\\{0,a\\}\\), et \\(g(y)\\) de même en \\(y\\in\\{0,b\\}\\). Les sinus conviennent : \\[\nf(x) = \\sin\\left(\\frac{m\\pi x}{a}\\right), \\qquad g(y) = \\sin\\left(\\frac{n\\pi y}{b}\\right).\n\\]\n\n\n\n\n\n\n\n\n\nSolution Q2 — Charge uniforme\n\n\n\n\n\nAvec \\(\\phi_{mn} = \\sin(\\alpha_m x) \\sin(\\beta_n y)\\), \\(\\alpha_m = \\frac{m\\pi}{a}\\), \\(\\beta_n = \\frac{n\\pi}{b}\\) : \\[\n\\Delta^2 \\phi_{mn} = \\left( \\alpha_m^2 + \\beta_n^2 \\right)^2 \\phi_{mn} = \\pi^4 \\left[ \\left(\\tfrac{m}{a}\\right)^2 + \\left(\\tfrac{n}{b}\\right)^2 \\right]^2 \\phi_{mn} .\n\\] En développant \\(w = \\sum W_{mn}\\phi_{mn}\\) et \\(q = \\sum Q_{mn}\\phi_{mn}\\) dans \\(D \\Delta^2 w = q\\), puis en projetant sur le mode \\((k,l)\\) (orthogonalité, facteur \\(\\frac{ab}{4}\\)), on obtient \\[\nW_{mn} = \\frac{Q_{mn}}{D \\pi^4 \\left[ \\left(\\frac{m}{a}\\right)^2 + \\left(\\frac{n}{b}\\right)^2 \\right]^2},\n\\qquad\nQ_{mn} = \\frac{4}{ab} \\int_0^a \\!\\!\\int_0^b q(x, y)\\, \\phi_{mn}\\, dx\\,dy .\n\\] Pour \\(q = -p_0\\), l’intégrale se factorise, avec \\(\\int_0^a \\sin\\frac{m\\pi x}{a}\\,dx = \\frac{a}{m\\pi}\\left(1 - (-1)^m\\right)\\) : \\[\nQ_{mn} = \\begin{cases} -\\dfrac{16 p_0}{\\pi^2 m n} & m, n \\text{ impairs} \\\\ 0 & \\text{sinon} \\end{cases}\n\\] d’où la solution \\[\nw(x, y) = -\\frac{16 p_0}{\\pi^6 D} \\sum_{m=1,3,\\dots} \\;\\sum_{n=1,3,\\dots} \\frac{\\sin\\left(\\frac{m\\pi x}{a}\\right) \\sin\\left(\\frac{n\\pi y}{b}\\right)}{mn \\left[ \\left(\\frac{m}{a}\\right)^2 + \\left(\\frac{n}{b}\\right)^2 \\right]^2}.\n\\] Pour une plaque carrée, \\(w_{\\max} \\approx 0{,}00406\\, p_0a^4/D\\). Explorez la convergence de la série :\n\n\n\n\n\n\n\n\n\n\n\n\nSolution Q3 — Force ponctuelle (bonus)\n\n\n\n\n\nOn modélise la charge par une distribution de Dirac, \\(q(x, y) = -F_0\\, \\delta(x - x^*)\\, \\delta(y - y^*)\\), avec \\(\\int_0^a f(x)\\delta(x-x^*)\\,dx = f(x^*)\\). La même projection donne \\[\nQ_{mn} = -\\frac{4F_0}{ab} \\sin\\left(\\frac{m\\pi x^*}{a}\\right) \\sin\\left(\\frac{n\\pi y^*}{b}\\right),\n\\] \\[\nw(x, y) = -\\frac{4F_0}{ab\\, D \\pi^4} \\sum_{m=1}^{\\infty} \\sum_{n=1}^{\\infty} \\frac{\\sin\\left(\\frac{m\\pi x^*}{a}\\right) \\sin\\left(\\frac{n\\pi y^*}{b}\\right)}{\\left[ \\left(\\frac{m}{a}\\right)^2 + \\left(\\frac{n}{b}\\right)^2 \\right]^2} \\sin\\left(\\frac{m\\pi x}{a}\\right) \\sin\\left(\\frac{n\\pi y}{b}\\right).\n\\] Cliquez sur la plaque pour déplacer la force :",
+    "crumbs": [
+      "PC 1 · Analytical solutions"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/pc1.html#exercice-4-travail-à-la-maison-cisaillement-pur",
+    "href": "teaching/plates/pc1.html#exercice-4-travail-à-la-maison-cisaillement-pur",
+    "title": "PC 1 · Solutions analytiques",
+    "section": "Exercice 4 — Travail à la maison : cisaillement pur",
+    "text": "Exercice 4 — Travail à la maison : cisaillement pur\nOn considère une plaque rectangulaire homogène, isotrope, élastique linéaire (module d’Young \\(E\\), module de cisaillement \\(G\\), coefficient de Poisson \\(\\nu\\)), de dimensions \\(a\\) selon \\(x\\) et \\(b\\) selon \\(y\\). Elle est soumise à des forces linéiques tangentielles uniformes imposant un état de cisaillement pur : \\[\n\\bm{f} = -h\\tau_0\\, \\bm{e}_y \\text{ sur } x=0, \\qquad\n\\bm{f} = +h\\tau_0\\, \\bm{e}_y \\text{ sur } x=a, \\qquad\n\\bm{f} = -h\\tau_0\\, \\bm{e}_x \\text{ sur } y=0, \\qquad\n\\bm{f} = +h\\tau_0\\, \\bm{e}_x \\text{ sur } y=b.\n\\]\n\n\n\n\nMontrez que le champ de contraintes est un cisaillement pur uniforme.\nDéterminez les déformations.\nTrouvez un champ de déplacements. Quelles hypothèses faut-il introduire pour fixer le mouvement rigide ?\nDonnez les contraintes principales.\n\n\n\n\n\n\n\nSolution Q1 — Champ de contraintes\n\n\n\n\n\nOn cherche un champ statiquement admissible et uniforme : \\(N_{xx} = 0\\), \\(N_{yy} = 0\\), \\(N_{xy} = h\\tau_0\\). Il vérifie trivialement \\(\\partial_x N_{xx} + \\partial_y N_{xy} = 0\\) et \\(\\partial_x N_{xy} + \\partial_y N_{yy} = 0\\). La seule composante active est \\(\\sigma_{xy} = \\tau_0\\).\n\n\n\n\n\n\n\n\n\nSolution Q2 — Déformations\n\n\n\n\n\nPour un matériau isotrope, \\(\\sigma_{xy} = G \\gamma_{xy}\\), donc \\[\n\\gamma_{xy} = \\frac{\\tau_0}{G}, \\qquad \\varepsilon_{xx} = \\varepsilon_{yy} = 0.\n\\]\n\n\n\n\n\n\n\n\n\nSolution Q3 — Déplacements\n\n\n\n\n\n\\(\\varepsilon_{xx} = \\partial_x u = 0 \\Rightarrow u = f(y)\\) et \\(\\varepsilon_{yy} = \\partial_y v = 0 \\Rightarrow v = g(x)\\). Le cisaillement impose \\(f'(y) + g'(x) = \\tau_0/G\\) : chaque terme est constant, \\(f'(y) = A\\), \\(g'(x) = \\tau_0/G - A\\), d’où \\[\nu(x,y) = Ay + C_1, \\qquad v(x,y) = \\left(\\frac{\\tau_0}{G} - A\\right)x + C_2 .\n\\] Pour fixer le mouvement rigide, on bloque le point \\((0, 0)\\) en translation (\\(C_1 = C_2 = 0\\)) et en rotation : \\(\\theta_z = \\frac{1}{2}\\left(\\partial_x v - \\partial_y u\\right) = \\frac{1}{2}\\left(\\frac{\\tau_0}{G}-2A\\right) = 0 \\Rightarrow A=\\frac{\\tau_0}{2G}\\). Ainsi \\[\nu(x,y) = \\frac{\\tau_0}{2G}\\,y, \\qquad v(x,y) = \\frac{\\tau_0}{2G}\\,x .\n\\]\n\n\n\n\n\n\n\n\n\n\n\n\nSolution Q4 — Contraintes principales\n\n\n\n\n\n\\[\n\\bm{\\sigma} = \\begin{pmatrix} 0 & \\tau_0 \\\\ \\tau_0 & 0 \\end{pmatrix}\n\\quad\\Longrightarrow\\quad \\sigma_1 = \\tau_0, \\qquad \\sigma_2 = -\\tau_0,\n\\] avec des directions principales inclinées à \\(45^\\circ\\).",
+    "crumbs": [
+      "PC 1 · Analytical solutions"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/index.html",
+    "href": "teaching/plates/index.html",
+    "title": "Structures minces — plaques",
+    "section": "",
+    "text": "ISAE-SUPAERO · 2e année · cours en français\n  \n  Théorie de Kirchhoff–Love, plaques circulaires, flambement et méthode de Ritz.\n  \n     2 h de cours\n     2 séances de PC\n     6 simulations interactives\n     Andrea Brugnoli\n  \n  \n     Ouvrir les transparents\n     PC 1\n     PC 2\n     Laboratoire",
+    "crumbs": [
+      "Course home"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/index.html#contenu",
+    "href": "teaching/plates/index.html#contenu",
+    "title": "Structures minces — plaques",
+    "section": "Contenu",
+    "text": "Contenu\n\n  \n    Cours73 transparents\n      Transparents\n    Diaporama interactif (Reveal.js) : élasticité, cinématique de Kirchhoff, efforts généralisés, conditions aux limites, von Kármán, flambement, Rayleigh–Ritz. Trois simulations intégrées.\n    Touches : F plein écran · O vue d'ensemble · E mode impression PDF · B tableau noir.\n    \n  \n  \n    Laboratoire\n      Simulations\n    Série de Navier, coefficient de flambement, Ritz à un terme pour toute combinaison C/S/F, convergence de Rayleigh–Ritz, disque encastré, plaque vs poutre.\n    \n  \n  \n    PC 1Corrigé\n      Solutions analytiques\n    Traction-flexion dans le plan (plaque vs poutre), disque encastré sous pression, solution de Navier, cisaillement pur.\n    \n  \n  \n    PC 2Corrigé\n      Méthodes énergétiques\n    Ritz pour un disque sous force ponctuelle, flambement par Rayleigh–Ritz, plaque appuyée revisitée.",
+    "crumbs": [
+      "Course home"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/index.html#aperçu-le-flambement-en-direct",
+    "href": "teaching/plates/index.html#aperçu-le-flambement-en-direct",
+    "title": "Structures minces — plaques",
+    "section": "Aperçu : le flambement en direct",
+    "text": "Aperçu : le flambement en direct\nFaites varier le rapport des côtés \\(\\alpha = a/b\\) d’une plaque appuyée comprimée : le mode critique change de nombre de demi-ondes en \\(\\alpha=\\sqrt{m(m+1)}\\).",
+    "crumbs": [
+      "Course home"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/index.html#références",
+    "href": "teaching/plates/index.html#références",
+    "title": "Structures minces — plaques",
+    "section": "Références",
+    "text": "Références\n\nJ. N. Reddy (2006), Theory and Analysis of Elastic Plates and Shells, CRC Press.\nE. Ventsel & T. Krauthammer (2001), Thin Plates and Shells: Theory, Analysis, and Applications, CRC Press.\nR. Szilard (2004), Theories and Applications of Plate Analysis, Wiley.\nA. C. Ugural (2018), Plates and Shells: Theory and Analysis, 4e éd., CRC Press.\nB. Audoly & Y. Pomeau (2010), Elasticity and Geometry, Oxford University Press.",
+    "crumbs": [
+      "Course home"
+    ]
+  },
+  {
+    "objectID": "contact.html#elsewhere-online",
+    "href": "contact.html#elsewhere-online",
+    "title": "Contact",
+    "section": "Elsewhere online",
+    "text": "Elsewhere online\n\n   GitHub\n   LinkedIn\n   Google Scholar\n   HAL"
+  },
+  {
+    "objectID": "teaching/port_hamiltonian_systems/index.html",
+    "href": "teaching/port_hamiltonian_systems/index.html",
+    "title": "Port-Hamiltonian systems",
+    "section": "",
+    "text": "Material for this course will be published here soon.",
+    "crumbs": [
+      "Port-Hamiltonian systems"
+    ]
+  },
+  {
+    "objectID": "teaching/port_hamiltonian_systems/index.html#lectures",
+    "href": "teaching/port_hamiltonian_systems/index.html#lectures",
+    "title": "Port-Hamiltonian systems",
+    "section": "",
+    "text": "Material for this course will be published here soon.",
+    "crumbs": [
+      "Port-Hamiltonian systems"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/lab.html",
+    "href": "teaching/plates/lab.html",
+    "title": "Laboratoire interactif",
+    "section": "",
+    "text": "\\(\\renewcommand{\\div}{\\operatorname{div}}\\newcommand{\\bm}[1]{\\boldsymbol{#1}}\\newcommand{\\Hess}{\\operatorname{Hess}}\\newcommand{\\tr}{\\operatorname{tr}}\\newcommand{\\bbR}{\\mathbb{R}}\\newcommand{\\curl}{\\operatorname{curl}}\\newcommand{\\dd}{\\mathrm{d}}\\)\nTous les calculs sont faits en direct dans la page (aucun serveur) : séries de Navier, systèmes de Ritz, problèmes aux valeurs propres généralisés. Les mêmes simulations apparaissent dans les transparents et dans les corrigés des PC 1 et PC 2.",
+    "crumbs": [
+      "Interactive lab"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/lab.html#solution-de-navier",
+    "href": "teaching/plates/lab.html#solution-de-navier",
+    "title": "Laboratoire interactif",
+    "section": "1 · Solution de Navier",
+    "text": "1 · Solution de Navier\nPlaque rectangulaire simplement appuyée, \\(D\\Delta^2 w = q\\), avec \\(w=\\sum W_{mn}\\sin\\frac{m\\pi x}{a}\\sin\\frac{n\\pi y}{b}\\). Changez le nombre de termes, le rapport des côtés, ou passez à une charge ponctuelle et cliquez sur la plaque pour la déplacer.",
+    "crumbs": [
+      "Interactive lab"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/lab.html#coefficient-de-flambement",
+    "href": "teaching/plates/lab.html#coefficient-de-flambement",
+    "title": "Laboratoire interactif",
+    "section": "2 · Coefficient de flambement",
+    "text": "2 · Coefficient de flambement\n\\(N_{mn}=k\\,\\pi^2D/b^2\\) avec \\(k=\\left(\\frac{m}{\\alpha}+\\frac{n^2\\alpha}{m}\\right)^2\\). Faites varier \\(\\alpha=a/b\\) et observez les changements de mode en \\(\\alpha=\\sqrt{m(m+1)}\\).",
+    "crumbs": [
+      "Interactive lab"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/lab.html#ritz-à-un-terme",
+    "href": "teaching/plates/lab.html#ritz-à-un-terme",
+    "title": "Laboratoire interactif",
+    "section": "3 · Ritz à un terme",
+    "text": "3 · Ritz à un terme\nChoisissez les conditions aux limites des quatre bords : l’enveloppe \\(g_{B_0B_1}(\\xi)=\\xi^{r(B_0)}(1-\\xi)^{r(B_1)}\\) est construite automatiquement, les intégrales 1D sont calculées exactement (fractions) et la flèche et la charge de flambement de Rayleigh en découlent.",
+    "crumbs": [
+      "Interactive lab"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/lab.html#convergence-de-rayleighritz",
+    "href": "teaching/plates/lab.html#convergence-de-rayleighritz",
+    "title": "Laboratoire interactif",
+    "section": "4 · Convergence de Rayleigh–Ritz",
+    "text": "4 · Convergence de Rayleigh–Ritz\nProblème aux valeurs propres généralisé \\(\\mathbf K\\mathbf c=-\\lambda\\mathbf K_G\\mathbf c\\) résolu en direct. La valeur approchée est toujours une borne supérieure de la charge critique.",
+    "crumbs": [
+      "Interactive lab"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/lab.html#disque-encastré-sous-force-ponctuelle",
+    "href": "teaching/plates/lab.html#disque-encastré-sous-force-ponctuelle",
+    "title": "Laboratoire interactif",
+    "section": "5 · Disque encastré sous force ponctuelle",
+    "text": "5 · Disque encastré sous force ponctuelle\nLa solution exacte contient un terme \\(r^2\\ln r\\) que les polynômes peinent à représenter : regardez la lenteur de la convergence.",
+    "crumbs": [
+      "Interactive lab"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/lab.html#plaque-vs-poutre",
+    "href": "teaching/plates/lab.html#plaque-vs-poutre",
+    "title": "Laboratoire interactif",
+    "section": "6 · Plaque vs poutre",
+    "text": "6 · Plaque vs poutre\nDéformées de la plaque en traction-flexion dans son plan (PC 1, exercice 1) : l’écart entre les deux modèles est entièrement dû à l’effet Poisson.",
+    "crumbs": [
+      "Interactive lab"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/pc2.html",
+    "href": "teaching/plates/pc2.html",
+    "title": "PC 2 · Méthodes énergétiques",
+    "section": "",
+    "text": "\\(\\renewcommand{\\div}{\\operatorname{div}}\\newcommand{\\bm}[1]{\\boldsymbol{#1}}\\newcommand{\\Hess}{\\operatorname{Hess}}\\newcommand{\\tr}{\\operatorname{tr}}\\newcommand{\\bbR}{\\mathbb{R}}\\newcommand{\\curl}{\\operatorname{curl}}\\)\nChaque question a sa propre solution repliée : essayez d’abord, puis dépliez. Les encadrés Simulation refont les calculs de Ritz en direct.",
+    "crumbs": [
+      "PC 2 · Energy methods"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/pc2.html#exercice-1-plaque-circulaire-soumise-à-une-force-concentrée",
+    "href": "teaching/plates/pc2.html#exercice-1-plaque-circulaire-soumise-à-une-force-concentrée",
+    "title": "PC 2 · Méthodes énergétiques",
+    "section": "Exercice 1 — Plaque circulaire soumise à une force concentrée",
+    "text": "Exercice 1 — Plaque circulaire soumise à une force concentrée\nSoit une plaque circulaire mince de rayon \\(a\\) et de rigidité \\(D\\), encastrée sur tout son contour (\\(r = a\\)) et soumise à une force ponctuelle \\(F\\) en son centre. On approche la flèche \\(w(r)\\) par la méthode de Ritz avec la fonction de base \\[\n\\phi(r) = \\left(1 - \\frac{r^2}{a^2}\\right)^2, \\qquad w(r) = c\\, \\phi(r),\n\\] où \\(c\\) est le paramètre de Ritz à déterminer.\n\n\n\n\nVérifiez que la fonction de base satisfait les conditions aux limites cinématiques.\nCalculez l’énergie de déformation.\nCalculez le travail de la force.\nCalculez le paramètre de Ritz \\(c\\) en minimisant l’énergie potentielle.\nComment la méthode se modifie-t-elle avec deux fonctions de base, \\(w(r) = c_1 \\phi_1(r) + c_2 \\phi_2(r)\\) ? \\[\n\\phi_1(r) = \\left(1 - \\frac{r^2}{a^2}\\right)^2, \\qquad \\phi_2(r) = \\left(1 - \\frac{r^2}{a^2}\\right)^3\n\\]\n\n\n\n\n\n\n\nFormulaire\n\n\n\n\n\nÉnergie de flexion d’une plaque isotrope : \\[\nU = \\frac{D}{2} \\int_{\\Omega} \\left[ (\\Delta w)^2 - 2(1-\\nu) \\det(\\Hess w) \\right] d\\Omega .\n\\] En coordonnées polaires et dans le cas axisymétrique (\\(\\partial_\\theta = 0\\)) : \\[\nU = \\pi D \\int_{0}^{a} \\left[ \\left( \\frac{d^2w}{dr^2} + \\frac{1}{r}\\frac{dw}{dr} \\right)^2 - 2(1-\\nu)\\frac{1}{r}\\frac{dw}{dr}\\frac{d^2w}{dr^2} \\right] r \\, dr .\n\\] Remarque : le second terme est une dérivée totale, \\(\\;\\dfrac{dw}{dr}\\dfrac{d^2w}{dr^2} = \\dfrac{1}{2} \\dfrac{d}{dr} \\left[ \\left(\\dfrac{dw}{dr}\\right)^2 \\right]\\).\nSolution analytique pour une force concentrée \\(F\\) : \\[\n\\begin{aligned}\nw(r) &= \\frac{Fa^2}{16\\pi D}\\left[1 - \\frac{r^2}{a^2} + 2 \\frac{r^2}{a^2}\\ln\\left(\\frac{r}{a}\\right)\\right], \\\\\nM_{rr} &= -\\frac{F}{4\\pi}\\left[1 +(1+\\nu)\\ln\\left(\\frac{r}{a}\\right)\\right], \\qquad\nM_{\\theta\\theta} = -\\frac{F}{4\\pi}\\left[\\nu +(1+\\nu)\\ln\\left(\\frac{r}{a}\\right)\\right].\n\\end{aligned}\n\\]\n\n\n\n\n\n\n\n\n\nSolution Q1 — Conditions aux limites\n\n\n\n\n\nEncastrement en \\(r=a\\) : \\(w(a)=0\\) et \\(w'(a)=0\\). \\[\nw(a) = c\\,(1 - 1)^2 = 0, \\qquad\n\\frac{dw}{dr} = -\\frac{4c}{a^2}\\, r \\left(1 - \\frac{r^2}{a^2}\\right) \\;\\Rightarrow\\; \\left.\\frac{dw}{dr}\\right|_{r=a} = 0 .\n\\] La fonction est cinématiquement admissible. On note aussi \\(w'(0) = 0\\) : indispensable pour la régularité et la symétrie au centre.\n\n\n\n\n\n\n\n\n\nSolution Q2 — Énergie de déformation\n\n\n\n\n\nLe terme de Gauss est une dérivée totale : \\[\nI_2 = \\int_{0}^{a} \\frac{1}{r}\\frac{dw}{dr}\\frac{d^2w}{dr^2}\\, r \\, dr = \\frac{1}{2} \\left[ \\left(\\frac{dw}{dr}\\right)^2 \\right]_{0}^{a} = 0,\n\\] puisque la pente est nulle en \\(r=a\\) et en \\(r=0\\). Il reste \\(U = \\pi D \\int_{0}^{a} (\\Delta w)^2\\, r \\, dr\\) avec \\[\n\\frac{dw}{dr} = -\\frac{4c}{a^2}r + \\frac{4c}{a^4}r^3, \\qquad\n\\frac{d^2w}{dr^2} = -\\frac{4c}{a^2} + \\frac{12c}{a^4}r^2, \\qquad\n\\Delta w = \\frac{8c}{a^2} \\left( 2\\frac{r^2}{a^2} - 1 \\right).\n\\] \\[\nU = \\pi D \\frac{64c^2}{a^4} \\int_{0}^{a} \\left( 4\\frac{r^5}{a^4} - 4\\frac{r^3}{a^2} + r \\right) dr\n= \\pi D \\frac{64c^2}{a^4}\\cdot\\frac{a^2}{6} = \\frac{32\\pi D}{3a^2}\\, c^2 .\n\\]\n\n\n\n\n\n\n\n\n\nSolution Q3 — Travail de la force\n\n\n\n\n\nLa force est appliquée en \\(r=0\\) : \\(\\;W = F\\, w(0) = F c\\).\n\n\n\n\n\n\n\n\n\nSolution Q4 — Paramètre de Ritz\n\n\n\n\n\n\\[\n\\Pi(c) = \\frac{32\\pi D}{3a^2}\\, c^2 - F c, \\qquad\n\\frac{d\\Pi}{dc} = \\frac{64\\pi D}{3a^2}\\, c - F = 0 \\;\\Longrightarrow\\; c = \\frac{3Fa^2}{64\\pi D} = \\frac{9Fa^2(1-\\nu^2)}{16\\pi Eh^3}.\n\\] Le paramètre \\(c\\) est la flèche au centre. La solution exacte vaut \\(w(0) = \\dfrac{Fa^2}{16\\pi D} = \\dfrac{4Fa^2}{64\\pi D}\\) : Ritz donne exactement 75 % de la valeur réelle. Cette sous-estimation (sur-rigidification) est typique de Ritz avec une base polynomiale simple, incapable de capturer la singularité \\(r^2\\ln r\\) de la solution exacte.\n\n\n\n\n\n\n\n\n\nSolution Q5 — Deux fonctions de base\n\n\n\n\n\n\\(\\phi_1\\) et \\(\\phi_2\\) vérifient chacune \\(w=0\\) et \\(w'=0\\) en \\(r=a\\). L’énergie étant quadratique, \\(\\Pi(c_1, c_2)\\) est un paraboloïde ; on annule son gradient, \\(\\partial\\Pi/\\partial c_1 = \\partial\\Pi/\\partial c_2 = 0\\), ce qui donne un système \\(2\\times2\\) : \\[\n\\begin{bmatrix} K_{11} & K_{12} \\\\ K_{21} & K_{22} \\end{bmatrix} \\begin{bmatrix} c_1 \\\\ c_2 \\end{bmatrix} = \\begin{bmatrix} f_1 \\\\ f_2 \\end{bmatrix},\n\\qquad K_{ij} = 2\\pi D \\int_{0}^{a} \\Delta\\phi_i\\, \\Delta\\phi_j \\, r \\, dr, \\qquad f_i = F\\, \\phi_i(0) .\n\\] \\(\\mathbf K\\) est symétrique définie positive. Le calcul donne \\[\n\\mathbf K = \\frac{\\pi D}{a^2}\\begin{bmatrix} 64/3 & 16 \\\\ 16 & 96/5 \\end{bmatrix},\n\\qquad c_1 = \\frac{Fa^2}{48\\pi D}, \\quad c_2 = \\frac{5Fa^2}{144\\pi D},\n\\] soit \\(w(0) = c_1 + c_2 = \\frac{8}{9}\\,w_{\\rm exact}(0)\\) : l’enrichissement fait passer de 75 % à 89 %. Ajoutez des fonctions :",
+    "crumbs": [
+      "PC 2 · Energy methods"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/pc2.html#sec-ritz-buckling",
+    "href": "teaching/plates/pc2.html#sec-ritz-buckling",
+    "title": "PC 2 · Méthodes énergétiques",
+    "section": "Exercice 2 — Flambement par la méthode de Rayleigh–Ritz",
+    "text": "Exercice 2 — Flambement par la méthode de Rayleigh–Ritz\nUne plaque rectangulaire \\(a \\times b\\), simplement appuyée sur tout son contour, de rigidité \\(D\\), est soumise à une compression uniforme \\(N_{xx}^{\\rm comp}\\) sur les bords \\(x=0\\) et \\(x=a\\) (ici prise positive en compression). Le phénomène est gouverné par \\[\nD\\Delta^2 w = -N_{xx}^{\\rm comp}\\,\\frac{\\partial^2 w}{\\partial x^2}.\n\\] L’énergie de déformation et le travail de la compression valent \\[\nU = \\frac{D}{2} \\int_0^a \\!\\!\\int_0^b \\left\\{ (\\Delta w)^2 - 2(1-\\nu) \\det(\\Hess w)\\right\\} dx\\,dy, \\qquad\nW = \\frac{1}{2} \\int_0^a \\!\\!\\int_0^b N_{xx}^{\\rm comp} (\\partial_x w)^2 \\, dx \\, dy,\n\\] avec \\(\\det \\Hess w = \\partial_{xx} w\\, \\partial_{yy} w - (\\partial_{xy} w)^2\\).\n\n\n\n\nMontrez que pour une plaque rectangulaire avec \\(w=0\\) sur le contour, le terme \\(\\int\\det \\Hess w\\) (courbure de Gauss linéarisée) est nul. Suggestion : \\[\n\\partial_{xx} w\\, \\partial_{yy} w - (\\partial_{xy} w)^2 = \\frac{\\partial}{\\partial x} \\left( \\partial_x w\\, \\partial_{yy} w \\right) - \\frac{\\partial}{\\partial y} \\left( \\partial_x w\\, \\partial_{xy} w \\right).\n\\]\nPar Rayleigh–Ritz, évaluez la charge critique \\(N^{\\mathrm{cr}}_{\\mathrm{p}}\\) avec le polynôme \\(w_{\\mathrm{p}}(x,y) = x y\\,(x-a)(y-b)\\).\nCalculez \\(N^{\\mathrm{cr}}_{\\mathrm{s}}\\) avec le double sinus \\(w_{\\mathrm{s}}(x,y) = \\sin\\left(\\frac{\\pi x}{a}\\right) \\sin\\left(\\frac{\\pi y}{b}\\right)\\).\nPour une plaque carrée (\\(a = b\\)), évaluez l’écart relatif entre les deux charges et commentez-le à la lumière des conditions aux limites.\nAvec les modes \\(w_{mn} = \\sin\\left(\\frac{m \\pi x}{a}\\right) \\sin\\left(\\frac{n\\pi y}{b}\\right)\\), évaluez la charge critique pour un rapport \\(a/b\\) fixé. Suggestion : minimisez par rapport à \\(m\\) et \\(n\\).\n\n\n\n\n\n\n\nRappel : valeurs propres et quotient de Rayleigh\n\n\n\n\n\nEn théorie linéaire, le flambement est un problème aux valeurs propres généralisé : la charge critique \\(N^{\\rm cr}\\) est la plus petite valeur de \\(N_{xx}^{\\rm comp}\\) pour laquelle \\(D\\Delta^2 w = -N_{xx}^{\\rm comp}\\,\\partial_{xx} w\\) admet une solution non nulle.\nLe quotient de Rayleigh est intimement lié aux valeurs propres (voir la méthode de Rayleigh–Ritz, ou en génie civil Lu et al. (2025)). Avec \\(U\\) l’énergie de déformation et \\(W\\) le travail d’une compression unitaire : \\[\nR(w) = \\frac{U}{W}, \\qquad W = \\frac{1}{2} \\int_0^a \\!\\!\\int_0^b \\left(\\partial_x w\\right)^2 dx\\,dy, \\qquad N^{\\mathrm{cr}} = \\min_w R(w).\n\\] On approche le mode de flambement par une approximation de Ritz — d’où le nom Rayleigh–Ritz.\nLe numérateur \\(U\\) représente la résistance interne (énergie de flexion stockée) ; le dénominateur \\(W\\), le potentiel d’activation du chargement. À \\(N_{xx} = N^{\\rm cr}\\), le travail de la compression compense exactement l’énergie élastique de flexion : le système bascule d’un état stable (plan) à un état neutre (\\(\\Pi = 0\\)).\n\n\n\n\n\n\n\n\n\nSolution Q1 — Annulation du terme de Gauss\n\n\n\n\n\nL’intégrande s’écrit comme une divergence : \\[\nI_G = \\int_\\Omega \\nabla \\cdot \\begin{pmatrix} \\partial_x w\\, \\partial_{yy} w \\\\ -\\partial_x w\\, \\partial_{xy}w \\end{pmatrix} d\\Omega\n= \\oint_{\\Gamma} \\bm{n} \\cdot \\begin{pmatrix} \\partial_x w\\, \\partial_{yy} w \\\\ -\\partial_x w\\, \\partial_{xy}w \\end{pmatrix} ds .\n\\]\n\nBords \\(y=0\\) et \\(y=b\\) : l’intégrande est \\(\\mp\\,\\partial_x w\\, \\partial_{xy}w\\). Comme \\(w(x,0) = w(x,b) = 0\\), la dérivée tangentielle \\(\\partial_x w\\) y est nulle.\nBords \\(x=0\\) et \\(x=a\\) : l’intégrande est \\(\\pm\\,\\partial_x w\\, \\partial_{yy}w\\). Comme \\(w(0,y) = w(a,y) = 0\\), la dérivée seconde tangentielle \\(\\partial_{yy} w\\) est nulle.\n\nDonc \\(I_G = 0\\) : pour \\(w=0\\) sur le contour, \\(\\nu\\) disparaît de l’énergie.\n\n\n\n\n\n\n\n\n\nSolution Q2 — Approximation polynomiale\n\n\n\n\n\nAvec \\(w_{\\mathrm{p}} = (x^2 - ax)(y^2 - by)\\), l’énergie a été calculée à l’exercice 3 : \\(U = D\\, ab \\left( \\frac{a^4 + b^4}{15} + \\frac{a^2b^2}{9} \\right)\\). Pour le travail, \\(\\partial_x w_{\\mathrm{p}} = (2x - a)(y^2 - by)\\) et \\[\n\\int_{0}^{a} (2x - a)^2 \\, dx = \\frac{a^3}{3}, \\qquad\n\\int_0^b(y^2 - by)^2\\, dy = \\frac{b^5}{30}\n\\quad\\Longrightarrow\\quad W = \\frac{1}{2}\\cdot\\frac{a^3}{3}\\cdot\\frac{b^5}{30} = \\frac{a^3b^5}{180}.\n\\] \\[\nN^{\\mathrm{cr}}_{\\mathrm{p}} = \\frac{U}{W} = \\frac{D}{b^2} \\left( 12\\frac{b^2}{a^2} + 12\\frac{a^2}{b^2} + 20 \\right).\n\\]\n\n\n\n\n\n\n\n\n\nSolution Q3 — Approximation trigonométrique\n\n\n\n\n\nL’énergie (exercice 3) vaut \\(U = \\frac{D ab \\pi^4}{8}\\left(\\frac{1}{a^2} + \\frac{1}{b^2}\\right)^2\\). Avec \\(\\int_0^a \\cos^2\\frac{\\pi x}{a}\\,dx = \\frac{a}{2}\\) et \\(\\int_0^b \\sin^2\\frac{\\pi y}{b}\\,dy = \\frac{b}{2}\\) : \\[\nW = \\frac{1}{2}\\cdot\\frac{\\pi^2}{a^2}\\cdot\\frac{a}{2}\\cdot\\frac{b}{2} = \\frac{\\pi^2 b}{8a}\n\\quad\\Longrightarrow\\quad\nN^{\\mathrm{cr}}_{\\mathrm{s}} = \\frac{\\pi^2 D}{b^2}\\left(\\frac{b}{a} + \\frac{a}{b}\\right)^2 .\n\\]\n\n\n\n\n\n\n\n\n\nSolution Q4 — Plaque carrée\n\n\n\n\n\nPour \\(a = b\\) : \\[\nN^{\\mathrm{cr}}_{\\mathrm{p}} = \\frac{44D}{a^2}, \\qquad N^{\\mathrm{cr}}_{\\mathrm{s}} = \\frac{4\\pi^2 D}{a^2} \\approx \\frac{39{,}48\\,D}{a^2},\n\\qquad e = \\frac{44 - 4\\pi^2}{4\\pi^2} \\approx 11{,}45\\,\\%.\n\\] Le double sinus est la solution exacte (Navier). Le polynôme est admissible (\\(w=0\\) au bord) mais ne satisfait pas la condition naturelle de moment nul (\\(\\partial_{xx} w_{\\mathrm{p}} \\neq 0\\) sur les bords chargés). Restreindre l’espace des solutions revient à ajouter une rigidité artificielle : Rayleigh–Ritz surestime toujours la charge critique. Enrichissez la base polynomiale pour voir la convergence :\n\n\n\n\n\n\n\n\n\n\n\n\nSolution Q5 — Modes successifs\n\n\n\n\n\nAvec \\(w_{mn}\\), les mêmes intégrations donnent \\[\nN^{\\mathrm{cr}}(m,n) = \\frac{\\pi^2 D}{b^2} \\left(\\frac{mb}{a} + \\frac{n^2 a}{mb}\\right)^2 .\n\\] \\(n\\) n’apparaît qu’au numérateur d’un terme positif : le minimum est atteint pour \\(n = 1\\) (une seule demi-onde transversalement à la compression). Avec \\(\\alpha = a/b\\) : \\[\nN^{\\mathrm{cr}}(m) = \\frac{\\pi^2 D}{b^2} \\left(\\frac{m}{\\alpha} + \\frac{\\alpha}{m}\\right)^2,\n\\qquad \\frac{\\partial}{\\partial m}\\left(\\frac{m}{\\alpha} + \\frac{\\alpha}{m}\\right) = 0 \\;\\Rightarrow\\; m = \\alpha .\n\\] Le minimum, atteint pour \\(m = \\alpha\\) entier, est indépendant de la longueur \\(a\\) : \\[\nN^{\\mathrm{cr}}_{\\mathrm{min}} = \\frac{4\\pi^2 D}{b^2}.\n\\] Entre deux entiers, le mode critique passe de \\(m\\) à \\(m+1\\) demi-ondes en \\(\\alpha=\\sqrt{m(m+1)}\\) :\n\n\n\n\n\n\n\nModes \\(\\phi_{11}\\) et \\(\\phi_{21}\\).",
+    "crumbs": [
+      "PC 2 · Energy methods"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/pc2.html#sec-ssss-ritz",
+    "href": "teaching/plates/pc2.html#sec-ssss-ritz",
+    "title": "PC 2 · Méthodes énergétiques",
+    "section": "Exercice 3 — Travail à la maison : plaque appuyée revisitée",
+    "text": "Exercice 3 — Travail à la maison : plaque appuyée revisitée\nOn reprend le cadre de l’exercice de Navier : plaque mince rectangulaire \\(a \\times b\\) simplement appuyée, de rigidité \\(D\\) et coefficient de Poisson \\(\\nu\\), sous pression uniforme \\(p_0\\). L’énergie potentielle totale est \\(\\Pi = U - W\\) avec \\[\nU = \\frac{D}{2} \\int_0^a \\!\\!\\int_0^b \\left\\{ (\\Delta w)^2 - 2(1-\\nu) \\det(\\Hess w)\\right\\} dx\\,dy, \\qquad\nW = \\int_0^a \\!\\!\\int_0^b p_0 \\, w(x,y) \\, dx \\, dy .\n\\]\n\nOn résout le problème par Ritz avec une fonction de forme unique \\(\\phi(x,y) = x y (x-a)(y-b)\\). Vérifiez que \\(w_{\\mathrm{app}} = c \\, \\phi\\) est admissible.\nÉvaluez \\(\\Pi(w_{\\mathrm{app}})\\).\nDéduisez-en l’amplitude \\(c\\).\nQue se passe-t-il si la fonction d’essai est un double sinus \\(\\phi(x,y) = \\sin\\left(\\frac{\\pi m x}{a}\\right) \\sin\\left(\\frac{\\pi n y}{b}\\right)\\) ?\n\n\n\n\n\n\n\nSolution Q1 — Admissibilité\n\n\n\n\n\nLes conditions essentielles de l’appui simple sont \\(w = 0\\) sur le contour : \\(w_{\\mathrm{app}}(0,y) = w_{\\mathrm{app}}(a,y) = 0\\) et \\(w_{\\mathrm{app}}(x,0) = w_{\\mathrm{app}}(x,b) = 0\\). La fonction est admissible.\nRemarque préliminaire : \\(w=0\\) sur tout le contour, donc \\(\\int\\det\\Hess w = 0\\) (exercice 2) et \\(U = \\frac{D}{2} \\int_0^a \\!\\int_0^b (\\Delta w)^2 dx\\,dy\\).\n\n\n\n\n\n\n\n\n\nSolution Q2 — Énergie potentielle\n\n\n\n\n\n\\(\\partial_{xx} w_{\\mathrm{app}} = 2c(y^2 - by)\\), \\(\\partial_{yy} w_{\\mathrm{app}} = 2c(x^2 - ax)\\), donc \\((\\Delta w_{\\mathrm{app}})^2 = 4c^2 \\left[ (y^2 - by)^2 + (x^2 - ax)^2 + 2(x^2 - ax)(y^2 - by) \\right]\\). Avec \\[\n\\int_0^a (x^2 - ax) \\, dx = -\\frac{a^3}{6}, \\qquad \\int_0^a (x^2 - ax)^2 \\, dx = \\frac{a^5}{30}\n\\] (et de même en \\(y\\)) : \\[\nU = 2D c^2 ab \\left( \\frac{a^4 + b^4}{30} + \\frac{a^2b^2}{18} \\right), \\qquad\nW = p_0 c \\left(-\\frac{a^3}{6}\\right)\\left(-\\frac{b^3}{6}\\right) = p_0 c\\, \\frac{a^3b^3}{36}.\n\\]\n\n\n\n\n\n\n\n\n\nSolution Q3 — Amplitude\n\n\n\n\n\n\\(\\partial\\Pi/\\partial c = 0\\) donne \\(4D c \\, ab\\, \\dfrac{3a^4 + 3b^4 + 5a^2b^2}{90} = p_0 \\dfrac{a^3b^3}{36}\\), soit \\[\nc = \\frac{5 \\, p_0 a^2 b^2}{8D (3a^4 + 3b^4 + 5a^2b^2)} .\n\\] Pour une plaque carrée, au centre : \\[\nw_{\\mathrm{app}}^{\\max} = \\frac{5 p_0 a^4}{1408\\,D} \\approx 0{,}00355\\,\\frac{p_0a^4}{D}\n\\qquad\\text{contre}\\qquad w^{\\max}_{\\mathrm{ex}} \\approx 0{,}00406\\,\\frac{p_0a^4}{D}.\n\\] Ritz à un terme prédit une flèche plus faible (structure plus rigide), en accord avec le caractère de borne des méthodes énergétiques en déplacement. Testez d’autres conditions aux limites :\n\n\n\n\n\n\n\n\n\n\n\n\nSolution Q4 — Base en double sinus\n\n\n\n\n\nLe double sinus est fonction propre du problème appuyé : \\(\\Delta \\phi = -k^2 \\phi\\) avec \\(k^2 = \\pi^2\\left(\\frac{m^2}{a^2}+\\frac{n^2}{b^2}\\right)\\). Alors \\[\nU = \\frac{D}{2}c^2 k^4 \\int_0^a\\!\\!\\int_0^b \\phi^2 = \\frac{D\\,c^2 k^4}{8}\\,ab, \\qquad\nW = p_0 c\\, \\frac{a}{m\\pi}(1-\\cos m\\pi)\\,\\frac{b}{n\\pi}(1-\\cos n\\pi),\n\\] nul si \\(m\\) ou \\(n\\) est pair, et égal à \\(\\frac{4ab\\,p_0}{\\pi^2 mn}\\, c\\) sinon. La minimisation donne \\[\nc = \\frac{16\\,p_0}{\\pi^6\\, mn\\, D\\left(\\dfrac{m^2}{a^2}+\\dfrac{n^2}{b^2}\\right)^2} \\qquad (m,n \\text{ impairs}),\n\\] exactement le coefficient de Fourier de la solution de Navier : Ritz redonne la solution exacte lorsque la base contient les modes propres.",
+    "crumbs": [
+      "PC 2 · Energy methods"
+    ]
+  },
+  {
+    "objectID": "teaching/plates/pc2.html#références",
+    "href": "teaching/plates/pc2.html#références",
+    "title": "PC 2 · Méthodes énergétiques",
+    "section": "Références",
+    "text": "Références\n\n\nLu, Yan, Bojie Ren, Bin Wu, Ying Yang, et Bin Li. 2025. « Deep Rayleigh-Ritz method for elastic local buckling analysis of cold-formed steel columns ». Structures 76: 109016. https://doi.org/10.1016/j.istruc.2025.109016.",
+    "crumbs": [
+      "PC 2 · Energy methods"
     ]
   }
 ]

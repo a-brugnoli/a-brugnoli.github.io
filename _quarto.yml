@@ -1,26 +1,77 @@
 project:
   type: website
+  resources:
+    - assets/**
+    - files/**
+
+# ---------------------------------------------------------------------
+#  Social profiles — edit here, they are used in the navbar and footer
+# ---------------------------------------------------------------------
+#  GitHub   : https://github.com/a-brugnoli
+#  LinkedIn : https://www.linkedin.com/in/andrea-brugnoli   <- check this URL
+#  Scholar  : https://scholar.google.com/citations?user=aze4Eh4AAAAJ
+#  HAL      : https://cv.hal.science/andrea-brugnoli
 
 website:
-  title: '<img src="/files/images/cartoon_face.jpg" height="50px" style="border-radius:50%;"> Andrea Brugnoli'
+  title: "Andrea Brugnoli"
+  description: "Associate Professor at ISAE-SUPAERO — computational mechanics, port-Hamiltonian systems, structure-preserving discretization."
+  site-url: https://a-brugnoli.github.io
+  favicon: files/images/cartoon_face.jpg
+  open-graph: true
+  page-navigation: true
+  back-to-top-navigation: true
+  search:
+    location: navbar
+    type: overlay
   navbar:
+    logo: files/images/cartoon_face.jpg
+    logo-alt: "Andrea Brugnoli"
     left:
       - href: index.qmd
         text: Home
-      - href: /files/pdfs/CV.pdf
-        text: CV
       - research.qmd
       - publications.qmd
       - talks.qmd
       - text: Teaching
         menu:
+          - text: "Overview"
+            href: teaching/index.qmd
+          - text: "---"
+          - text: "Thin structures: plates"
+            href: teaching/plates/index.qmd
           - text: "Structural dynamics"
             href: teaching/structural_dynamics/index.qmd
           - text: "Port-Hamiltonian systems"
             href: teaching/port_hamiltonian_systems/index.qmd
       - software.qmd
+      - href: /files/pdfs/CV.pdf
+        text: CV
       - contact.qmd
+    right:
+      - icon: github
+        href: https://github.com/a-brugnoli
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/andrea-brugnoli
+        aria-label: LinkedIn
+      - text: '<svg class="scholar-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>'
+        href: https://scholar.google.com/citations?user=aze4Eh4AAAAJ
+        aria-label: Google Scholar
   sidebar:
+    - id: plates
+      title: "Thin structures: plates"
+      style: floating
+      contents:
+        - text: "Course home"
+          href: teaching/plates/index.qmd
+        - text: "Slides"
+          href: teaching/plates/slides.qmd
+        - text: "PC 1 · Analytical solutions"
+          href: teaching/plates/pc1.qmd
+        - text: "PC 2 · Energy methods"
+          href: teaching/plates/pc2.qmd
+        - text: "Interactive lab"
+          href: teaching/plates/lab.qmd
     - id: structural_dynamics
       title: "Structural dynamics"
       contents:
@@ -30,12 +81,33 @@ website:
       title: "Port-Hamiltonian systems"
       contents:
         - teaching/port_hamiltonian_systems/index.qmd
+  page-footer:
+    left: |
+      © 2026 Andrea Brugnoli · ISAE-SUPAERO, Toulouse
+    center: |
+      Built with [Quarto](https://quarto.org)
+    right:
+      - icon: envelope
+        href: mailto:andrea.brugnoli@isae-supaero.fr
+        aria-label: Email
+      - icon: github
+        href: https://github.com/a-brugnoli
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/andrea-brugnoli
+        aria-label: LinkedIn
+      - text: '<svg class="scholar-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>'
+        href: https://scholar.google.com/citations?user=aze4Eh4AAAAJ
+        aria-label: Google Scholar
 
 format:
   html:
-    theme: flatly
-    theme-variables:
-      font-family-base: "Georgia, serif"
+    theme:
+      light: [cosmo, styles/theme-light.scss]
+      dark: [cosmo, styles/theme-dark.scss]
+    respect-user-color-scheme: true
     css: styles/custom.css
     toc: true
-    mathjax: true
+    html-math-method: mathjax
+    smooth-scroll: true
+    link-external-newwindow: true

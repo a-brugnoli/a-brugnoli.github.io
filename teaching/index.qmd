@@ -1,6 +1,29 @@
 ---
 title: "Teaching"
+subtitle: "Courses I teach at ISAE-SUPAERO, with slides, notes and interactive material."
+toc: false
 ---
 
-### Structural dynamics
-- [Course overview](structural_dynamics/index.qmd)
+```{=html}
+<div class="ab-cards two">
+  <div class="ab-card featured">
+    <span class="ab-tag">2nd year</span><span class="ab-tag">FR</span><span class="ab-tag">Interactive</span>
+    <h3>Thin structures: plates</h3>
+    <p>Linear elasticity refresher, Kirchhoff–Love plate theory, circular plates, buckling and the Rayleigh–Ritz method.</p>
+    <p><i class="bi bi-easel"></i> Slides · <i class="bi bi-pencil-square"></i> 2 exercise sessions with solutions · <i class="bi bi-cpu"></i> live simulations</p>
+    <a class="stretched-link" href="plates/index.qmd" aria-label="Thin structures: plates"></a>
+  </div>
+  <div class="ab-card">
+    <span class="ab-tag">FR</span>
+    <h3>Structural dynamics</h3>
+    <p>Finite elements for beam bending: Euler–Bernoulli model, Hermite elements, convergence and modal analysis.</p>
+    <a class="stretched-link" href="structural_dynamics/index.qmd" aria-label="Structural dynamics"></a>
+  </div>
+  <div class="ab-card">
+    <span class="ab-tag">Coming soon</span>
+    <h3>Port-Hamiltonian systems</h3>
+    <p>Energy-based modelling, interconnection and structure-preserving discretization.</p>
+    <a class="stretched-link" href="port_hamiltonian_systems/index.qmd" aria-label="Port-Hamiltonian systems"></a>
+  </div>
+</div>
+```

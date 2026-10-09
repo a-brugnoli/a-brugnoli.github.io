@@ -1,63 +1,266 @@
-/* Navbar background and text */
+/* =====================================================================
+   Andrea Brugnoli — site styles (works with theme-light / theme-dark)
+   ===================================================================== */
+
+/* ---------- Self-hosted fonts (no third-party requests) -------------- */
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("../assets/fonts/source-serif-4-latin-wght-normal.woff2") format("woff2-variations");
+}
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("../assets/fonts/source-serif-4-latin-wght-italic.woff2") format("woff2-variations");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../assets/fonts/inter-latin-wght-normal.woff2") format("woff2-variations");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src: url("../assets/fonts/jetbrains-mono-latin-wght-normal.woff2") format("woff2-variations");
+}
+
+/* ---------- Navbar --------------------------------------------------- */
 .navbar {
-    background-color: #008b8b !important;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: .93rem;
+  box-shadow: 0 1px 0 rgba(255,255,255,.06), 0 6px 20px rgba(0,0,0,.08);
 }
-
-.navbar .navbar-nav .nav-link {
-    color: #ffffff !important;       /* link color */
+.navbar-brand .navbar-logo,
+.navbar .navbar-logo {
+  max-height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 2px var(--ab-amber);
+  margin-right: .35rem;
 }
-
-.navbar .navbar-nav .nav-link:hover {
-    color: #e0e0e0 !important;       /* hover text */
-}
-
-/* Dropdown menu */
+.navbar-title { font-weight: 650; letter-spacing: -.01em; }
+.navbar .nav-link { font-weight: 500; border-radius: .45rem; padding-left: .6rem !important; padding-right: .6rem !important; }
+.navbar .nav-link:hover { background: rgba(255,255,255,.08); }
+.navbar .nav-link.active { box-shadow: inset 0 -2px 0 var(--ab-amber); border-radius: 0; }
 .navbar .dropdown-menu {
-    background-color: #008b8b !important;   /* dark cyan */
-    border: none;
+  font-family: "Inter", system-ui, sans-serif;
+  border: 1px solid var(--ab-card-border);
+  box-shadow: var(--ab-shadow);
+  border-radius: .7rem;
+  padding: .4rem;
+}
+.navbar .dropdown-item { border-radius: .45rem; }
+.navbar .dropdown-item:hover { background: var(--ab-soft); color: var(--ab-teal); }
+
+.scholar-icon { width: 1.05em; height: 1.05em; fill: currentColor; vertical-align: -0.14em; }
+.nav-footer .scholar-icon { width: 1em; height: 1em; }
+
+/* ---------- Typography ----------------------------------------------- */
+h1, h2, h3, h4, .h1, .h2, .h3 { letter-spacing: -.015em; }
+.title { letter-spacing: -.025em; }
+main h2 { margin-top: 2.2rem; }
+main h2.anchored::after { content: none; }
+.quarto-title-meta-heading, .quarto-title-meta-contents, .sidebar, #TOC, .toc-actions, .nav-footer {
+  font-family: "Inter", system-ui, sans-serif;
+}
+#TOC { font-size: .85rem; }
+.sidebar-item-text { font-size: .9rem; }
+hr { opacity: .12; }
+
+figure img, .quarto-figure img { border-radius: .5rem; }
+
+/* ---------- Footer --------------------------------------------------- */
+.nav-footer { font-size: .85rem; border-top: 1px solid var(--ab-card-border); }
+.nav-footer .nav-link { padding: .2rem .45rem; }
+
+/* ---------- Generic components --------------------------------------- */
+.ab-eyebrow {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: .75rem; font-weight: 650; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ab-teal);
+  margin-bottom: .35rem;
+}
+.ab-lead { font-size: 1.15rem; color: var(--ab-muted); }
+
+.ab-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; margin: 1.2rem 0 1.8rem; }
+.ab-cards.two { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.ab-card {
+  position: relative;
+  background: var(--ab-card);
+  border: 1px solid var(--ab-card-border);
+  border-radius: .9rem;
+  padding: 1.1rem 1.2rem 1.05rem;
+  box-shadow: var(--ab-shadow);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.ab-card:hover { transform: translateY(-2px); border-color: var(--ab-teal); }
+.ab-card h3, .ab-card h4 { margin-top: .2rem; font-size: 1.05rem; }
+.ab-card p { margin-bottom: .3rem; font-size: .96rem; color: var(--ab-muted); }
+.ab-card .bi { font-size: 1.4rem; color: var(--ab-teal); }
+.ab-card a.stretched-link { text-decoration: none; }
+.ab-card .ab-tag {
+  display: inline-block; font-family: "Inter", sans-serif; font-size: .7rem; font-weight: 600;
+  letter-spacing: .04em; text-transform: uppercase;
+  background: var(--ab-soft); color: var(--ab-teal); padding: .12rem .5rem; border-radius: 99px; margin-right: .25rem;
+}
+.ab-card.featured { border-color: var(--ab-teal); background:
+  linear-gradient(135deg, var(--ab-soft), var(--ab-card) 60%); }
+
+.ab-btn {
+  display: inline-flex; align-items: center; gap: .45rem;
+  font-family: "Inter", system-ui, sans-serif; font-size: .9rem; font-weight: 550;
+  padding: .45rem .95rem; border-radius: 99px;
+  border: 1px solid var(--ab-card-border); background: var(--ab-card);
+  color: inherit; text-decoration: none; transition: all .15s ease;
+  margin: .2rem .25rem .2rem 0;
+}
+.ab-btn:hover { border-color: var(--ab-teal); color: var(--ab-teal); transform: translateY(-1px); }
+.ab-btn.primary { background: var(--ab-teal); border-color: var(--ab-teal); color: #fff; }
+.ab-btn.primary:hover { filter: brightness(1.08); color: #fff; }
+.quarto-dark .ab-btn.primary, .quarto-dark .ab-btn.primary:hover { color: #0b1a1c; }
+.ab-btn { line-height: 1.25; }
+.ab-btn svg { width: 1em; height: 1em; fill: currentColor; }
+
+/* ---------- Home hero ------------------------------------------------- */
+.ab-hero {
+  display: grid; grid-template-columns: 190px 1fr; gap: 2.2rem; align-items: center;
+  padding: 2.2rem 2rem; margin: .5rem 0 2rem;
+  border-radius: 1.2rem; border: 1px solid var(--ab-card-border);
+  background: var(--ab-hero-grad), var(--ab-card);
+  box-shadow: var(--ab-shadow);
+}
+.ab-hero img.ab-portrait {
+  width: 190px; height: 190px; border-radius: 50%; object-fit: cover;
+  box-shadow: 0 0 0 5px var(--ab-paper), 0 0 0 7px var(--ab-teal), var(--ab-shadow);
+}
+.ab-hero h1 { font-size: 2.5rem; margin: 0 0 .25rem; font-weight: 700; }
+.ab-hero .ab-role { font-family: "Inter", sans-serif; font-size: 1rem; color: var(--ab-muted); margin-bottom: .9rem; line-height: 1.5; }
+.ab-hero .ab-role strong { color: var(--ab-ink); font-weight: 600; }
+.ab-hero p { margin-bottom: .9rem; }
+@media (max-width: 720px) {
+  .ab-hero { grid-template-columns: 1fr; text-align: center; padding: 1.6rem 1.1rem; }
+  .ab-hero img.ab-portrait { margin: 0 auto; width: 150px; height: 150px; }
+  .ab-hero h1 { font-size: 2rem; }
 }
 
-/* Dropdown items (links) */
-.navbar .dropdown-menu .dropdown-item {
-    color: #ffffff !important;              /* white text */
-    background-color: #008b8b !important;   /* dark cyan */
+/* ---------- Talks (timeline) ----------------------------------------- */
+.talk-list { margin: 1.5rem 0 2rem; }
+.talk-list ul { list-style: none; padding-left: 0; margin: 0; border-left: 2px solid var(--ab-card-border); }
+.talk-list ul > li { position: relative; margin: 0 0 1.6rem; padding-left: 1.4rem; }
+.talk-list ul > li::before {
+  content: ""; position: absolute; left: -7px; top: .55rem; width: 12px; height: 12px; border-radius: 50%;
+  background: var(--ab-paper); border: 2px solid var(--ab-teal);
 }
-
-/* Hover effect for dropdown items */
-.navbar .dropdown-menu .dropdown-item:hover {
-    background-color: #006666 !important;   /* slightly darker cyan */
-    color: #ffffff !important;
+.talk-list ul > li > p:first-child strong a { text-decoration: none; }
+.talk-list .talk-date, .talk-list .talk-location { display: block; margin: 0; line-height: 1.35; }
+.talk-list .talk-date {
+  font-family: "Inter", sans-serif; font-size: .78rem; font-weight: 650; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--ab-teal); margin-top: .25rem;
 }
+.talk-list .talk-location { color: var(--ab-muted); font-size: .95rem; }
 
-
-/* Only affects lists inside .talk-list */
-.talk-list ul {
-  list-style: none;   /* remove bullets */
-  padding-left: 0;    /* remove indentation */
-}
-
-.talk-list ul > li {
-  margin-bottom: 2em; /* spacing between talks */
-}
-
-/* date and location tight layout */
-.talk-list .talk-date,
-.talk-list .talk-location {
-  display: block;
-  margin: 0;
-  line-height: 1.25;
-}
-
-.talk-list {
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-
+/* ---------- Software ------------------------------------------------- */
 .software-entry {
-  margin-bottom: 1.5rem;
+  background: var(--ab-card); border: 1px solid var(--ab-card-border); border-left: 4px solid var(--ab-teal);
+  border-radius: .7rem; padding: 1rem 1.2rem .6rem; margin-bottom: 1.4rem; box-shadow: var(--ab-shadow);
+}
+.software-entry a { text-decoration: none; }
+
+/* ---------- Figures on dark backgrounds ------------------------------ */
+.quarto-dark .quarto-figure img,
+.quarto-dark figure img,
+.quarto-dark .figure-panel img { background: var(--ab-figure-bg); padding: .4rem; }
+
+/* ---------- Course pages (plates) ------------------------------------ */
+.course-hero {
+  border-radius: 1.1rem; padding: 1.6rem 1.7rem; margin-bottom: 1.6rem;
+  border: 1px solid var(--ab-card-border);
+  background: var(--ab-hero-grad), var(--ab-card); box-shadow: var(--ab-shadow);
+}
+.course-hero h1 { margin-top: .1rem; }
+.course-meta { font-family: "Inter", sans-serif; font-size: .88rem; color: var(--ab-muted); }
+.course-meta span { margin-right: 1rem; white-space: nowrap; }
+
+.figure-panel { background: var(--ab-figure-bg); border: 1px solid var(--ab-card-border); border-radius: .8rem; padding: .8rem; text-align: center; margin: 1rem 0; }
+.figure-panel img { max-width: 100%; height: auto; }
+.figure-panel figcaption, .figure-panel .caption { font-size: .88rem; color: #5b6b70; margin-top: .4rem; }
+
+/* key formula box (from the beamer \cle environment) */
+.cle {
+  background: color-mix(in srgb, var(--ab-teal) 9%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ab-teal) 35%, transparent);
+  border-radius: .7rem; padding: .35rem 1rem; margin: .7rem 0;
+}
+.remarque {
+  background: color-mix(in srgb, var(--ab-amber) 13%, transparent);
+  border-left: 4px solid var(--ab-amber);
+  border-radius: .5rem; padding: .55rem 1rem; margin: .7rem 0;
+}
+.hl  { color: #c0392b; font-weight: 650; }
+.hlp { color: var(--ab-teal); font-weight: 650; }
+.quarto-dark .hl { color: #ff8a7a; }
+
+/* Exercise questions list */
+ol.questions > li, .questions ol > li { margin-bottom: .35rem; }
+
+/* ---------- Interactive widgets -------------------------------------- */
+.pw {
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--ab-card); border: 1px solid var(--ab-card-border); border-radius: .9rem;
+  padding: 1rem 1.1rem; margin: 1.2rem 0 1.6rem; box-shadow: var(--ab-shadow);
+  color: inherit;
+}
+.pw-head { display: flex; align-items: center; gap: .55rem; margin-bottom: .6rem; }
+.pw-head .pw-badge {
+  font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  background: var(--ab-teal); color: #fff; padding: .15rem .5rem; border-radius: 99px;
+}
+.pw-head .pw-title { font-weight: 650; font-size: 1rem; }
+.pw-controls { display: flex; flex-wrap: wrap; gap: .5rem 1.4rem; align-items: center; margin-bottom: .7rem; font-size: .88rem; }
+.pw-controls label { display: inline-flex; align-items: center; gap: .5rem; white-space: nowrap; }
+.pw-controls input[type=range] { width: 150px; accent-color: var(--ab-teal); }
+.pw-controls select { font: inherit; padding: .15rem .35rem; border-radius: .4rem; border: 1px solid var(--ab-card-border); background: var(--ab-paper); color: inherit; }
+.pw-controls output { font-variant-numeric: tabular-nums; min-width: 3.2em; font-weight: 600; color: var(--ab-teal); }
+.pw-body { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: .8rem; align-items: start; }
+.pw-body.single { grid-template-columns: 1fr; }
+.pw-panel { min-width: 0; }
+.pw-panel svg { max-width: 100%; height: auto; overflow: visible; }
+.pw-panel canvas { width: 100%; height: auto; border-radius: .4rem; display: block; }
+.pw-readout {
+  display: flex; flex-wrap: wrap; gap: .4rem .6rem; margin-top: .6rem; font-size: .85rem;
+}
+.pw-readout .kv { background: var(--ab-soft); border-radius: .45rem; padding: .25rem .6rem; }
+.pw-readout .kv b { color: var(--ab-teal); font-variant-numeric: tabular-nums; }
+.pw-note { font-size: .8rem; color: var(--ab-muted); margin-top: .5rem; }
+.pw-cbar { display: flex; align-items: center; gap: .4rem; font-size: .72rem; color: var(--ab-muted); margin-top: .3rem; }
+.pw-cbar .bar { flex: 1; height: 8px; border-radius: 4px; }
+.pw table { font-size: .82rem; margin: 0; }
+.pw table td, .pw table th { padding: .15rem .5rem; }
+
+/* Plot (Observable) typography inside widgets */
+.pw figure, .pw svg[class^="plot"] { font-family: "Inter", system-ui, sans-serif; }
+.pw [class^="plot-"] { background: transparent !important; }
+
+/* Plot figure titles inside widgets */
+.pw figure { margin: 0; }
+.pw figure h2, .pw figure h3 {
+  font-family: "Inter", system-ui, sans-serif; font-size: .82rem !important; font-weight: 600;
+  margin: 0 0 .2rem !important; border: 0 !important; padding: 0 !important; color: var(--ab-muted); letter-spacing: 0;
 }
 
-.software-entry a {
-  text-decoration: none;
-}
+/* Exercise pages */
+.sol-toolbar { display: flex; flex-wrap: wrap; gap: .3rem; margin: .4rem 0 1rem; }
+.callout.callout-style-default .callout-header { font-family: "Inter", system-ui, sans-serif; }
+.callout-tip.callout { border-left-color: var(--ab-teal) !important; }
+.callout-tip .callout-header { background: color-mix(in srgb, var(--ab-teal) 8%, transparent) !important; }
+.callout-tip .callout-icon::before, .callout-tip .callout-title-container { color: inherit; }
+main h2[id^="exercice"], main h2 { scroll-margin-top: 80px; }

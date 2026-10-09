@@ -1,0 +1,49 @@
+/*-- scss:defaults --*/
+$brand-teal:      #5cc8bf;
+$brand-ink:       #e6efee;
+$brand-amber:     #f0bd5e;
+
+$body-bg:         #0f1719;
+$body-color:      #d9e3e2;
+$primary:         $brand-teal;
+$secondary:       #8fa3a6;
+$info:            #6cb3e6;
+$warning:         #f0bd5e;
+$link-color:      $brand-teal;
+$link-hover-color: lighten($brand-teal, 10%);
+
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$font-family-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+$font-family-base: $font-family-serif;
+$font-family-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: 650;
+$headings-color: #eef5f4;
+$font-size-root: 17px;
+$line-height-base: 1.65;
+
+$navbar-bg: #0a2427;
+$navbar-fg: #d5e6e4;
+$navbar-hl: #ffffff;
+$footer-bg: #0b1214;
+$footer-fg: #8fa3a6;
+
+$border-radius: .6rem;
+$border-radius-lg: .9rem;
+$code-color: #f2a679;
+
+/*-- scss:rules --*/
+:root {
+  --ab-teal: #{$brand-teal};
+  --ab-ink: #e6efee;
+  --ab-amber: #{$brand-amber};
+  --ab-paper: #{$body-bg};
+  --ab-card: #152124;
+  --ab-card-border: #23363a;
+  --ab-muted: #8fa3a6;
+  --ab-soft: #14292b;
+  --ab-figure-bg: #f7f6f2;
+  --ab-shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+  --ab-hero-grad: radial-gradient(1200px 400px at 85% -10%, rgba(92,200,191,.12), transparent 60%),
+                  radial-gradient(800px 300px at -10% 110%, rgba(240,189,94,.08), transparent 60%);
+}

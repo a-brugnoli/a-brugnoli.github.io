@@ -1,9 +1,41 @@
-# Contact
+---
+title: "Contact"
+toc: false
+---
 
-You can reach me at:
+```{=html}
+<div class="ab-cards two">
+  <div class="ab-card">
+    <i class="bi bi-envelope"></i>
+    <h3>Email</h3>
+    <p><a href="mailto:andrea.brugnoli@isae-supaero.fr">andrea.brugnoli@isae-supaero.fr</a></p>
+  </div>
+  <div class="ab-card">
+    <i class="bi bi-telephone"></i>
+    <h3>Phone</h3>
+    <p><a href="tel:+33561338983">+33 5 61 33 89 83</a></p>
+  </div>
+  <div class="ab-card">
+    <i class="bi bi-geo-alt"></i>
+    <h3>Address</h3>
+    <p>ISAE-SUPAERO, Department of Mechanics of Structures and Materials<br>
+    10 avenue Marc Pélegrin – BP 54032<br>31055 Toulouse Cedex 4 – France</p>
+  </div>
+  <div class="ab-card">
+    <i class="bi bi-door-open"></i>
+    <h3>Office</h3>
+    <p>38-136, Department of Mechanics</p>
+  </div>
+</div>
+```
 
-- Email: [andrea.brugnoli@isae-supaero.fr](mailto:andrea.brugnoli@isae-supaero.fr)  
-- Phone: +33 5 61 33 89 83
-- Adress: 10 avenue Marc Pélegrin – BP 54032 – 31055 TOULOUSE Cedex 4 – France
-- Office: 38-136, Department of Mechanics
+## Elsewhere online
 
+```{=html}
+<p>
+  <a class="ab-btn" href="https://github.com/a-brugnoli" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+  <a class="ab-btn" href="https://www.linkedin.com/in/andrea-brugnoli" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
+  <a class="ab-btn" href="https://scholar.google.com/citations?user=aze4Eh4AAAAJ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg> Google Scholar</a>
+  <a class="ab-btn" href="https://cv.hal.science/andrea-brugnoli" target="_blank" rel="noopener"><i class="bi bi-journal-text"></i> HAL</a>
+</p>
+```

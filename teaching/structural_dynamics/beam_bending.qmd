@@ -7,10 +7,8 @@ format:
     toc-depth: 3
     toc-title: "Table des matières"
     number-sections: true
-    theme: cosmo
     html-math-method: mathjax
     code-fold: false
-    self-contained: true
 execute:
   echo: false
 ---
