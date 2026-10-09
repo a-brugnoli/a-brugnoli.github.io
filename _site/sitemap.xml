@@ -1,46 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://a-brugnoli.github.io/teaching/structural_dynamics/beam_bending.html</loc>
-    <lastmod>2026-10-09T12:25:24.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://a-brugnoli.github.io/teaching/port_hamiltonian_systems/index.html</loc>
-    <lastmod>2026-10-09T12:24:35.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://a-brugnoli.github.io/talks.html</loc>
-    <lastmod>2026-10-09T12:25:24.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://a-brugnoli.github.io/contact.html</loc>
-    <lastmod>2026-10-09T12:24:54.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://a-brugnoli.github.io/software.html</loc>
-    <lastmod>2026-02-09T15:19:33.138Z</lastmod>
-  </url>
-  <url>
-    <loc>https://a-brugnoli.github.io/index.html</loc>
-    <lastmod>2026-10-09T12:26:54.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://a-brugnoli.github.io/publications.html</loc>
-    <lastmod>2026-10-09T12:24:47.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://a-brugnoli.github.io/research.html</loc>
-    <lastmod>2026-10-09T12:24:54.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://a-brugnoli.github.io/teaching/index.html</loc>
-    <lastmod>2026-10-09T12:24:35.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://a-brugnoli.github.io/teaching/structural_dynamics/index.html</loc>
-    <lastmod>2026-10-09T12:24:35.000Z</lastmod>
-  </url>
-  <url>
     <loc>https://a-brugnoli.github.io/teaching/plates/slides.html</loc>
     <lastmod>2026-10-09T12:41:57.000Z</lastmod>
   </url>
@@ -51,6 +11,46 @@
   <url>
     <loc>https://a-brugnoli.github.io/teaching/plates/index.html</loc>
     <lastmod>2026-10-09T12:48:21.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://a-brugnoli.github.io/teaching/structural_dynamics/index.html</loc>
+    <lastmod>2026-10-09T12:24:35.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://a-brugnoli.github.io/teaching/index.html</loc>
+    <lastmod>2026-10-09T12:24:35.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://a-brugnoli.github.io/research.html</loc>
+    <lastmod>2026-10-09T12:24:54.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://a-brugnoli.github.io/publications.html</loc>
+    <lastmod>2026-10-09T12:24:47.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://a-brugnoli.github.io/index.html</loc>
+    <lastmod>2026-10-09T12:26:54.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://a-brugnoli.github.io/software.html</loc>
+    <lastmod>2026-02-09T15:19:33.138Z</lastmod>
+  </url>
+  <url>
+    <loc>https://a-brugnoli.github.io/contact.html</loc>
+    <lastmod>2026-10-09T12:24:54.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://a-brugnoli.github.io/talks.html</loc>
+    <lastmod>2026-10-09T12:25:24.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://a-brugnoli.github.io/teaching/port_hamiltonian_systems/index.html</loc>
+    <lastmod>2026-10-09T12:24:35.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://a-brugnoli.github.io/teaching/structural_dynamics/beam_bending.html</loc>
+    <lastmod>2026-10-09T12:25:24.000Z</lastmod>
   </url>
   <url>
     <loc>https://a-brugnoli.github.io/teaching/plates/lab.html</loc>
