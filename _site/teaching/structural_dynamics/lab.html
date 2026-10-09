@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.31">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Software – Andrea Brugnoli</title>
+<title>Laboratoire interactif – Andrea Brugnoli</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,28 +23,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./files/images/cartoon_face.jpg" rel="icon" type="image/jpeg">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-8f99ecc55887f2ce381cfc6b01f48ab6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-1de24e8f28a0b8257e57cf1d5baaebe4.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-8f99ecc55887f2ce381cfc6b01f48ab6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-321c191247638ee0eb194b62c3960d8c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-14b347695a6efa141a9305110d4b2810.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-321c191247638ee0eb194b62c3960d8c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../teaching/structural_dynamics/beam_bending.html" rel="prev">
+<link href="../../files/images/cartoon_face.jpg" rel="icon" type="image/jpeg">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-8f99ecc55887f2ce381cfc6b01f48ab6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-1de24e8f28a0b8257e57cf1d5baaebe4.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-8f99ecc55887f2ce381cfc6b01f48ab6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-321c191247638ee0eb194b62c3960d8c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-14b347695a6efa141a9305110d4b2810.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-321c191247638ee0eb194b62c3960d8c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -58,29 +59,58 @@ ul.task-list li input[type="checkbox"] {
     "s"
   ],
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles/custom.css">
-<link rel="stylesheet" href="styles/software.css">
-<meta property="og:title" content="Software – Andrea Brugnoli">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles/custom.css">
+<meta property="og:title" content="Laboratoire interactif – Andrea Brugnoli">
+<meta property="og:description" content="Huit simulations qui tournent dans le navigateur, pour explorer le cours en manipulant les paramètres.">
 <meta property="og:site_name" content="Andrea Brugnoli">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -258,33 +288,33 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./files/images/cartoon_face.jpg" alt="Andrea Brugnoli" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../files/images/cartoon_face.jpg" alt="Andrea Brugnoli" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Andrea Brugnoli</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./talks.html"> 
+    <a class="nav-link" href="../../talks.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -293,34 +323,34 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-teaching">    
         <li>
-    <a class="dropdown-item" href="./teaching/index.html">
+    <a class="dropdown-item" href="../../teaching/index.html">
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li>
-    <a class="dropdown-item" href="./teaching/plates/index.html">
+    <a class="dropdown-item" href="../../teaching/plates/index.html">
  <span class="dropdown-text">Thin structures: plates</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching/structural_dynamics/index.html">
+    <a class="dropdown-item" href="../../teaching/structural_dynamics/index.html">
  <span class="dropdown-text">Structural dynamics</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./teaching/port_hamiltonian_systems/index.html">
+    <a class="dropdown-item" href="../../teaching/port_hamiltonian_systems/index.html">
  <span class="dropdown-text">Port-Hamiltonian systems</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./software.html" aria-current="page"> 
+    <a class="nav-link" href="../../software.html"> 
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./files/pdfs/CV.pdf"> 
+    <a class="nav-link" href="../../files/pdfs/CV.pdf"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contact.html"> 
+    <a class="nav-link" href="../../contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -342,31 +372,83 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Basculer le mode sombre"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../teaching/structural_dynamics/lab.html">Interactive lab</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../teaching/structural_dynamics/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../teaching/structural_dynamics/slides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slides</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../teaching/structural_dynamics/beam_bending.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lecture notes</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../teaching/structural_dynamics/lab.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Interactive lab</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Sur cette page</h2>
    
   <ul>
-  <li><a href="#companion-code-to-papers" id="toc-companion-code-to-papers" class="nav-link active" data-scroll-target="#companion-code-to-papers">Companion code to papers</a></li>
+  <li><a href="#cinématique-de-kirchhoff" id="toc-cinématique-de-kirchhoff" class="nav-link active" data-scroll-target="#cinématique-de-kirchhoff">1 · Cinématique de Kirchhoff</a></li>
+  <li><a href="#fonctions-dinterpolation-dhermite" id="toc-fonctions-dinterpolation-dhermite" class="nav-link" data-scroll-target="#fonctions-dinterpolation-dhermite">2 · Fonctions d’interpolation d’Hermite</a></li>
+  <li><a href="#matrices-élémentaires" id="toc-matrices-élémentaires" class="nav-link" data-scroll-target="#matrices-élémentaires">3 · Matrices élémentaires</a></li>
+  <li><a href="#assemblage" id="toc-assemblage" class="nav-link" data-scroll-target="#assemblage">4 · Assemblage</a></li>
+  <li><a href="#poutre-encastrée-flèche-moment-et-convergence" id="toc-poutre-encastrée-flèche-moment-et-convergence" class="nav-link" data-scroll-target="#poutre-encastrée-flèche-moment-et-convergence">5 · Poutre encastrée : flèche, moment et convergence</a></li>
+  <li><a href="#modes-propres" id="toc-modes-propres" class="nav-link" data-scroll-target="#modes-propres">6 · Modes propres</a></li>
+  <li><a href="#invariance-modale" id="toc-invariance-modale" class="nav-link" data-scroll-target="#invariance-modale">7 · Invariance modale</a></li>
+  <li><a href="#réduction-modale" id="toc-réduction-modale" class="nav-link" data-scroll-target="#réduction-modale">8 · Réduction modale</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<div class="hidden" aria-hidden="true" style="display:none">
+\(\renewcommand{\div}{\operatorname{div}}\newcommand{\bm}[1]{\boldsymbol{#1}}\newcommand{\Hess}{\operatorname{Hess}}\newcommand{\tr}{\operatorname{tr}}\newcommand{\bbR}{\mathbb{R}}\newcommand{\curl}{\operatorname{curl}}\newcommand{\dd}{\mathrm{d}}\)
+</div>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Software</h1>
+<h1 class="title">Laboratoire interactif</h1>
+<p class="subtitle lead">Huit simulations qui tournent dans le navigateur, pour explorer le cours en manipulant les paramètres.</p>
 </div>
 
 
@@ -383,33 +465,71 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="companion-code-to-papers" class="level2">
-<h2 class="anchored" data-anchor-id="companion-code-to-papers">Companion code to papers</h2>
-<div class="software-entry">
-<p><span class="paper-title"> A linearly-implicit energy-momentum preserving scheme for geometrically nonlinear mechanics based on non-canonical Hamiltonian formulations </span></p>
-<p><strong>Nonlinear Dynamics</strong>, 2025<br>
-DOI: <a href="https://doi.org/10.1016/10.1007/s11071-025-11601-6">10.1016/10.1007/s11071-025-11601-6</a></p>
-<p><strong>Companion code</strong><br>
-- 📦 <strong>Zenodo (archival, citable):</strong><br>
-<a href="https://doi.org/10.5281/zenodo.15009425" class="uri">https://doi.org/10.5281/zenodo.15009425</a><br>
-- 💻 <strong>GitHub (development):</strong><br>
-<a href="https://github.com/a-brugnoli/hamiltonian-geometrically-nonlinear-elasticity" class="uri">https://github.com/a-brugnoli/hamiltonian-geometrically-nonlinear-elasticity</a></p>
+<p>Tous les calculs sont faits en direct dans la page (aucun serveur) : éléments finis de Hermite, solveur linéaire, problème aux valeurs propres généralisé. Les mêmes simulations apparaissent dans les <a href="../../teaching/structural_dynamics/slides.html">transparents</a> et dans les <a href="../../teaching/structural_dynamics/beam_bending.html">notes de cours</a>.</p>
+<section id="cinématique-de-kirchhoff" class="level2">
+<h2 class="anchored" data-anchor-id="cinématique-de-kirchhoff">1 · Cinématique de Kirchhoff</h2>
+<p>Poutre encastrée sous charge de bout : les sections restent perpendiculaires à l’axe déformé (<span class="math inline">\(\phi_z=v'\)</span>). Comparez la rotation exacte avec le champ linéarisé <span class="math inline">\(\bm u\approx(-y\,v',\,v)\)</span>, et regardez la contrainte <span class="math inline">\(\sigma_{xx}=-Ey\,v''\)</span> varier linéairement dans l’épaisseur.</p>
+<div class="pw" data-widget="kinematics">
+
 </div>
-<div class="software-entry">
-<p><span class="paper-title"> Finite element hybridization of port-Hamiltonian systems </span></p>
-<p><strong>Applied Mathematics and Computation</strong>, 2025<br>
-DOI: <a href="https://doi.org/10.1016/j.amc.2025.129377">10.1016/j.amc.2025.129377</a></p>
-<p><strong>Companion code</strong><br>
-- 📦 <strong>Zenodo (archival, citable):</strong><br>
-<a href="https://doi.org/10.5281/zenodo.10047121" class="uri">https://doi.org/10.5281/zenodo.10047121</a><br>
-- 💻 <strong>GitHub (development):</strong><br>
-<a href="https://github.com/a-brugnoli/ph-hybridization" class="uri">https://github.com/a-brugnoli/ph-hybridization</a></p>
+</section>
+<section id="fonctions-dinterpolation-dhermite" class="level2">
+<h2 class="anchored" data-anchor-id="fonctions-dinterpolation-dhermite">2 · Fonctions d’interpolation d’Hermite</h2>
+<p>Quatre ddl <span class="math inline">\((v_1,\phi_1,v_2,\phi_2)\)</span> et un polynôme cubique : choisissez un préréglage pour retrouver chaque <span class="math inline">\(N_i\)</span> ou les mouvements rigides.</p>
+<div class="pw" data-widget="hermite">
+
+</div>
+</section>
+<section id="matrices-élémentaires" class="level2">
+<h2 class="anchored" data-anchor-id="matrices-élémentaires">3 · Matrices élémentaires</h2>
+<p>La colonne <span class="math inline">\(j\)</span> de <span class="math inline">\(\bm K_e\)</span> est le jeu d’efforts nodaux qui impose le ddl <span class="math inline">\(j\)</span> unitaire, les autres étant nuls. Pour un mouvement rigide, tous les efforts sont nuls : <span class="math inline">\(\bm K_e\)</span> est singulière.</p>
+<div class="pw" data-widget="elemK">
+
+</div>
+</section>
+<section id="assemblage" class="level2">
+<h2 class="anchored" data-anchor-id="assemblage">4 · Assemblage</h2>
+<p>Les contributions des éléments se recouvrent aux nœuds partagés et s’additionnent.</p>
+<div class="pw" data-widget="assembly">
+
+</div>
+</section>
+<section id="poutre-encastrée-flèche-moment-et-convergence" class="level2">
+<h2 class="anchored" data-anchor-id="poutre-encastrée-flèche-moment-et-convergence">5 · Poutre encastrée : flèche, moment et convergence</h2>
+<p>La solution éléments finis est tracée avec la solution exacte (tirets). Les réactions sont exactes quel que soit le maillage ; l’erreur sur la flèche décroît en <span class="math inline">\(h^4\)</span> pour la charge répartie ; avec une force nodale seule, la solution est exacte aux nœuds <strong>et</strong> entre les nœuds (la solution exacte est cubique entre deux nœuds chargés).</p>
+<div class="pw" data-widget="cantilever" data-show="defl,moment,conv" data-n="4">
+
+</div>
+</section>
+<section id="modes-propres" class="level2">
+<h2 class="anchored" data-anchor-id="modes-propres">6 · Modes propres</h2>
+<p>Fréquences et formes des modes d’une poutre encastrée–libre, appuyée–appuyée ou encastrée–encastrée, comparées à <span class="math inline">\(\omega_i=(\beta_iL)^2\sqrt{EI/(\rho S L^4)}\)</span>.</p>
+<div class="pw" data-widget="modes" data-n="10">
+
+</div>
+</section>
+<section id="invariance-modale" class="level2">
+<h2 class="anchored" data-anchor-id="invariance-modale">7 · Invariance modale</h2>
+<p>Une condition initiale colinéaire à un seul mode produit un mouvement synchrone qui garde la même forme ; une combinaison de modes produit un mouvement dont la forme évolue.</p>
+<div class="pw" data-widget="modalsum">
+
+</div>
+</section>
+<section id="réduction-modale" class="level2">
+<h2 class="anchored" data-anchor-id="réduction-modale">8 · Réduction modale</h2>
+<p>Réponse en fréquence en bout de poutre (40 ddl) : la base réduite à <span class="math inline">\(m\)</span> modes reproduit la réponse complète dans la bande utile si elle contient les modes qui y résonnent.</p>
+<div class="pw" data-widget="frf">
+
 </div>
 
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Retour au sommet</a></main> <!-- /main -->
+<script src="../../assets/js/d3.min.js"></script>
+<script src="../../assets/js/plot.umd.min.js"></script>
+<script src="../../assets/js/beam-core.js"></script>
+<script src="../../assets/js/beam-widgets.js"></script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -448,12 +568,12 @@ DOI: <a href="https://doi.org/10.1016/j.amc.2025.129377">10.1016/j.amc.2025.1293
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copié");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copié");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -827,6 +947,15 @@ DOI: <a href="https://doi.org/10.1016/j.amc.2025.129377">10.1016/j.amc.2025.1293
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../teaching/structural_dynamics/beam_bending.html" class="pagination-link" aria-label="Lecture notes">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lecture notes</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -871,5 +1000,5 @@ DOI: <a href="https://doi.org/10.1016/j.amc.2025.129377">10.1016/j.amc.2025.1293
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

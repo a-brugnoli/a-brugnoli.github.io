@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.31">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Structural dynamics – Andrea Brugnoli</title>
+<title>Dynamique des structures — éléments finis de poutre – Andrea Brugnoli</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../teaching/structural_dynamics/beam_bending.html" rel="next">
+<link href="../../teaching/structural_dynamics/slides.html" rel="next">
 <link href="../../files/images/cartoon_face.jpg" rel="icon" type="image/jpeg">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -43,9 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-8f99ecc55887f2ce381cfc6b01f48ab6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-321c191247638ee0eb194b62c3960d8c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-14b347695a6efa141a9305110d4b2810.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-321c191247638ee0eb194b62c3960d8c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-577e19eeb1aaa01f596e000fac366a68.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-e6f7416fa47a2818c7c2584e084660b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-577e19eeb1aaa01f596e000fac366a68.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -59,28 +59,29 @@ ul.task-list li input[type="checkbox"] {
     "s"
   ],
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="../../styles/custom.css">
-<meta property="og:title" content="Structural dynamics – Andrea Brugnoli">
+<meta property="og:title" content="Dynamique des structures — éléments finis de poutre">
+<meta property="og:description" content="Associate Professor at ISAE-SUPAERO — computational mechanics, port-Hamiltonian systems, structure-preserving discretization.">
 <meta property="og:site_name" content="Andrea Brugnoli">
 </head>
 
-<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar floating nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -265,8 +266,8 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Andrea Brugnoli</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -331,7 +332,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/andrea-brugnoli"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+    <a class="nav-link" href="https://www.linkedin.com/in/andrea-brugnoli-97a80826b"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -342,17 +343,17 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Basculer le mode sombre"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../teaching/structural_dynamics/index.html">Structural dynamics</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../teaching/structural_dynamics/index.html">Course home</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -366,13 +367,25 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../teaching/structural_dynamics/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Structural dynamics</span></a>
+ <span class="menu-text">Course home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../teaching/structural_dynamics/slides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slides</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../teaching/structural_dynamics/beam_bending.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Éléments finis pour la flexion des poutres</span></a>
+ <span class="menu-text">Lecture notes</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../teaching/structural_dynamics/lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Interactive lab</span></a>
   </div>
 </li>
     </ul>
@@ -380,48 +393,82 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#lectures" id="toc-lectures" class="nav-link active" data-scroll-target="#lectures">Lectures</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Structural dynamics</h1>
+<div class="hidden" aria-hidden="true" style="display:none">
+\(\renewcommand{\div}{\operatorname{div}}\newcommand{\bm}[1]{\boldsymbol{#1}}\newcommand{\Hess}{\operatorname{Hess}}\newcommand{\tr}{\operatorname{tr}}\newcommand{\bbR}{\mathbb{R}}\newcommand{\curl}{\operatorname{curl}}\newcommand{\dd}{\mathrm{d}}\)
 </div>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
+<section class="course-hero">
+  <div class="ab-eyebrow">ISAE-SUPAERO · 1<sup>re</sup> année · cours en français</div>
+  <h1>Dynamique des structures</h1>
+  <p class="ab-lead">Éléments finis pour la flexion des poutres d'Euler–Bernoulli : de la formulation faible à l'analyse modale et à la réduction.</p>
+  <div class="course-meta">
+    <span><i class="bi bi-easel"></i> 57 transparents</span>
+    <span><i class="bi bi-cpu"></i> 8 simulations interactives</span>
+    <span><i class="bi bi-journal-text"></i> notes de cours</span>
+    <span><i class="bi bi-person"></i> Andrea Brugnoli</span>
   </div>
-  
+  <div style="margin-top:1rem">
+    <a class="ab-btn primary" href="../../teaching/structural_dynamics/slides.html"><i class="bi bi-easel"></i> Ouvrir les transparents</a>
+    <a class="ab-btn" href="../../teaching/structural_dynamics/beam_bending.html"><i class="bi bi-journal-text"></i> Notes de cours</a>
+    <a class="ab-btn" href="../../teaching/structural_dynamics/lab.html"><i class="bi bi-sliders"></i> Laboratoire</a>
+  </div>
+</section>
+<section id="contenu" class="level2">
+<h2 class="anchored" data-anchor-id="contenu">Contenu</h2>
+<div class="ab-cards two">
+  <div class="ab-card featured">
+    <span class="ab-tag">Cours</span><span class="ab-tag">57 transparents</span>
+    <h3 class="anchored"><i class="bi bi-easel"></i>&nbsp; Transparents</h3>
+    <p>Diaporama interactif (Reveal.js) : modèle d'Euler–Bernoulli, forme faible, élément d'Hermite, assemblage, conditions aux limites, matrice de masse, modes propres et réduction modale. Huit simulations intégrées.</p>
+    <p class="small">Touches : <kbd>F</kbd> plein écran · <kbd>O</kbd> vue d'ensemble · <kbd>E</kbd> mode impression PDF · <kbd>B</kbd> tableau noir.</p>
+    <a class="stretched-link" href="../../teaching/structural_dynamics/slides.html" aria-label="Transparents"></a>
+  </div>
+  <div class="ab-card">
+    <span class="ab-tag">Laboratoire</span>
+    <h3 class="anchored"><i class="bi bi-sliders"></i>&nbsp; Simulations</h3>
+    <p>Cinématique de Kirchhoff, fonctions d'Hermite, colonnes de la matrice de raideur élémentaire, assemblage pas à pas, convergence, modes propres, invariance modale et réponse en fréquence d'un modèle réduit.</p>
+    <a class="stretched-link" href="../../teaching/structural_dynamics/lab.html" aria-label="Laboratoire interactif"></a>
+  </div>
+  <div class="ab-card">
+    <span class="ab-tag">Notes</span>
+    <h3 class="anchored"><i class="bi bi-journal-text"></i>&nbsp; Notes de cours</h3>
+    <p>Version détaillée du cours, avec les calculs, les figures et les mêmes simulations intégrées dans le texte.</p>
+    <a class="stretched-link" href="../../teaching/structural_dynamics/beam_bending.html" aria-label="Notes de cours"></a>
+  </div>
+</div>
+</section>
+<section id="aperçu-les-modes-propres-en-direct" class="level2">
+<h2 class="anchored" data-anchor-id="aperçu-les-modes-propres-en-direct">Aperçu : les modes propres en direct</h2>
+<p>Choisissez les conditions aux limites, le nombre d’éléments et le mode : la fréquence éléments finis est comparée à la solution analytique, et la précision se dégrade pour les modes élevés.</p>
+<div class="pw" data-widget="modes" data-n="10">
 
-
-</header>
-
-
-<section id="lectures" class="level2">
-<h2 class="anchored" data-anchor-id="lectures">Lectures</h2>
-<ul>
-<li><a href="../../teaching/structural_dynamics/beam_bending.html">Lecture 1: Finite elements for beam bending (in French)</a></li>
-</ul>
+</div>
+</section>
+<section id="parcours" class="level2">
+<h2 class="anchored" data-anchor-id="parcours">Parcours</h2>
+<ol type="1">
+<li><strong>Modèle</strong> : cinématique de Kirchhoff, efforts généralisés, équilibre, conditions aux limites.</li>
+<li><strong>Formulation faible</strong> : travaux virtuels et énergie de flexion.</li>
+<li><strong>Élément fini</strong> : interpolation d’Hermite, matrice de raideur élémentaire.</li>
+<li><strong>Assemblage</strong> et résolution : conditions essentielles, réactions, convergence.</li>
+<li><strong>Dynamique</strong> : matrice de masse cohérente, modes propres, invariance, réduction modale.</li>
+</ol>
 
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Retour au sommet</a></main> <!-- /main -->
+<script src="../../assets/js/d3.min.js"></script>
+<script src="../../assets/js/plot.umd.min.js"></script>
+<script src="../../assets/js/beam-core.js"></script>
+<script src="../../assets/js/beam-widgets.js"></script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -460,12 +507,12 @@ ul.task-list li input[type="checkbox"] {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copié");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copié");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -843,8 +890,8 @@ ul.task-list li input[type="checkbox"] {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../teaching/structural_dynamics/beam_bending.html" class="pagination-link" aria-label="Éléments finis pour la flexion des poutres">
-        <span class="nav-page-text">Éléments finis pour la flexion des poutres</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../teaching/structural_dynamics/slides.html" class="pagination-link" aria-label="Slides">
+        <span class="nav-page-text">Slides</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -872,7 +919,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/andrea-brugnoli">
+    <a class="nav-link" href="https://www.linkedin.com/in/andrea-brugnoli-97a80826b">
       <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
     </a>

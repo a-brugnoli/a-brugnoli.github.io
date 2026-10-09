@@ -501,9 +501,8 @@
       if (+sM.value > +sM.max) sM.fmtOut(sM.max);
       const i = +sM.value;
       const shape = m.shapes[i - 1];
-      const cv = C.sample(shape, Ne, 1, 1, 16);
-      const nodes = d3.range(0, Ne + 1).map((k) => shape[2 * k]); // nodal deflections = dofs v_k
-      cur = { cv, nodes, omega: m.omega[i - 1], Ne, bc, i, m };
+      const cv = C.sample(shape, Ne, 1, 1, 8);
+      cur = { cv, omega: m.omega[i - 1], Ne, bc, i, m };
       svg.selectAll("*").remove();
       drawBeamSVG(svg, W, H, s, x0, yc, bc);
       svg.append("line").attr("x1", x0).attr("x2", x0 + s).attr("y1", yc).attr("y2", yc).attr("stroke", CUR).attr("stroke-dasharray", "3 5").attr("opacity", 0.35);
@@ -521,7 +520,7 @@
       for (let k = 1; k <= nm; k++) data.push({ k, r: m.omega[k - 1] / C.omegaExact(bc, k) });
       put(pB, Plot.plot({
         width: 430, height: 250, marginLeft: 50, grid: true,
-        x: { label: "numéro du mode i →", ticks: d3.range(1, nm + 1, Math.ceil(nm / 8)), tickFormat: (d) => d }, y: { type: "log", label: "↑ ω_EF / ω_exact", domain: [0.995, Math.max(1.05, d3.max(data, (d) => d.r) * 1.1)], tickFormat: (d) => fr(d, 2) },
+        x: { label: "numéro du mode i →", ticks: 8 }, y: { type: "log", label: "↑ ω_EF / ω_exact", domain: [0.995, Math.max(1.05, d3.max(data, (d) => d.r) * 1.1)], tickFormat: (d) => fr(d, 2) },
         marks: [Plot.ruleY([1], { stroke: CUR, strokeDasharray: "4 4" }), Plot.line(data, { x: "k", y: "r", stroke: TEAL, strokeWidth: 2 }),
           Plot.dot(data, { x: "k", y: "r", r: 4, fill: TEAL }), Plot.dot(data.filter((d) => d.k === i), { x: "k", y: "r", r: 9, fill: AMBER, stroke: "white" })],
       }));
@@ -536,7 +535,7 @@
       const mk = (a) => cv.x.map((x, k) => `${x0 + s * x},${yc - s * A * a * cv.v[k]}`).join(" ");
       gDyn.line.attr("points", mk(c));
       gDyn.env1.attr("points", mk(1)); gDyn.env2.attr("points", mk(-1));
-      gDyn.dots.selectAll("circle").attr("cx", (_, k) => x0 + s * k / cur.Ne).attr("cy", (_, k) => yc - s * A * c * cur.nodes[k]);
+      gDyn.dots.selectAll("circle").attr("cx", (_, k) => x0 + s * k / cur.Ne).attr("cy", (_, k) => yc - s * A * c * cv.v[k * 8]);
       gDyn.txt.text(`mode ${i}  ·  ω = ${fr(cur.omega, 1)} rad/s`);
     }
     [bcS, sN, sM].forEach((c) => c.addEventListener("input", setup)); bcS.addEventListener("change", setup);
