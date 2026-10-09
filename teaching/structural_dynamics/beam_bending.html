@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.31">
@@ -31,7 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../teaching/structural_dynamics/index.html" rel="prev">
+<link href="../../teaching/structural_dynamics/lab.html" rel="next">
+<link href="../../teaching/structural_dynamics/slides.html" rel="prev">
 <link href="../../files/images/cartoon_face.jpg" rel="icon" type="image/jpeg">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -60,17 +61,17 @@ ul.task-list li input[type="checkbox"] {
     "s"
   ],
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -107,7 +108,7 @@ window.Quarto = {
 
 <link rel="stylesheet" href="../../styles/custom.css">
 <meta property="og:title" content="Éléments finis pour la flexion des poutres – Andrea Brugnoli">
-<meta property="og:description" content="Associate Professor at ISAE-SUPAERO — computational mechanics, port-Hamiltonian systems, structure-preserving discretization.">
+<meta property="og:description" content="Notes de cours avec simulations interactives">
 <meta property="og:image" content="https://a-brugnoli.github.io/files/images/teaching/structural_dynamics/beam_bending/tikz_image-01.png">
 <meta property="og:site_name" content="Andrea Brugnoli">
 <meta property="og:image:height" content="230">
@@ -299,8 +300,8 @@ window.Quarto = {
     <span class="navbar-title">Andrea Brugnoli</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -365,7 +366,7 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/andrea-brugnoli"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+    <a class="nav-link" href="https://www.linkedin.com/in/andrea-brugnoli-97a80826b"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -376,17 +377,17 @@ window.Quarto = {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Basculer le mode sombre"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../teaching/structural_dynamics/beam_bending.html">Éléments finis pour la flexion des poutres</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../teaching/structural_dynamics/beam_bending.html">Lecture notes</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -400,13 +401,25 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../teaching/structural_dynamics/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Structural dynamics</span></a>
+ <span class="menu-text">Course home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../teaching/structural_dynamics/slides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slides</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../teaching/structural_dynamics/beam_bending.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Éléments finis pour la flexion des poutres</span></a>
+ <span class="menu-text">Lecture notes</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../teaching/structural_dynamics/lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Interactive lab</span></a>
   </div>
 </li>
     </ul>
@@ -478,6 +491,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Éléments finis pour la flexion des poutres</h1>
+<p class="subtitle lead">Notes de cours avec simulations interactives</p>
 </div>
 
 
@@ -485,7 +499,7 @@ window.Quarto = {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Auteur·rice</div>
     <div class="quarto-title-meta-contents">
              <p>Andrea Brugnoli, DMSM </p>
           </div>
@@ -504,6 +518,11 @@ window.Quarto = {
 \newcommand{\d}{\mathrm{d}}
 \newcommand{\bm}[1]{\boldsymbol{#1}}
 \]</span></p>
+<div class="sol-toolbar">
+  <a class="ab-btn primary" href="slides.html"><i class="bi bi-easel"></i> Ouvrir les transparents</a>
+  <a class="ab-btn" href="lab.html"><i class="bi bi-sliders"></i> Laboratoire interactif</a>
+</div>
+<p>Les encadrés <strong>Simulation</strong> de cette page sont interactifs : ils s’exécutent dans votre navigateur (aucun serveur).</p>
 <section id="modèle-de-poutre" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="modèle-de-poutre"><span class="header-section-number">1</span> Modèle de poutre</h2>
 <div class="callout callout-style-default callout-warning callout-titled">
@@ -512,7 +531,7 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+Avertissement
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -567,7 +586,7 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+Avertissement
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -607,6 +626,9 @@ Note
 \begin{pmatrix} -y\,\dfrac{\mathrm{d}v}{\mathrm{d}x} \\ v \end{pmatrix}
 \]</span></p>
 <p>où <span class="math inline">\(v(x)\)</span> est le déplacement de l’axe moyen et <span class="math inline">\(\phi_z(x)\)</span> est la rotation de la section.</p>
+<div class="pw" data-widget="kinematics">
+
+</div>
 <p><img src="../../files/images/teaching/structural_dynamics/beam_bending/deformed_beam.png" class="img-fluid" style="width:85.0%"></p>
 <hr>
 </section>
@@ -644,7 +666,7 @@ M(x) = -\int_S y\,\sigma_{xx}\,\mathrm{d}S \quad \text{(Moment de flexion)}.
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+Avertissement
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -793,23 +815,8 @@ N_3 &amp;= 3\xi^2 - 2\xi^3, \\
 N_4 &amp;= L_e(-\xi^2 + \xi^3).
 \end{aligned}
 \]</span></p>
-<div class="quarto-layout-panel" data-layout-nrow="2" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="../../files/images/teaching/structural_dynamics/beam_bending/tikz_image-08.png" class="img-fluid"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="../../files/images/teaching/structural_dynamics/beam_bending/tikz_image-09.png" class="img-fluid"></p>
-</div>
-</div>
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="../../files/images/teaching/structural_dynamics/beam_bending/tikz_image-10.png" class="img-fluid"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="../../files/images/teaching/structural_dynamics/beam_bending/tikz_image-11.png" class="img-fluid"></p>
-</div>
-</div>
+<div class="pw" data-widget="hermite">
+
 </div>
 <hr>
 </section>
@@ -938,6 +945,9 @@ Note
 \begin{pmatrix} 0 \\ 1 \\ L_e \\ 1 \end{pmatrix}
 \right\}.
 \]</span></p>
+<div class="pw" data-widget="elemK">
+
+</div>
 <hr>
 </section>
 <section id="complément-ajout-du-comportement-en-traction" class="level2" data-number="20">
@@ -1061,6 +1071,9 @@ E_t = \int_0^L EA\left(\frac{\mathrm{d}u}{\mathrm{d}x}\right)^2\mathrm{d}x.
 <figcaption>Trois éléments</figcaption>
 </figure>
 </div>
+<div class="pw" data-widget="assembly">
+
+</div>
 <hr>
 </section>
 <section id="assemblage-de-la-force-distribuée" class="level2" data-number="26">
@@ -1148,7 +1161,7 @@ Retourner K, f</code></pre>
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+Avertissement
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1195,15 +1208,8 @@ Note
 </section>
 <section id="résultats" class="level2" data-number="31">
 <h2 data-number="31" class="anchored" data-anchor-id="résultats"><span class="header-section-number">31</span> Résultats</h2>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="../../files/images/teaching/structural_dynamics/beam_bending/cantilever_beam_deflection_diff.png" class="img-fluid"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="../../files/images/teaching/structural_dynamics/beam_bending/cantilever_beam_error_convergence.png" class="img-fluid"></p>
-</div>
-</div>
+<div class="pw" data-widget="cantilever" data-show="defl,moment,conv" data-n="2">
+
 </div>
 <p>Barre prismatique rectangulaire : <span class="math inline">\(L=1\,\mathrm{[m]}\)</span>, <span class="math inline">\(b=1\,\mathrm{[cm]}\)</span>, <span class="math inline">\(h=1\,\mathrm{[cm]}\)</span>. Paramètres acier : <span class="math inline">\(EI = 2\times10^5\,[\mathrm{Pa\cdot m^4}]\)</span>. Forces : <span class="math inline">\(p=100\,[\mathrm{N/m}]\)</span>, <span class="math inline">\(F=20\,[\mathrm{N}]\)</span>.</p>
 <hr>
@@ -1290,7 +1296,7 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+Avertissement
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1302,7 +1308,9 @@ Warning
 <section id="résultat-de-lanalyse-modale" class="level2" data-number="36">
 <h2 data-number="36" class="anchored" data-anchor-id="résultat-de-lanalyse-modale"><span class="header-section-number">36</span> Résultat de l’analyse modale</h2>
 <p><span class="math inline">\(L = 1\,[\mathrm{m}]\)</span>, <span class="math inline">\(EI = 2\times10^5\,[\mathrm{Pa\cdot m^4}]\)</span>, <span class="math inline">\(\rho S = 0.78\,[\mathrm{kg/m}]\)</span>.</p>
-<p><img src="../../files/images/teaching/structural_dynamics/beam_bending/mode_shapes_cantilever.png" class="img-fluid" style="width:70.0%"></p>
+<div class="pw" data-widget="modes" data-n="8">
+
+</div>
 <hr>
 </section>
 <section id="propriétés-des-modes" class="level2" data-number="37">
@@ -1353,6 +1361,9 @@ Note
 \]</span></p>
 </div>
 </div>
+<div class="pw" data-widget="modalsum">
+
+</div>
 <section id="preuve-de-linvariance" class="level3" data-number="38.1">
 <h3 data-number="38.1" class="anchored" data-anchor-id="preuve-de-linvariance"><span class="header-section-number">38.1</span> Preuve de l’invariance</h3>
 <p>Chaque espace propre s’écrit :</p>
@@ -1366,7 +1377,7 @@ E_i := \{\bm{\phi}_i \neq \bm{0} \mid \bm{K}\bm{\phi}_i = \omega_i^2\,\bm{M}\bm{
 <li>En utilisant <span class="math inline">\(\bm{K}\bm{\phi}_i = \omega_i^2\,\bm{M}\bm{\phi}_i\)</span>, on obtient les équations découplées : <span class="math display">\[
 \begin{aligned}
 \ddot{\eta}_i + \omega_i^2\,\eta_i &amp;= 0, \qquad \eta_i\big|_{t=0} = \eta_i^0, \quad \dot{\eta}_i\big|_{t=0} = \dot{\eta}_i^0, \\
-\ddot{\eta}_j + \omega_i^2\,\eta_j &amp;= 0, \qquad \eta_j\big|_{t=0} = 0, \quad \dot{\eta}_j\big|_{t=0} = 0.
+\ddot{\eta}_j + \omega_j^2\,\eta_j &amp;= 0, \qquad \eta_j\big|_{t=0} = 0, \quad \dot{\eta}_j\big|_{t=0} = 0.
 \end{aligned}
 \]</span></li>
 <li>On trouve <span class="math inline">\(\eta_i(t) \neq 0\)</span> alors que <span class="math inline">\(\eta_j(t) \equiv 0\)</span>. Le mouvement reste donc dans <span class="math inline">\(E_i\)</span>.</li>
@@ -1399,18 +1410,25 @@ E_i := \{\bm{\phi}_i \neq \bm{0} \mid \bm{K}\bm{\phi}_i = \omega_i^2\,\bm{M}\bm{
 \]</span></p>
 <p>La matrice <span class="math inline">\(\bm{\Phi}_{[m]}\)</span> vérifie :</p>
 <p><span class="math display">\[
-\bm{M}\bm{\Phi}_{[m]} = \bm{K}\bm{\Phi}_{[m]}\,\bm{\Omega}_{[m]}^2, \qquad
+\bm{K}\bm{\Phi}_{[m]} = \bm{M}\bm{\Phi}_{[m]}\,\bm{\Omega}_{[m]}^2, \qquad
 \bm{\Omega}_{[m]}^2 = \mathrm{diag}(\omega_1^2,\omega_2^2,\dots,\omega_m^2).
 \]</span></p>
 <p>On obtient un <strong>système découplé de taille réduite</strong> :</p>
 <p><span class="math display">\[
 \ddot{\bm{\eta}}_{[m]} + \bm{\Omega}_{[m]}^2\,\bm{\eta}_{[m]} = \bm{\Phi}_{[m]}^\top\bm{f}.
 \]</span></p>
+<div class="pw" data-widget="frf">
+
+</div>
 
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Retour au sommet</a></main> <!-- /main -->
+<script src="../../assets/js/d3.min.js"></script>
+<script src="../../assets/js/plot.umd.min.js"></script>
+<script src="../../assets/js/beam-core.js"></script>
+<script src="../../assets/js/beam-widgets.js"></script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -1449,12 +1467,12 @@ E_i := \{\bm{\phi}_i \neq \bm{0} \mid \bm{K}\bm{\phi}_i = \omega_i^2\,\bm{M}\bm{
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copié");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copié");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -1830,11 +1848,14 @@ E_i := \{\bm{\phi}_i \neq \bm{0} \mid \bm{K}\bm{\phi}_i = \omega_i^2\,\bm{M}\bm{
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../teaching/structural_dynamics/index.html" class="pagination-link" aria-label="Structural dynamics">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Structural dynamics</span>
+      <a href="../../teaching/structural_dynamics/slides.html" class="pagination-link" aria-label="Slides">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Slides</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../../teaching/structural_dynamics/lab.html" class="pagination-link" aria-label="Interactive lab">
+        <span class="nav-page-text">Interactive lab</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -1861,7 +1882,7 @@ E_i := \{\bm{\phi}_i \neq \bm{0} \mid \bm{K}\bm{\phi}_i = \omega_i^2\,\bm{M}\bm{
     </a>
   </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/andrea-brugnoli">
+    <a class="nav-link" href="https://www.linkedin.com/in/andrea-brugnoli-97a80826b">
       <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
     </a>
