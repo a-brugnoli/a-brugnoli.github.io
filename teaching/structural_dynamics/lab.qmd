@@ -1,0 +1,65 @@
+---
+title: "Laboratoire interactif"
+subtitle: "Huit simulations qui tournent dans le navigateur, pour explorer le cours en manipulant les paramètres."
+lang: fr
+include-before-body: _macros.html
+include-after-body: _scripts.html
+---
+
+Tous les calculs sont faits en direct dans la page (aucun serveur) : éléments finis de Hermite, solveur linéaire, problème aux valeurs propres généralisé. Les mêmes simulations apparaissent dans les [transparents](slides.qmd) et dans les [notes de cours](beam_bending.qmd).
+
+## 1 · Cinématique de Kirchhoff
+
+Poutre encastrée sous charge de bout : les sections restent perpendiculaires à l'axe déformé ($\phi_z=v'$). Comparez la rotation exacte avec le champ linéarisé $\bm u\approx(-y\,v',\,v)$, et regardez la contrainte $\sigma_{xx}=-Ey\,v''$ varier linéairement dans l'épaisseur.
+
+::: {.pw data-widget="kinematics"}
+:::
+
+## 2 · Fonctions d'interpolation d'Hermite
+
+Quatre ddl $(v_1,\phi_1,v_2,\phi_2)$ et un polynôme cubique : choisissez un préréglage pour retrouver chaque $N_i$ ou les mouvements rigides.
+
+::: {.pw data-widget="hermite"}
+:::
+
+## 3 · Matrices élémentaires
+
+La colonne $j$ de $\bm K_e$ est le jeu d'efforts nodaux qui impose le ddl $j$ unitaire, les autres étant nuls. Pour un mouvement rigide, tous les efforts sont nuls : $\bm K_e$ est singulière.
+
+::: {.pw data-widget="elemK"}
+:::
+
+## 4 · Assemblage
+
+Les contributions des éléments se recouvrent aux nœuds partagés et s'additionnent.
+
+::: {.pw data-widget="assembly"}
+:::
+
+## 5 · Poutre encastrée : flèche, moment et convergence
+
+La solution éléments finis est tracée avec la solution exacte (tirets). Les réactions sont exactes quel que soit le maillage ; l'erreur sur la flèche décroît en $h^4$ pour la charge répartie ; avec une force nodale seule, la solution est exacte aux nœuds **et** entre les nœuds (la solution exacte est cubique entre deux nœuds chargés).
+
+::: {.pw data-widget="cantilever" data-show="defl,moment,conv" data-n="4"}
+:::
+
+## 6 · Modes propres
+
+Fréquences et formes des modes d'une poutre encastrée–libre, appuyée–appuyée ou encastrée–encastrée, comparées à $\omega_i=(\beta_iL)^2\sqrt{EI/(\rho S L^4)}$.
+
+::: {.pw data-widget="modes" data-n="10"}
+:::
+
+## 7 · Invariance modale
+
+Une condition initiale colinéaire à un seul mode produit un mouvement synchrone qui garde la même forme ; une combinaison de modes produit un mouvement dont la forme évolue.
+
+::: {.pw data-widget="modalsum"}
+:::
+
+## 8 · Réduction modale
+
+Réponse en fréquence en bout de poutre (40 ddl) : la base réduite à $m$ modes reproduit la réponse complète dans la bande utile si elle contient les modes qui y résonnent.
+
+::: {.pw data-widget="frf"}
+:::

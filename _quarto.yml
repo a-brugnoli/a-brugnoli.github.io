@@ -8,7 +8,6 @@ project:
 #  Social profiles — edit here, they are used in the navbar and footer
 # ---------------------------------------------------------------------
 #  GitHub   : https://github.com/a-brugnoli
-#  LinkedIn : https://www.linkedin.com/in/andrea-brugnoli   <- check this URL
 #  Scholar  : https://scholar.google.com/citations?user=aze4Eh4AAAAJ
 #  HAL      : https://cv.hal.science/andrea-brugnoli
 
@@ -52,7 +51,7 @@ website:
         href: https://github.com/a-brugnoli
         aria-label: GitHub
       - icon: linkedin
-        href: https://www.linkedin.com/in/andrea-brugnoli
+        href: https://www.linkedin.com/in/andrea-brugnoli-97a80826b
         aria-label: LinkedIn
       - text: '<svg class="scholar-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>'
         href: https://scholar.google.com/citations?user=aze4Eh4AAAAJ
@@ -74,9 +73,16 @@ website:
           href: teaching/plates/lab.qmd
     - id: structural_dynamics
       title: "Structural dynamics"
+      style: floating
       contents:
-        - teaching/structural_dynamics/index.qmd
-        - teaching/structural_dynamics/beam_bending.qmd
+        - text: "Course home"
+          href: teaching/structural_dynamics/index.qmd
+        - text: "Slides"
+          href: teaching/structural_dynamics/slides.qmd
+        - text: "Lecture notes"
+          href: teaching/structural_dynamics/beam_bending.qmd
+        - text: "Interactive lab"
+          href: teaching/structural_dynamics/lab.qmd
     - id: port_hamiltonian_systems
       title: "Port-Hamiltonian systems"
       contents:
@@ -94,7 +100,7 @@ website:
         href: https://github.com/a-brugnoli
         aria-label: GitHub
       - icon: linkedin
-        href: https://www.linkedin.com/in/andrea-brugnoli
+        href: https://www.linkedin.com/in/andrea-brugnoli-97a80826b
         aria-label: LinkedIn
       - text: '<svg class="scholar-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>'
         href: https://scholar.google.com/citations?user=aze4Eh4AAAAJ

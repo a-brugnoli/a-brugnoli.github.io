@@ -34,7 +34,7 @@ toc: false
 ```{=html}
 <p>
   <a class="ab-btn" href="https://github.com/a-brugnoli" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
-  <a class="ab-btn" href="https://www.linkedin.com/in/andrea-brugnoli" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
+  <a class="ab-btn" href="https://www.linkedin.com/in/andrea-brugnoli-97a80826b" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
   <a class="ab-btn" href="https://scholar.google.com/citations?user=aze4Eh4AAAAJ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg> Google Scholar</a>
   <a class="ab-btn" href="https://cv.hal.science/andrea-brugnoli" target="_blank" rel="noopener"><i class="bi bi-journal-text"></i> HAL</a>
 </p>

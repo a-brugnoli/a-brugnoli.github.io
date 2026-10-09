@@ -1,7 +1,68 @@
 ---
-title: "Structural dynamics"
+pagetitle: "Dynamique des structures — éléments finis de poutre"
+lang: fr
+toc: false
+title-block-style: none
+include-before-body: _macros.html
+include-after-body: _scripts.html
 ---
 
-## Lectures
+```{=html}
+<section class="course-hero">
+  <div class="ab-eyebrow">ISAE-SUPAERO · 1<sup>re</sup> année · cours en français</div>
+  <h1>Dynamique des structures</h1>
+  <p class="ab-lead">Éléments finis pour la flexion des poutres d'Euler–Bernoulli : de la formulation faible à l'analyse modale et à la réduction.</p>
+  <div class="course-meta">
+    <span><i class="bi bi-easel"></i> 57 transparents</span>
+    <span><i class="bi bi-cpu"></i> 8 simulations interactives</span>
+    <span><i class="bi bi-journal-text"></i> notes de cours</span>
+    <span><i class="bi bi-person"></i> Andrea Brugnoli</span>
+  </div>
+  <div style="margin-top:1rem">
+    <a class="ab-btn primary" href="slides.qmd"><i class="bi bi-easel"></i> Ouvrir les transparents</a>
+    <a class="ab-btn" href="beam_bending.qmd"><i class="bi bi-journal-text"></i> Notes de cours</a>
+    <a class="ab-btn" href="lab.qmd"><i class="bi bi-sliders"></i> Laboratoire</a>
+  </div>
+</section>
+```
 
-- [Lecture 1: Finite elements for beam bending (in French)](beam_bending.qmd)
+## Contenu
+
+```{=html}
+<div class="ab-cards two">
+  <div class="ab-card featured">
+    <span class="ab-tag">Cours</span><span class="ab-tag">57 transparents</span>
+    <h3><i class="bi bi-easel"></i>&nbsp; Transparents</h3>
+    <p>Diaporama interactif (Reveal.js) : modèle d'Euler–Bernoulli, forme faible, élément d'Hermite, assemblage, conditions aux limites, matrice de masse, modes propres et réduction modale. Huit simulations intégrées.</p>
+    <p class="small">Touches : <kbd>F</kbd> plein écran · <kbd>O</kbd> vue d'ensemble · <kbd>E</kbd> mode impression PDF · <kbd>B</kbd> tableau noir.</p>
+    <a class="stretched-link" href="slides.qmd" aria-label="Transparents"></a>
+  </div>
+  <div class="ab-card">
+    <span class="ab-tag">Laboratoire</span>
+    <h3><i class="bi bi-sliders"></i>&nbsp; Simulations</h3>
+    <p>Cinématique de Kirchhoff, fonctions d'Hermite, colonnes de la matrice de raideur élémentaire, assemblage pas à pas, convergence, modes propres, invariance modale et réponse en fréquence d'un modèle réduit.</p>
+    <a class="stretched-link" href="lab.qmd" aria-label="Laboratoire interactif"></a>
+  </div>
+  <div class="ab-card">
+    <span class="ab-tag">Notes</span>
+    <h3><i class="bi bi-journal-text"></i>&nbsp; Notes de cours</h3>
+    <p>Version détaillée du cours, avec les calculs, les figures et les mêmes simulations intégrées dans le texte.</p>
+    <a class="stretched-link" href="beam_bending.qmd" aria-label="Notes de cours"></a>
+  </div>
+</div>
+```
+
+## Aperçu : les modes propres en direct
+
+Choisissez les conditions aux limites, le nombre d'éléments et le mode : la fréquence éléments finis est comparée à la solution analytique, et la précision se dégrade pour les modes élevés.
+
+::: {.pw data-widget="modes" data-n="10"}
+:::
+
+## Parcours
+
+1. **Modèle** : cinématique de Kirchhoff, efforts généralisés, équilibre, conditions aux limites.
+2. **Formulation faible** : travaux virtuels et énergie de flexion.
+3. **Élément fini** : interpolation d'Hermite, matrice de raideur élémentaire.
+4. **Assemblage** et résolution : conditions essentielles, réactions, convergence.
+5. **Dynamique** : matrice de masse cohérente, modes propres, invariance, réduction modale.

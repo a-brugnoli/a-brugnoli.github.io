@@ -14,9 +14,10 @@ toc: false
     <a class="stretched-link" href="plates/index.qmd" aria-label="Thin structures: plates"></a>
   </div>
   <div class="ab-card">
-    <span class="ab-tag">FR</span>
+    <span class="ab-tag">1st year</span><span class="ab-tag">FR</span><span class="ab-tag">Interactive</span>
     <h3>Structural dynamics</h3>
-    <p>Finite elements for beam bending: Euler–Bernoulli model, Hermite elements, convergence and modal analysis.</p>
+    <p>Finite elements for beam bending: Euler–Bernoulli model, Hermite elements, assembly, convergence, modal analysis and model reduction.</p>
+    <p><i class="bi bi-easel"></i> Slides · <i class="bi bi-journal-text"></i> lecture notes · <i class="bi bi-cpu"></i> 8 live simulations</p>
     <a class="stretched-link" href="structural_dynamics/index.qmd" aria-label="Structural dynamics"></a>
   </div>
   <div class="ab-card">

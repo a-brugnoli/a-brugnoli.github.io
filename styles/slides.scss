@@ -98,3 +98,21 @@ $code-block-font-size: .6em;
 .reveal .slides section .pw { font-size: .56em; }
 .reveal .pw-panel svg { width: 100%; max-height: 330px; }
 .reveal .pw-panel table { width: 100%; }
+
+/* Agenda (course outline) */
+.reveal .agenda { display: grid; gap: .5em; margin: .6em 0 .9em; }
+.reveal .agenda .step { display: flex; align-items: center; gap: .9em; background: #fff; border: 1px solid #e6e2d8;
+  border-radius: 14px; padding: .4em .9em; box-shadow: 0 1px 2px rgba(14,59,63,.06); }
+.reveal .agenda .step span { flex: none; width: 1.7em; height: 1.7em; border-radius: 50%; background: $brand-teal; color: #fff;
+  display: grid; place-items: center; font-weight: 700; }
+.reveal .agenda .step b { display: block; color: $brand-ink; font-size: .95em; }
+.reveal .agenda .step small { display: block; color: #5b6b70; font-size: .6em; }
+.reveal kbd { font-size: .8em; }
+.reveal .pw-btn { font: inherit; }
+
+.reveal .agenda .step { padding: .28em .9em; }
+.reveal .agenda { gap: .38em; margin: .4em 0 .6em; }
+.reveal .pw[data-widget="assembly"] .pw-panel svg { max-height: 392px; }
+.reveal .pw[data-widget="frf"] .pw-panel svg { max-height: 380px; }
+.reveal .pw[data-widget="modes"] .pw-panel svg, .reveal .pw[data-widget="modalsum"] .pw-panel svg { max-height: 300px; }
+.reveal img.nostretch { max-height: 300px; }

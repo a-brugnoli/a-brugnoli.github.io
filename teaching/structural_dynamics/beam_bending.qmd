@@ -1,6 +1,9 @@
 ---
 title: "Éléments finis pour la flexion des poutres"
+subtitle: "Notes de cours avec simulations interactives"
 author: "Andrea Brugnoli, DMSM"
+lang: fr
+include-after-body: _scripts.html
 format:
   html:
     toc: true
@@ -17,6 +20,15 @@ $$
 \newcommand{\d}{\mathrm{d}}
 \newcommand{\bm}[1]{\boldsymbol{#1}}
 $$
+
+```{=html}
+<div class="sol-toolbar">
+  <a class="ab-btn primary" href="slides.html"><i class="bi bi-easel"></i> Ouvrir les transparents</a>
+  <a class="ab-btn" href="lab.html"><i class="bi bi-sliders"></i> Laboratoire interactif</a>
+</div>
+```
+
+Les encadrés **Simulation** de cette page sont interactifs : ils s'exécutent dans votre navigateur (aucun serveur).
 
 ## Modèle de poutre
 
@@ -76,6 +88,9 @@ $$
 $$
 
 où $v(x)$ est le déplacement de l'axe moyen et $\phi_z(x)$ est la rotation de la section.
+
+::: {.pw data-widget="kinematics"}
+:::
 
 
 ![](/files/images/teaching/structural_dynamics/beam_bending/deformed_beam.png){width=85%}
@@ -312,16 +327,7 @@ N_4 &= L_e(-\xi^2 + \xi^3).
 $$
 
 
-::: {layout-ncol=2 layout-nrow=2}
-
-![](/files/images/teaching/structural_dynamics/beam_bending/tikz_image-08.png){width=60%}
-
-![](/files/images/teaching/structural_dynamics/beam_bending/tikz_image-09.png){width=60%}
-
-![](/files/images/teaching/structural_dynamics/beam_bending/tikz_image-10.png){width=60%}
-
-![](/files/images/teaching/structural_dynamics/beam_bending/tikz_image-11.png){width=60%}
-
+::: {.pw data-widget="hermite"}
 :::
 
 ---
@@ -444,6 +450,9 @@ $$
 \begin{pmatrix} 0 \\ 1 \\ L_e \\ 1 \end{pmatrix}
 \right\}.
 $$
+
+::: {.pw data-widget="elemK"}
+:::
 
 ---
 
@@ -589,6 +598,9 @@ $$
 
 ![Trois éléments](/files/images/teaching/structural_dynamics/beam_bending/tikz_image-16.png){width=60%}
 
+::: {.pw data-widget="assembly"}
+:::
+
 ---
 
 ## Assemblage de la force distribuée
@@ -707,12 +719,7 @@ $$
 
 ## Résultats
 
-::: {layout-ncol=2}
-
-![](/files/images/teaching/structural_dynamics/beam_bending/cantilever_beam_deflection_diff.png){width=90%}
-
-![](/files/images/teaching/structural_dynamics/beam_bending/cantilever_beam_error_convergence.png){width=90%}
-
+::: {.pw data-widget="cantilever" data-show="defl,moment,conv" data-n="2"}
 :::
 
 Barre prismatique rectangulaire :
@@ -818,7 +825,8 @@ On peut avoir plusieurs vecteurs propres $\bm{\phi}_i$ pour une fréquence propr
 
 $L = 1\,[\mathrm{m}]$, $EI = 2\times10^5\,[\mathrm{Pa\cdot m^4}]$, $\rho S = 0.78\,[\mathrm{kg/m}]$.
 
-![](/files/images/teaching/structural_dynamics/beam_bending/mode_shapes_cantilever.png){width=70%}
+::: {.pw data-widget="modes" data-n="8"}
+:::
 
 ---
 
@@ -872,6 +880,9 @@ $$
 $$
 :::
 
+::: {.pw data-widget="modalsum"}
+:::
+
 ### Preuve de l'invariance
 
 Chaque espace propre s'écrit :
@@ -889,7 +900,7 @@ $$
   $$
   \begin{aligned}
   \ddot{\eta}_i + \omega_i^2\,\eta_i &= 0, \qquad \eta_i\big|_{t=0} = \eta_i^0, \quad \dot{\eta}_i\big|_{t=0} = \dot{\eta}_i^0, \\
-  \ddot{\eta}_j + \omega_i^2\,\eta_j &= 0, \qquad \eta_j\big|_{t=0} = 0, \quad \dot{\eta}_j\big|_{t=0} = 0.
+  \ddot{\eta}_j + \omega_j^2\,\eta_j &= 0, \qquad \eta_j\big|_{t=0} = 0, \quad \dot{\eta}_j\big|_{t=0} = 0.
   \end{aligned}
   $$
 - On trouve $\eta_i(t) \neq 0$ alors que $\eta_j(t) \equiv 0$. Le mouvement reste donc dans $E_i$.
@@ -931,7 +942,7 @@ $$
 La matrice $\bm{\Phi}_{[m]}$ vérifie :
 
 $$
-\bm{M}\bm{\Phi}_{[m]} = \bm{K}\bm{\Phi}_{[m]}\,\bm{\Omega}_{[m]}^2, \qquad
+\bm{K}\bm{\Phi}_{[m]} = \bm{M}\bm{\Phi}_{[m]}\,\bm{\Omega}_{[m]}^2, \qquad
 \bm{\Omega}_{[m]}^2 = \mathrm{diag}(\omega_1^2,\omega_2^2,\dots,\omega_m^2).
 $$
 
@@ -940,3 +951,7 @@ On obtient un **système découplé de taille réduite** :
 $$
 \ddot{\bm{\eta}}_{[m]} + \bm{\Omega}_{[m]}^2\,\bm{\eta}_{[m]} = \bm{\Phi}_{[m]}^\top\bm{f}.
 $$
+
+::: {.pw data-widget="frf"}
+:::
+
