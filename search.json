@@ -234,7 +234,7 @@
     "href": "teaching/index.html",
     "title": "Teaching",
     "section": "",
-    "text": "2nd yearFRInteractive\n    Thin structures: plates\n    Linear elasticity refresher, Kirchhoff–Love plate theory, circular plates, buckling and the Rayleigh–Ritz method.\n     Slides ·  2 exercise sessions with solutions ·  live simulations\n    \n  \n  \n    1st yearFRInteractive\n    Structural dynamics\n    Finite elements for beam bending: Euler–Bernoulli model, Hermite elements, assembly, convergence, modal analysis and model reduction.\n     Slides ·  lecture notes ·  8 live simulations\n    \n  \n  \n    Coming soon\n    Port-Hamiltonian systems\n    Energy-based modelling, interconnection and structure-preserving discretization.\n    \n  \n\n\n\n\n Back to top"
+    "text": "1st yearFRInteractive\n    Structural dynamics\n    Finite elements for beam bending: Euler–Bernoulli model, Hermite elements, assembly, convergence, modal analysis and model reduction.\n     Slides ·  lecture notes ·  8 live simulations\n    \n  \n  \n    2nd yearFRInteractive\n    Thin structures: plates\n    Linear elasticity refresher, Kirchhoff–Love plate theory, circular plates, buckling and the Rayleigh–Ritz method.\n     Slides ·  2 exercise sessions with solutions ·  live simulations\n    \n  \n  \n    Coming soon\n    Port-Hamiltonian systems\n    Energy-based modelling, interconnection and structure-preserving discretization.\n    \n  \n\n\n\n\n Back to top"
   },
   {
     "objectID": "research.html",
@@ -290,7 +290,7 @@
     "href": "index.html#teaching",
     "title": "Andrea Brugnoli",
     "section": "Teaching",
-    "text": "Teaching\n\n  \n    NewInteractive\n    Thin structures: plates\n    Kirchhoff–Love theory, buckling and the Ritz method — slides, exercises with solutions and live simulations (in French).\n    \n  \n  \n    Lecture\n    Structural dynamics\n    Finite elements for Euler–Bernoulli beam bending (in French).\n    \n  \n\nI teach classical mechanics, solid and structural mechanics, and finite element methods at ISAE-SUPAERO. → All courses"
+    "text": "Teaching\n\n  \n    Lecture\n    Structural dynamics\n    Finite elements for Euler–Bernoulli beam bending (in French).\n    \n  \n  \n    NewInteractive\n    Thin structures: plates\n    Kirchhoff–Love theory, buckling and the Ritz method — slides, exercises with solutions and live simulations (in French).\n    \n  \n\nI teach classical mechanics, solid and structural mechanics, and finite element methods at ISAE-SUPAERO. → All courses"
   },
   {
     "objectID": "index.html#software",
