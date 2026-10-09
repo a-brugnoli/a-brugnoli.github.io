@@ -36,10 +36,10 @@ website:
           - text: "Overview"
             href: teaching/index.qmd
           - text: "---"
-          - text: "Thin structures: plates"
-            href: teaching/plates/index.qmd
           - text: "Structural dynamics"
             href: teaching/structural_dynamics/index.qmd
+          - text: "Thin structures: plates"
+            href: teaching/plates/index.qmd
           - text: "Port-Hamiltonian systems"
             href: teaching/port_hamiltonian_systems/index.qmd
       - software.qmd

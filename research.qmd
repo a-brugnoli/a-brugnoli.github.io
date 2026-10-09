@@ -35,9 +35,9 @@ The integration is capable of preserving the energy exactly and has a lower erro
 
 ::: {#fig-lin-imp-integrator layout-ncol=2}
 
-![Energy error](/files/images/research/geometrically_nonlinear_integrator/energy_error_Duffing.png){width=90%}
+![Energy error](/files/images/research/geometrically_nonlinear_integrator/energy_error_duffing.png){width=90%}
 
-![Error on the position of the mass](/files/images/research/geometrically_nonlinear_integrator/convergence_position_Duffing.png){width=90%}
+![Error on the position of the mass](/files/images/research/geometrically_nonlinear_integrator/convergence_position_duffing.png){width=90%}
 
 
 :::

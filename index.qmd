@@ -64,17 +64,17 @@ page-layout: article
 
 ```{=html}
 <div class="ab-cards two">
-  <div class="ab-card featured">
-    <span class="ab-tag">New</span><span class="ab-tag">Interactive</span>
-    <h3>Thin structures: plates</h3>
-    <p>Kirchhoff–Love theory, buckling and the Ritz method — slides, exercises with solutions and live simulations (in French).</p>
-    <a class="stretched-link" href="teaching/plates/index.qmd" aria-label="Plates course"></a>
-  </div>
   <div class="ab-card">
     <span class="ab-tag">Lecture</span>
     <h3>Structural dynamics</h3>
     <p>Finite elements for Euler–Bernoulli beam bending (in French).</p>
     <a class="stretched-link" href="teaching/structural_dynamics/index.qmd" aria-label="Structural dynamics"></a>
+  </div>
+  <div class="ab-card featured">
+    <span class="ab-tag">New</span><span class="ab-tag">Interactive</span>
+    <h3>Thin structures: plates</h3>
+    <p>Kirchhoff–Love theory, buckling and the Ritz method — slides, exercises with solutions and live simulations (in French).</p>
+    <a class="stretched-link" href="teaching/plates/index.qmd" aria-label="Plates course"></a>
   </div>
 </div>
 ```
